@@ -6,7 +6,6 @@
       <img src="./assets/Logo.png" height="100%">
     </div>
 	</div>
-
 <div class="waterdrop_button"></div>
 <nav class="nav flex-column white--bg">
   <ul class="nav flex-column nav-ul">
@@ -32,15 +31,16 @@
       <a class="nav-link disabled" href="#">Settings</a>
     </li>
   </ul>
-  </nav>
+</nav>
   <div class="inner-body">
+    <button class="primary--bg col-sm-2 btn-lg border-radius-50">New program</button>
     <div class="d-flex justify-space-around">
       <div class="card card-left">
         <div class="card-body">
           <button type="button" class="btn btn-sm">
             <i class="fas fa-3x white fa-cog rounded-100 pt-2 pb-2 pr-2 pl-2 black--bg"></i>
           </button>
-          <img src="./assets/mechanics.png" class="centered" height="60%" width="60%">
+          <img src="./assets/mechanics.png" class="centered mt--30" height="60%" width="60%">
           <div class="bold text-center fs--16 width-100">Title of Programs</div>
           <div class="width-90 py-2 mt-2 centered border-radius-50 lightBlue--bg">
             <div class="fs--16 primary text-center justify-center pt-1 pb-1">No. of Courses
@@ -54,7 +54,7 @@
           <button type="button" class="btn btn-sm">
             <i class="fas fa-3x white fa-cog rounded-100 pt-2 pb-2 pr-2 pl-2 black--bg"></i>
           </button>
-          <img src="./assets/construction.png" class="centered" height="60%" width="60%">
+          <img src="./assets/construction.png" class="centered mt--30" height="60%" width="60%">
           <div class="bold text-center fs--16 width-100">Title of Programs</div>
           <div class="width-90 py-2 mt-2 centered border-radius-50 lightBlue--bg">
             <div class="fs--16 primary text-center justify-center pt-1 pb-1">No. of Courses
@@ -68,7 +68,7 @@
           <button type="button" class="btn btn-sm">
             <i class="fas fa-3x white fa-cog rounded-100 pt-2 pb-2 pr-2 pl-2 black--bg"></i>
           </button>
-          <img src="./assets/atom.png" class="centered" height="60%" width="60%">
+          <img src="./assets/atom.png" class="centered mt--30" height="60%" width="60%">
           <div class="bold text-center fs--16 width-100">Title of Programs</div>
           <div class="width-90 py-2 mt-2 centered border-radius-50 lightBlue--bg">
             <div class="fs--16 primary text-center justify-center pt-1 pb-1">No. of Courses
@@ -84,7 +84,7 @@
           <button type="button" class="btn btn-sm">
             <i class="fas fa-3x white fa-cog rounded-100 pt-2 pb-2 pr-2 pl-2 black--bg"></i>
           </button>
-          <img src="./assets/mechanics.png" class="centered" height="60%" width="60%">
+          <img src="./assets/mechanics.png" class="centered mt--30" height="60%" width="60%">
           <div class="bold text-center fs--16 width-100">Title of Programs</div>
           <div class="width-90 py-2 mt-2 centered border-radius-50 lightBlue--bg">
             <div class="fs--16 primary text-center justify-center pt-1 pb-1">No. of Courses
@@ -98,7 +98,7 @@
           <button type="button" class="btn btn-sm">
             <i class="fas fa-3x white fa-cog rounded-100 pt-2 pb-2 pr-2 pl-2 black--bg"></i>
           </button>
-          <img src="./assets/construction.png" class="centered" height="60%" width="60%">
+          <img src="./assets/construction.png" class="centered mt--30" height="60%" width="60%">
           <div class="bold text-center fs--16 width-100">Title of Programs</div>
           <div class="width-90 py-2 mt-2 centered border-radius-50 lightBlue--bg">
             <div class="fs--16 primary text-center justify-center pt-1 pb-1">No. of Courses
@@ -112,7 +112,7 @@
           <button type="button" class="btn btn-sm">
             <i class="fas fa-3x white fa-cog rounded-100 pt-2 pb-2 pr-2 pl-2 black--bg"></i>
           </button>
-          <img src="./assets/atom.png" class="centered" height="60%" width="60%">
+          <img src="./assets/atom.png" class="centered mt--30" height="60%" width="60%">
           <div class="bold text-center fs--16 width-100">Title of Programs</div>
           <div class="width-90 py-2 mt-2 centered border-radius-50 lightBlue--bg">
             <div class="fs--16 primary text-center justify-center pt-1 pb-1">No. of Courses
@@ -158,6 +158,9 @@
 }
 .rounded-100{
   border-radius: 100%;
+}
+.mt--30{
+  margin-top: -30px;
 }
 .header{
   border-radius: 0px 0px 80px;
