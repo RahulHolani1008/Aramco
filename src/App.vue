@@ -36,23 +36,7 @@
   <div class="inner-body">
     <div class="card card-left">
       <div class="card-body">
-        <h5 class="card-title">Average training time</h5>
-        <h6 class="card-subtitle mb-2 text-muted">
-          <div class="btn-group btn-group-toggle" data-toggle="buttons">
-            <label class="btn btn-secondary active">
-              <input type="radio" name="options" id="option1" autocomplete="off" checked> Yearly
-            </label>
-            <label class="btn btn-secondary">
-              <input type="radio" name="options" id="option2" autocomplete="off"> Monthly
-            </label>
-            <label class="btn btn-secondary">
-              <input type="radio" name="options" id="option3" autocomplete="off"> Weekly
-            </label>
-          </div>
-        </h6>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="card-link">Card link</a>
-        <a href="#" class="card-link">Another link</a>
+        
       </div>
     </div>
   </div>
@@ -113,12 +97,12 @@ body{
 .nav{
   grid-area: navigation;
   height: 88vh;
-  width: 15%;
   position: absolute;
   bottom: 0px;
   box-shadow: -2px 0 4px 0 rgba(0, 0, 0, 0.02);
   background-color: rgb(255, 255, 255);
   border-radius: 0 80px 0 0;
+  min-width: 250px;
 }
 
 .nav-ul{
@@ -147,7 +131,7 @@ body{
   opacity: 0.6;
   height: 100vh;
   padding-top: 6vh;
-  padding-left: 5%;
+  padding-left: 10%;
 }
 
 .grid{
@@ -166,7 +150,7 @@ body{
 
 
 .header_main {
-		  width: 15%;
+		  width: 250px;
 		  height: 15vh;
 		  border-radius: 0 0 80px 0;
 		  box-shadow: 0 0 49px 0 rgba(16, 29, 113, 0.08);
@@ -194,7 +178,7 @@ body{
 			box-shadow: 0 0 49px 0 rgba(16, 29, 113, 0.08);
 			background-image: linear-gradient(315deg, #0c9ee2, #06e8a7);
 			position: absolute;
-			left: 15%;
+			left: 250px;
 			top: 11.5vh;
       z-index: 1000;
 		}
