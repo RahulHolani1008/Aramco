@@ -6,34 +6,54 @@
       <img src="./assets/Logo.png" height="100%">
     </div>
 	</div>
-<div class="waterdrop_button"></div>
-<nav class="nav flex-column white--bg">
-  <ul class="nav flex-column nav-ul">
-    <li class="nav-item">
-      <a class="nav-link active" href="#">Analytics</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Members</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Requests</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link disabled" href="#">Content</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link disabled" href="#">Communication</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link disabled" href="#">Services</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link disabled" href="#">Settings</a>
-    </li>
-  </ul>
-</nav>
+  <div class="waterdrop_button"></div>
+  <nav class="nav flex-column white--bg">
+    <ul class="nav flex-column nav-ul">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Analytics</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Members</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Requests</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Content</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Communication</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Settings</a>
+      </li>
+    </ul>
+  </nav>
   <div class="inner-body">
-    <button class="primary--bg btn col-sm-2 btn-lg mt-5 white rounded-50 ml-100 mb-2"><i class="fas fa-plus white--bg rounded-100 mr-2 transparent"></i>New program</button>
+    <!-- PAGE 1 -->
+    <div class="d-flex">
+      <button class="primary--bg btn col-sm-2 btn-lg mt-5 white rounded-50 ml-100 mb-2"><i class="fas fa-plus white--bg rounded-100 mr-2 transparent"></i>New department</button>
+      <div class="col-sm-2 position-relative"><input type="text" class="form-control pt-2 pb-2 mt-5 ml-5 pr-5 rounded-50" placeholder="Search"><i class="fas position-absolute right--10 bottom-25 fa-search"></i></div>
+    </div>
+    <nav aria-label="Departments Pagination" class="position-absolute bottom-20">
+      <ul class="pagination justify-content-center">
+        <li class="page-item disabled">
+          <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Prev</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#">Next</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- PAGE 1 ENDS -->
+    <!-- PAGE 2 -->
+    <!-- <button class="primary--bg btn col-sm-2 btn-lg mt-5 white rounded-50 ml-100 mb-2"><i class="fas fa-plus white--bg rounded-100 mr-2 transparent"></i>New program</button>
     <div class="d-flex justify-space-around">
       <div class="card card-left">
         <div class="card-body">
@@ -121,7 +141,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </div>
 </template>
@@ -135,9 +155,19 @@
 .btn{
   border: 0px !important;
   outline: none !important;
+  height: auto;
+}
+.form-control{
+  height: auto !important;
 }
 .rounded-50{
   border-radius: 50px !important;
+}
+.right--10{
+  right: -10px;
+}
+.bottom-25{
+  bottom: 25px;
 }
 .border-radius-20{
   border-radius: 20px;
