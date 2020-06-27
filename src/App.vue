@@ -1,16 +1,37 @@
 <template>
 <div class="grid outer-div">
-  <div class="header">
-    Hello world
-  </div>
-  <nav class="nav flex-column white--bg">
-    <a class="nav-link active" href="#">Analytics</a>
-    <a class="nav-link" href="#">Members</a>
-    <a class="nav-link" href="#">Requests</a>
-    <a class="nav-link" href="#">Content</a>
-    <a class="nav-link" href="#">Communication</a>
-    <a class="nav-link" href="#">Services</a>
-    <a class="nav-link" href="#">Settings</a>
+  <div class="header_main">
+		<!-- logo will come here -->
+		<div class="logo_main">
+      <img src="./assets/Logo.png" height="100%">
+    </div>
+	</div>
+
+<div class="waterdrop_button"></div>
+<nav class="nav flex-column white--bg">
+  <ul class="nav flex-column nav-ul">
+    <li class="nav-item">
+      <a class="nav-link active" href="#">Analytics</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Members</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Requests</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#">Content</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#">Communication</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#">Services</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#">Settings</a>
+    </li>
+  </ul>
   </nav>
   <div class="inner-body"></div>
 </div>
@@ -19,8 +40,9 @@
 .header{
   border-radius: 0px 0px 80px;
   box-shadow: 0 0 49px 0 rgba(16, 29, 113, 0.08);
-  background-image: linear-gradient(294deg, #7fbf50 100%, #00aeed);
-  height: 20vh;
+  background-image: linear-gradient(294deg, #7fbf50, #00aeed);
+  width: 250px;
+  height: 10vh;
   grid-area: heads;
   position: absolute;
   top: 0px;
@@ -28,11 +50,38 @@
   z-index: 999999;
 }
 
+body{
+  opacity: 0.6;
+  background-image: linear-gradient(to top, #cad9f3, #eaf2ff);
+}
+
+.header-logo{
+  position: absolute;
+  left: 20px;
+  top: 8vh;
+}
+
+.header-text{
+  position: absolute;
+  left: 50px;
+  top: 7.8vh;
+  color: white;
+  list-style-type: none;
+}
+
 .nav{
   grid-area: navigation;
-  height: 80vh;
+  height: 88vh;
+  width: 15%;
   position: absolute;
   bottom: 0px;
+  box-shadow: -2px 0 4px 0 rgba(0, 0, 0, 0.02);
+  background-color: rgb(255, 255, 255);
+  border-radius: 0 80px 0 0;
+}
+
+.nav-ul{
+  padding-top: 40px;
 }
 
 .active{
@@ -46,13 +95,11 @@
 .white--bg{
   background-color: white;
   box-shadow: -2px 0 4px 0 rgba(0, 0, 0, 0.02);
-  border-radius: 80px;
 }
 
 .inner-body{
   grid-area: innerbody;
   opacity: 0.6;
-  background-image: linear-gradient(to top, #cad9f3, #eaf2ff);
   height: 100vh;
   width: 100
 }
@@ -62,8 +109,43 @@
 }
 
 .outer-div{
-  grid-template-columns: 12fr 55fr;
+  grid-template-columns: 15fr 85fr;
   grid-template-rows: 20vh 80vh;
   grid-template-areas: "heads innerbody" "navigation innerbody";
 }
+
+
+.header_main {
+		  width: 15%;
+		  height: 15vh;
+		  border-radius: 0 0 80px 0;
+		  box-shadow: 0 0 49px 0 rgba(16, 29, 113, 0.08);
+		  background-image: linear-gradient(294deg, #00aeed, #7fbf50);
+		  position: absolute;
+		  top: 0;
+      z-index:99999;
+		  left: 0;
+		}
+
+		.logo_main{
+			width: 188px;
+			height: 52px;
+			background-color: #fff;
+			margin: auto;
+			margin-top: 4vh;
+		}
+
+		.waterdrop_button{
+			width: 40px;
+			height: 40px;
+			transform: rotate(230deg);
+			border-radius: 20px;
+			border-top-right-radius: 0;
+			box-shadow: 0 0 49px 0 rgba(16, 29, 113, 0.08);
+			background-image: linear-gradient(315deg, #0c9ee2, #06e8a7);
+			position: absolute;
+			left: 15%;
+			top: 11.5vh;
+      z-index: 1000;
+		}
 </style>
