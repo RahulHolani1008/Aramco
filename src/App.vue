@@ -33,7 +33,17 @@
     </li>
   </ul>
   </nav>
-  <div class="inner-body"></div>
+  <div class="inner-body">
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">Average training time</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="card-link">Card link</a>
+        <a href="#" class="card-link">Another link</a>
+      </div>
+    </div>
+  </div>
 </div>
 </template>
 <style lang="scss">
@@ -51,7 +61,7 @@
 }
 
 body{
-  opacity: 0.6;
+  opacity: 1;
   background-image: linear-gradient(to top, #cad9f3, #eaf2ff);
 }
 
@@ -101,7 +111,8 @@ body{
   grid-area: innerbody;
   opacity: 0.6;
   height: 100vh;
-  width: 100
+  padding-top: 6vh;
+  padding-left: 5%;
 }
 
 .grid{
