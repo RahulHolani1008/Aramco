@@ -34,10 +34,22 @@
   </ul>
   </nav>
   <div class="inner-body">
-    <div class="card" style="width: 18rem;">
+    <div class="card card-left">
       <div class="card-body">
         <h5 class="card-title">Average training time</h5>
-        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+        <h6 class="card-subtitle mb-2 text-muted">
+          <div class="btn-group btn-group-toggle" data-toggle="buttons">
+            <label class="btn btn-secondary active">
+              <input type="radio" name="options" id="option1" autocomplete="off" checked> Yearly
+            </label>
+            <label class="btn btn-secondary">
+              <input type="radio" name="options" id="option2" autocomplete="off"> Monthly
+            </label>
+            <label class="btn btn-secondary">
+              <input type="radio" name="options" id="option3" autocomplete="off"> Weekly
+            </label>
+          </div>
+        </h6>
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         <a href="#" class="card-link">Card link</a>
         <a href="#" class="card-link">Another link</a>
@@ -63,6 +75,25 @@
 body{
   opacity: 1;
   background-image: linear-gradient(to top, #cad9f3, #eaf2ff);
+}
+
+.btn-group{
+  padding-top: 25px;
+  padding-bottom: 25px;
+  .btn{
+    margin-right: 30px;
+    padding: 10px 50px 10px 50px;
+    box-shadow: 0 0 49px 0 rgba(16, 29, 113, 0.08);
+    border-radius: 50px 50px 50px 50px !important;
+    border: 0px;
+    background-color: #edf9fd;
+    color: #0c9ee2
+  }
+}
+
+.btn.active{
+    background-image: linear-gradient(287deg, rgb(12, 158, 226), rgb(6, 232, 167)) !important;
+    color: white !important;
 }
 
 .header-logo{
@@ -107,6 +138,10 @@ body{
   box-shadow: -2px 0 4px 0 rgba(0, 0, 0, 0.02);
 }
 
+.card-left{
+  border-radius: 60px 20px 20px 20px !important;
+}
+
 .inner-body{
   grid-area: innerbody;
   opacity: 0.6;
@@ -123,6 +158,10 @@ body{
   grid-template-columns: 15fr 85fr;
   grid-template-rows: 20vh 80vh;
   grid-template-areas: "heads innerbody" "navigation innerbody";
+}
+
+.card{
+  width: 30vw;
 }
 
 
