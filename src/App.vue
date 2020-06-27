@@ -6,39 +6,82 @@
       <img src="./assets/Logo.png" height="100%">
     </div>
 	</div>
-  <div class="waterdrop_button"></div>
-  <nav class="nav flex-column white--bg">
-    <ul class="nav flex-column nav-ul">
-      <li class="nav-item">
-        <a class="nav-link active" href="#">Analytics</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Members</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Requests</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Content</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Communication</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Services</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Settings</a>
-      </li>
-    </ul>
-  </nav>
-  <div class="inner-body">
-    <!-- PAGE 1 -->
-    <div class="d-flex">
-      <button class="primary--bg btn col-sm-2 btn-lg mt-5 white rounded-50 ml-100 mb-2"><i class="fas fa-plus white--bg rounded-100 mr-2 transparent"></i>New department</button>
-      <div class="col-sm-2 position-relative"><input type="text" class="form-control pt-2 pb-2 mt-5 ml-5 pr-5 rounded-50" placeholder="Search"><i class="fas position-absolute right--10 bottom-25 fa-search"></i></div>
-    </div>
-    <nav aria-label="Departments Pagination" class="position-absolute bottom-20">
+<div class="waterdrop_button"><i class="fas fa-angle-left white fs--28"></i></div>
+<nav class="nav flex-column white--bg">
+  <ul class="nav-ul list-unstyled">
+    <li class="nav-item">
+      <a class="nav-link active" href="#">
+        <span class="menu_icon pl-2"><i class="fas fa-chart-bar"></i></span>
+				<span class="menu_name">Statistics</span>
+        <i class="fas fa-angle-right"></i>
+      </a>
+
+      <ul class="list-unstyled sub-menu">
+        <li>Overview</li>
+        <li>Trainees Anayltics</li>
+        <li>Trainers Anayltics</li>
+        <li>Courses/Sessions Anayltics</li>
+        <li>Quizzes and Assessments</li>
+      </ul>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">
+        <span class="menu_icon"><i class="fas fa-user-friends"></i></span>
+				<span class="menu_name">Members</span>
+        <i class="fas fa-angle-right"></i>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">
+        <span class="menu_icon"></span>
+				<span class="menu_name">Complaints</span>
+        <i class="fas fa-angle-right"></i>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#">
+        <span class="menu_icon"></span>
+				<span class="menu_name">Content</span>
+        <i class="fas fa-angle-right"></i>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#">
+        <span class="menu_icon"><i class="far fa-comments"></i></span>
+				<span class="menu_name">Communication</span>
+        <i class="fas fa-angle-right"></i>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#">
+        <span class="menu_icon"></span>
+				<span class="menu_name">Services</span>
+        <i class="fas fa-angle-right"></i>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#">
+        <span class="menu_icon"><i class="fas fa-cog"></i></span>
+				<span class="menu_name">Settings</span>
+        <i class="fas fa-angle-right"></i>
+      </a>
+    </li>
+  </ul>
+
+  <div class="side_bottom_buttons">
+    <a href="#" class="button_printreport">
+      <span><i class="fas fa-print"></i></span>
+      <span class="button_text">Print reports</span>
+    </a>
+
+    <a href="" class="button_logout">
+      <span><i class="fas fa-sign-out-alt"></i></span>
+      <span class="button_text">Log out</span>
+    </a>
+	</div>
+</nav>
+<div class="inner-body">
+<nav aria-label="Departments Pagination" class="position-absolute bottom-20">
       <ul class="pagination justify-content-center">
         <li class="page-item disabled">
           <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Prev</a>
@@ -152,6 +195,9 @@
 .justify-space-around{
   justify-content: space-evenly;
 }
+.border-radius-50{
+  border-radius: 50px;
+}
 .btn{
   border: 0px !important;
   outline: none !important;
@@ -177,6 +223,9 @@
 }
 .fs--16{
   font-size: 16pt;
+}
+.fs--28{
+  font-size: 28px;
 }
 .black{
   color: black;
@@ -209,7 +258,7 @@
   border-radius: 0px 0px 80px;
   box-shadow: 0 0 49px 0 rgba(16, 29, 113, 0.08);
   background-image: linear-gradient(294deg, #7fbf50, #00aeed);
-  width: 250px;
+  width: 275px;
   height: 10vh;
   grid-area: heads;
   position: absolute;
@@ -291,7 +340,7 @@ body{
   box-shadow: -2px 0 4px 0 rgba(0, 0, 0, 0.02);
   background-color: rgb(255, 255, 255);
   border-radius: 0 80px 0 0;
-  min-width: 250px;
+  min-width: 275px;
 }
 
 .nav-ul{
@@ -303,7 +352,15 @@ body{
 }
 
 .nav-link{
-  color: rgba(1,1,1,0.3)
+  color: rgba(1,1,1,0.3);
+  padding: 0 !important;
+}
+
+.nav-link .fa-angle-right{
+ float: right;
+ margin-right: 15px;
+ margin-top: 18px;
+ color: #acbbd0;
 }
 
 .white--bg{
@@ -340,7 +397,7 @@ body{
 
 
 .header_main {
-		  width: 250px;
+		  width: 275px;
 		  height: 15vh;
 		  border-radius: 0 0 80px 0;
 		  box-shadow: 0 0 49px 0 rgba(16, 29, 113, 0.08);
@@ -368,8 +425,163 @@ body{
 			box-shadow: 0 0 49px 0 rgba(16, 29, 113, 0.08);
 			background-image: linear-gradient(315deg, #0c9ee2, #06e8a7);
 			position: absolute;
-			left: 250px;
+			left: 275px;
 			top: 11.5vh;
       z-index: 1000;
 		}
+
+    .waterdrop_button .fa-angle-left{
+      transform: rotate(130deg);
+      position: absolute;
+      top: 5px;
+      right: 12px;
+    }
+
+    ul{
+			padding-left: 0;
+			margin: 20px 20px;
+		}
+
+    li.nav-item{
+      margin: auto;
+      margin-top: 5px;
+      margin-bottom: 5px;
+			border-radius: 25px;
+			position: relative;
+			height: 50px;
+      transition: ease .3s;
+		}
+
+    li.nav-item:hover{
+      background-image: linear-gradient(284deg, #0c9ee212 , #06e8a712);	
+      box-shadow: 0 0 37px 0 rgba(16, 29, 113, 0.08);
+    }
+
+    li.nav-item:hover .sub-menu{
+      display: block;
+    }
+
+		.menu_icon{
+			display: inline-block;
+			position: absolute;
+			left: -15px;
+			width: 50px;
+      height: 50px;
+      transform: rotate(-45deg);
+      border-radius: 25px;
+      border-bottom-right-radius: 0;
+      transition: ease .3s;
+		}
+
+    .menu_icon svg{
+      transform: rotate(45deg);
+      position: absolute;
+      top: 13px;
+      right: 13px;
+      font-size: 24px;
+      color: #acbbd0;
+    }
+
+		li.nav-item.active .menu_icon,
+		li.nav-item:hover .menu_icon{
+			box-shadow: 0 0 37px 0 rgba(16, 29, 113, 0.08);
+			background-image: linear-gradient(130deg, #0c9ee2 , #06e8a7);
+		}
+
+    li.nav-item.active .menu_icon svg,
+		li.nav-item:hover .menu_icon svg{
+			color: #fff;
+		}
+
+		.menu_name{
+			display: inline-block;
+			padding: 15px 0 0 65px;
+			font-size: 14.9px;
+			font-weight: bold;
+			color: #acbbd0;
+		}
+
+    .sub-menu {
+      position: absolute;
+      top: 0;
+      left: 220px;
+      margin: 0;
+      padding: 15px !important;
+      width: max-content;
+      border-radius: 10px;      
+      background-image: linear-gradient(248deg, #06e8a7bf, #0c9ee2 );
+      z-index: 999999;
+      display: none;
+    }
+
+    .sub-menu::before{
+      content: "";
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      left: -8px;
+      top: 16px;
+      transform: rotate(45deg);
+      background: #0c9ee280;
+      z-index: -3;      
+    }
+
+    .sub-menu li{
+      color: #fff;
+      padding: 2px 0;
+    }
+
+    .sub-menu li:hover{
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .side_bottom_buttons{
+			margin: auto;
+      margin-left: 20px;
+      margin-right: 20px;
+		}
+
+		.side_bottom_buttons a{
+			display: block;
+      padding: 12px;
+      border-radius: 25px;
+      text-decoration: none !important;
+      color: unset;
+      position: relative;
+       box-shadow: 0 0 37px 0 rgba(16, 29, 113, 0.08);
+      background-image: linear-gradient(284deg, #0c9ee212 , #06e8a712);
+      margin-bottom: 15px;
+      font-size: 14.9px;
+			font-weight: bold;
+		}
+   
+
+    .side_bottom_buttons a:hover{
+      color: unset;
+    }
+
+    .button_printreport .fa-print{
+      color: #0c9ee2;
+      font-size: 20px;
+    }
+
+    .button_printreport .button_text,{
+       background: linear-gradient(284deg, #0c9ee2 , #06e8a7);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .button_text{
+      padding-left: 25px;
+    }
+
+    .button_logout{
+      background: #ff004412 !important;
+      color: #ff0044 !important;
+    }
+
+    .button_logout .fa-sign-out-alt{
+      font-size: 20px;
+    }
 </style>
