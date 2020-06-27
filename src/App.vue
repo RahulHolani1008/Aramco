@@ -34,15 +34,114 @@
   </ul>
   </nav>
   <div class="inner-body">
-    <div class="card card-left">
-      <div class="card-body">
-        
+    <div class="d-flex justify-space-around">
+      <div class="card card-left">
+        <div class="card-body">
+          <img src="./assets/mechanics.png" class="centered" height="60%" width="60%">
+          <div class="bold text-center fs--16 width-100">Title of Programs</div>
+          <div class="width-90 py-2 mt-2 centered border-radius-50 lightBlue--bg">
+            <div class="fs--16 primary text-center justify-center pt-1 pb-1">No. of Courses
+              <span class="primary--bg border-radius-20 ml-1 text-center pl-3 pt-1 pb-1 pr-3 fs--16">76</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card card-left">
+        <div class="card-body">
+          <img src="./assets/construction.png" class="centered" height="60%" width="60%">
+          <div class="bold text-center fs--16 width-100">Title of Programs</div>
+          <div class="width-90 py-2 mt-2 centered border-radius-50 lightBlue--bg">
+            <div class="fs--16 primary text-center justify-center pt-1 pb-1">No. of Courses
+              <span class="primary--bg border-radius-20 ml-1 text-center pl-3 pt-1 pb-1 pr-3 fs--16">76</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card card-left">
+        <div class="card-body">
+          <img src="./assets/atom.png" class="centered" height="60%" width="60%">
+          <div class="bold text-center fs--16 width-100">Title of Programs</div>
+          <div class="width-90 py-2 mt-2 centered border-radius-50 lightBlue--bg">
+            <div class="fs--16 primary text-center justify-center pt-1 pb-1">No. of Courses
+              <span class="primary--bg border-radius-20 ml-1 text-center pl-3 pt-1 pb-1 pr-3 fs--16">76</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex mt-5 justify-space-around">
+      <div class="card card-left">
+        <div class="card-body">
+          <button type="button" class="btn btn-sm rounded-100 black--bg"><i class="fas fa-2x white fa-cog"></i></button>
+          <img src="./assets/mechanics.png" class="centered" height="60%" width="60%">
+          <div class="bold text-center fs--16 width-100">Title of Programs</div>
+          <div class="width-90 py-2 mt-2 centered border-radius-50 lightBlue--bg">
+            <div class="fs--16 primary text-center justify-center pt-1 pb-1">No. of Courses
+              <span class="primary--bg border-radius-20 ml-1 text-center pl-3 pt-1 pb-1 pr-3 fs--16">76</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card card-left">
+        <div class="card-body">
+          <img src="./assets/construction.png" class="centered" height="60%" width="60%">
+          <div class="bold text-center fs--16 width-100">Title of Programs</div>
+          <div class="width-90 py-2 mt-2 centered border-radius-50 lightBlue--bg">
+            <div class="fs--16 primary text-center justify-center pt-1 pb-1">No. of Courses
+              <span class="primary--bg border-radius-20 ml-1 text-center pl-3 pt-1 pb-1 pr-3 fs--16">76</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card card-left">
+        <div class="card-body">
+          <img src="./assets/atom.png" class="centered" height="60%" width="60%">
+          <div class="bold text-center fs--16 width-100">Title of Programs</div>
+          <div class="width-90 py-2 mt-2 centered border-radius-50 lightBlue--bg">
+            <div class="fs--16 primary text-center justify-center pt-1 pb-1">No. of Courses
+              <span class="primary--bg border-radius-20 ml-1 text-center pl-3 pt-1 pb-1 pr-3 fs--16">76</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </div>
 </template>
 <style lang="scss">
+.text-center{
+  text-align: center;
+}
+.justify-space-around{
+  justify-content: space-evenly;
+}
+.border-radius-50{
+  border-radius: 50px;
+}
+.border-radius-20{
+  border-radius: 20px;
+}
+.width-100{
+  width: 100%;
+}
+.fs--16{
+  font-size: 16pt;
+}
+.black{
+  color: black;
+}
+.black--bg{
+  background-color: black;
+}
+.bold{
+  font-weight: bold;
+}
+.white{
+  color: white;
+}
+.roundeed-100{
+  border-radius: 100%;
+}
 .header{
   border-radius: 0px 0px 80px;
   box-shadow: 0 0 49px 0 rgba(16, 29, 113, 0.08);
@@ -61,6 +160,12 @@ body{
   background-image: linear-gradient(to top, #cad9f3, #eaf2ff);
 }
 
+.centered{
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .btn-group{
   padding-top: 25px;
   padding-bottom: 25px;
@@ -75,9 +180,24 @@ body{
   }
 }
 
+.lightBlue--bg{
+  background-color: #edf9fd;
+}
+.lightBlue{
+  color: #edf9fd;
+}
+.width-90{
+  width: 90%;
+}
+.height-40{
+  height: 40px;
+}
 .btn.active{
     background-image: linear-gradient(287deg, rgb(12, 158, 226), rgb(6, 232, 167)) !important;
     color: white !important;
+}
+.primary--bg{
+  background-image: linear-gradient(287deg, rgb(12, 158, 226), rgb(6, 232, 167)) !important;
 }
 
 .header-logo{
@@ -145,7 +265,7 @@ body{
 }
 
 .card{
-  width: 30vw;
+  width: 20vw;
 }
 
 
