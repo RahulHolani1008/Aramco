@@ -33,8 +33,7 @@
   </ul>
 </nav>
   <div class="inner-body">
-    <div class="col-sm-2"></div>
-    <button class="primary--bg col-sm-2 btn-lg mt-5 border-radius-50">New program</button>
+    <button class="primary--bg btn col-sm-2 btn-lg mt-5 white rounded-50 ml-100 mb-2"><i class="fas fa-plus white--bg rounded-100 mr-2 transparent"></i>New program</button>
     <div class="d-flex justify-space-around">
       <div class="card card-left">
         <div class="card-body">
@@ -43,7 +42,7 @@
           </button>
           <img src="./assets/mechanics.png" class="centered mt--50" width="60%">
           <div class="bold text-center fs--16 width-100 mt--30">Title of Programs</div>
-          <div class="width-90 py-2 mt-2 centered border-radius-50 lightBlue--bg">
+          <div class="width-90 py-2 mt-2 centered rounded-50 lightBlue--bg">
             <div class="fs--16 primary text-center justify-center pt-1 pb-1">No. of Courses
               <span class="primary--bg border-radius-20 ml-1 text-center pl-3 pt-1 pb-1 pr-3 fs--16">76</span>
             </div>
@@ -57,7 +56,7 @@
           </button>
           <img src="./assets/construction.png" class="centered mt--50" width="60%">
           <div class="bold text-center fs--16 width-100 mt--30">Title of Programs</div>
-          <div class="width-90 py-2 mt-2 centered border-radius-50 lightBlue--bg">
+          <div class="width-90 py-2 mt-2 centered rounded-50 lightBlue--bg">
             <div class="fs--16 primary text-center justify-center pt-1 pb-1">No. of Courses
               <span class="primary--bg border-radius-20 ml-1 text-center pl-3 pt-1 pb-1 pr-3 fs--16">76</span>
             </div>
@@ -71,7 +70,7 @@
           </button>
           <img src="./assets/atom.png" class="centered mt--50" width="60%">
           <div class="bold text-center fs--16 width-100 mt--30">Title of Programs</div>
-          <div class="width-90 py-2 mt-2 centered border-radius-50 lightBlue--bg">
+          <div class="width-90 py-2 mt-2 centered rounded-50 lightBlue--bg">
             <div class="fs--16 primary text-center justify-center pt-1 pb-1">No. of Courses
               <span class="primary--bg border-radius-20 ml-1 text-center pl-3 pt-1 pb-1 pr-3 fs--16">76</span>
             </div>
@@ -87,7 +86,7 @@
           </button>
           <img src="./assets/mechanics.png" class="centered mt--50" width="60%">
           <div class="bold text-center fs--16 width-100 mt--30">Title of Programs</div>
-          <div class="width-90 py-2 mt-2 centered border-radius-50 lightBlue--bg">
+          <div class="width-90 py-2 mt-2 centered rounded-50 lightBlue--bg">
             <div class="fs--16 primary text-center justify-center pt-1 pb-1">No. of Courses
               <span class="primary--bg border-radius-20 ml-1 text-center pl-3 pt-1 pb-1 pr-3 fs--16">76</span>
             </div>
@@ -101,7 +100,7 @@
           </button>
           <img src="./assets/construction.png" class="centered mt--50" width="60%">
           <div class="bold text-center fs--16 width-100 mt--30">Title of Programs</div>
-          <div class="width-90 py-2 mt-2 centered border-radius-50 lightBlue--bg">
+          <div class="width-90 py-2 mt-2 centered rounded-50 lightBlue--bg">
             <div class="fs--16 primary text-center justify-center pt-1 pb-1">No. of Courses
               <span class="primary--bg border-radius-20 ml-1 text-center pl-3 pt-1 pb-1 pr-3 fs--16">76</span>
             </div>
@@ -115,7 +114,7 @@
           </button>
           <img src="./assets/atom.png" class="centered mt--50" width="60%">
           <div class="bold text-center fs--16 width-100 mt--30">Title of Programs</div>
-          <div class="width-90 py-2 mt-2 centered border-radius-50 lightBlue--bg">
+          <div class="width-90 py-2 mt-2 centered rounded-50 lightBlue--bg">
             <div class="fs--16 primary text-center justify-center pt-1 pb-1">No. of Courses
               <span class="primary--bg border-radius-20 ml-1 text-center pl-3 pt-1 pb-1 pr-3 fs--16">76</span>
             </div>
@@ -133,8 +132,12 @@
 .justify-space-around{
   justify-content: space-evenly;
 }
-.border-radius-50{
-  border-radius: 50px;
+.btn{
+  border: 0px !important;
+  outline: none !important;
+}
+.rounded-50{
+  border-radius: 50px !important;
 }
 .border-radius-20{
   border-radius: 20px;
@@ -148,20 +151,26 @@
 .black{
   color: black;
 }
+.ml-100{
+  margin-left: 100px;
+}
 .black--bg{
   background-color: black;
 }
 .bold{
   font-weight: bold;
 }
-.white{
-  color: white;
+.transparent{
+  color: #6FDFD4;
 }
 .rounded-100{
   border-radius: 100%;
 }
 .mt--30{
   margin-top: -30px;
+}
+.white{
+  color: white !important;
 }
 .mt--50{
   margin-top: -50px;
@@ -295,6 +304,8 @@ body{
 
 .card{
   width: 20vw;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.02);
+  border: 0px;
 }
 
 
