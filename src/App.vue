@@ -37,6 +37,9 @@
     <div class="d-flex justify-space-around">
       <div class="card card-left">
         <div class="card-body">
+          <button type="button" class="btn btn-sm">
+            <i class="fas fa-3x white fa-cog rounded-100 pt-2 pb-2 pr-2 pl-2 black--bg"></i>
+          </button>
           <img src="./assets/mechanics.png" class="centered" height="60%" width="60%">
           <div class="bold text-center fs--16 width-100">Title of Programs</div>
           <div class="width-90 py-2 mt-2 centered border-radius-50 lightBlue--bg">
@@ -48,6 +51,9 @@
       </div>
       <div class="card card-left">
         <div class="card-body">
+          <button type="button" class="btn btn-sm">
+            <i class="fas fa-3x white fa-cog rounded-100 pt-2 pb-2 pr-2 pl-2 black--bg"></i>
+          </button>
           <img src="./assets/construction.png" class="centered" height="60%" width="60%">
           <div class="bold text-center fs--16 width-100">Title of Programs</div>
           <div class="width-90 py-2 mt-2 centered border-radius-50 lightBlue--bg">
@@ -59,6 +65,9 @@
       </div>
       <div class="card card-left">
         <div class="card-body">
+          <button type="button" class="btn btn-sm">
+            <i class="fas fa-3x white fa-cog rounded-100 pt-2 pb-2 pr-2 pl-2 black--bg"></i>
+          </button>
           <img src="./assets/atom.png" class="centered" height="60%" width="60%">
           <div class="bold text-center fs--16 width-100">Title of Programs</div>
           <div class="width-90 py-2 mt-2 centered border-radius-50 lightBlue--bg">
@@ -72,7 +81,9 @@
     <div class="d-flex mt-5 justify-space-around">
       <div class="card card-left">
         <div class="card-body">
-          <button type="button" class="btn btn-sm rounded-100 black--bg"><i class="fas fa-2x white fa-cog"></i></button>
+          <button type="button" class="btn btn-sm">
+            <i class="fas fa-3x white fa-cog rounded-100 pt-2 pb-2 pr-2 pl-2 black--bg"></i>
+          </button>
           <img src="./assets/mechanics.png" class="centered" height="60%" width="60%">
           <div class="bold text-center fs--16 width-100">Title of Programs</div>
           <div class="width-90 py-2 mt-2 centered border-radius-50 lightBlue--bg">
@@ -84,6 +95,9 @@
       </div>
       <div class="card card-left">
         <div class="card-body">
+          <button type="button" class="btn btn-sm">
+            <i class="fas fa-3x white fa-cog rounded-100 pt-2 pb-2 pr-2 pl-2 black--bg"></i>
+          </button>
           <img src="./assets/construction.png" class="centered" height="60%" width="60%">
           <div class="bold text-center fs--16 width-100">Title of Programs</div>
           <div class="width-90 py-2 mt-2 centered border-radius-50 lightBlue--bg">
@@ -95,6 +109,9 @@
       </div>
       <div class="card card-left">
         <div class="card-body">
+          <button type="button" class="btn btn-sm">
+            <i class="fas fa-3x white fa-cog rounded-100 pt-2 pb-2 pr-2 pl-2 black--bg"></i>
+          </button>
           <img src="./assets/atom.png" class="centered" height="60%" width="60%">
           <div class="bold text-center fs--16 width-100">Title of Programs</div>
           <div class="width-90 py-2 mt-2 centered border-radius-50 lightBlue--bg">
@@ -139,7 +156,7 @@
 .white{
   color: white;
 }
-.roundeed-100{
+.rounded-100{
   border-radius: 100%;
 }
 .header{
@@ -153,6 +170,12 @@
   top: 0px;
   left: 0px;
   z-index: 999999;
+}
+.height-100{
+  height: 100%;
+}
+.width-100{
+  width: 100%;
 }
 
 body{
@@ -251,7 +274,6 @@ body{
   opacity: 0.6;
   height: 100vh;
   padding-top: 6vh;
-  padding-left: 10%;
 }
 
 .grid{
