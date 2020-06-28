@@ -55,6 +55,15 @@
 .grid-de-la-setup {
   grid-template-columns: 50px auto auto auto 200px;
 }
+.grid-de-la-complaint {
+  grid-template-columns: 50px auto auto auto auto 200px;
+}
+.grid-de-la-logs {
+  grid-template-columns: 80px auto auto auto;
+}
+.yellow--bg {
+  background-color: #f6b900;
+}
 .height-80 {
   height: 80% !important;
 }

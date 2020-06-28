@@ -120,6 +120,16 @@
           <span class="menu_name">Settings</span>
           <i class="fas fa-angle-right"></i>
         </a>
+        <ul class="list-unstyled sub-menu">
+          <li>
+            <a href="/settings/logs" class="nav-link">Archiving log</a>
+          </li>
+          <li>
+            <a href="/settings/complaint" class="nav-link"
+              >Complaints settings</a
+            >
+          </li>
+        </ul>
       </li>
     </ul>
     <div class="side_bottom_buttons">

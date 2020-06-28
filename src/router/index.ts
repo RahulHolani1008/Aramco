@@ -10,6 +10,8 @@ import TermsAndConditions from "../pages/service/TermsAndConditions.vue";
 import MergingServices from "../pages/service/MergingServices.vue";
 import FAQ from "../pages/service/FAQ.vue";
 import Setup from "../pages/service/Setup.vue";
+import Complaint from "../pages/settings/Complaint.vue";
+import Logs from "../pages/settings/Logs.vue";
 
 Vue.use(VueRouter);
 
@@ -77,6 +79,16 @@ const routes: Array<RouteConfig> = [
     path: "/services/setup",
     name: "Setup",
     component: Setup
+  },
+  {
+    path: "/settings/complaint",
+    name: "Complaint",
+    component: Complaint
+  },
+  {
+    path: "/settings/logs",
+    name: "Logs",
+    component: Logs
   }
 ];
 
