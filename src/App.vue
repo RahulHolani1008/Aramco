@@ -15,7 +15,6 @@
 				<span class="menu_name">Statistics</span>
         <i class="fas fa-angle-right"></i>
       </a>
-
       <ul class="list-unstyled sub-menu">
         <li>Overview</li>
         <li>Trainees Anayltics</li>
@@ -44,6 +43,11 @@
 				<span class="menu_name">Content</span>
         <i class="fas fa-angle-right"></i>
       </a>
+      <ul class="list-unstyled sub-menu">
+        <li>Departments</li>
+        <li>Programs</li>
+        <li>Scientific content</li>
+      </ul>
     </li>
     <li class="nav-item">
       <a class="nav-link disabled" href="#">
@@ -80,120 +84,35 @@
     </a>
 	</div>
 </nav>
-<div class="inner-body">
-<nav aria-label="Departments Pagination" class="position-absolute bottom-20">
-      <ul class="pagination justify-content-center">
-        <li class="page-item disabled">
-          <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Prev</a>
-        </li>
-        <li class="page-item"><a class="page-link" href="#">1</a></li>
-        <li class="page-item"><a class="page-link" href="#">2</a></li>
-        <li class="page-item"><a class="page-link" href="#">3</a></li>
-        <li class="page-item">
-          <a class="page-link" href="#">Next</a>
-        </li>
-      </ul>
-    </nav>
-    <!-- PAGE 1 ENDS -->
-    <!-- PAGE 2 -->
-    <!-- <button class="primary--bg btn col-sm-2 btn-lg mt-5 white rounded-50 ml-100 mb-2"><i class="fas fa-plus white--bg rounded-100 mr-2 transparent"></i>New program</button>
-    <div class="d-flex justify-space-around">
-      <div class="card card-left">
-        <div class="card-body">
-          <button type="button" class="btn btn-sm">
-            <i class="fas fa-3x white fa-cog rounded-100 pt-2 pb-2 pr-2 pl-2 black--bg"></i>
-          </button>
-          <img src="./assets/mechanics.png" class="centered mt--50" width="60%">
-          <div class="bold text-center fs--16 width-100 mt--30">Title of Programs</div>
-          <div class="width-90 py-2 mt-2 centered rounded-50 lightBlue--bg">
-            <div class="fs--16 primary text-center justify-center pt-1 pb-1">No. of Courses
-              <span class="primary--bg border-radius-20 ml-1 text-center pl-3 pt-1 pb-1 pr-3 fs--16">76</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card card-left">
-        <div class="card-body">
-          <button type="button" class="btn btn-sm">
-            <i class="fas fa-3x white fa-cog rounded-100 pt-2 pb-2 pr-2 pl-2 black--bg"></i>
-          </button>
-          <img src="./assets/construction.png" class="centered mt--50" width="60%">
-          <div class="bold text-center fs--16 width-100 mt--30">Title of Programs</div>
-          <div class="width-90 py-2 mt-2 centered rounded-50 lightBlue--bg">
-            <div class="fs--16 primary text-center justify-center pt-1 pb-1">No. of Courses
-              <span class="primary--bg border-radius-20 ml-1 text-center pl-3 pt-1 pb-1 pr-3 fs--16">76</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card card-left">
-        <div class="card-body">
-          <button type="button" class="btn btn-sm">
-            <i class="fas fa-3x white fa-cog rounded-100 pt-2 pb-2 pr-2 pl-2 black--bg"></i>
-          </button>
-          <img src="./assets/atom.png" class="centered mt--50" width="60%">
-          <div class="bold text-center fs--16 width-100 mt--30">Title of Programs</div>
-          <div class="width-90 py-2 mt-2 centered rounded-50 lightBlue--bg">
-            <div class="fs--16 primary text-center justify-center pt-1 pb-1">No. of Courses
-              <span class="primary--bg border-radius-20 ml-1 text-center pl-3 pt-1 pb-1 pr-3 fs--16">76</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="d-flex mt-5 justify-space-around">
-      <div class="card card-left">
-        <div class="card-body">
-          <button type="button" class="btn btn-sm">
-            <i class="fas fa-3x white fa-cog rounded-100 pt-2 pb-2 pr-2 pl-2 black--bg"></i>
-          </button>
-          <img src="./assets/mechanics.png" class="centered mt--50" width="60%">
-          <div class="bold text-center fs--16 width-100 mt--30">Title of Programs</div>
-          <div class="width-90 py-2 mt-2 centered rounded-50 lightBlue--bg">
-            <div class="fs--16 primary text-center justify-center pt-1 pb-1">No. of Courses
-              <span class="primary--bg border-radius-20 ml-1 text-center pl-3 pt-1 pb-1 pr-3 fs--16">76</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card card-left">
-        <div class="card-body">
-          <button type="button" class="btn btn-sm">
-            <i class="fas fa-3x white fa-cog rounded-100 pt-2 pb-2 pr-2 pl-2 black--bg"></i>
-          </button>
-          <img src="./assets/construction.png" class="centered mt--50" width="60%">
-          <div class="bold text-center fs--16 width-100 mt--30">Title of Programs</div>
-          <div class="width-90 py-2 mt-2 centered rounded-50 lightBlue--bg">
-            <div class="fs--16 primary text-center justify-center pt-1 pb-1">No. of Courses
-              <span class="primary--bg border-radius-20 ml-1 text-center pl-3 pt-1 pb-1 pr-3 fs--16">76</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card card-left">
-        <div class="card-body">
-          <button type="button" class="btn btn-sm">
-            <i class="fas fa-3x white fa-cog rounded-100 pt-2 pb-2 pr-2 pl-2 black--bg"></i>
-          </button>
-          <img src="./assets/atom.png" class="centered mt--50" width="60%">
-          <div class="bold text-center fs--16 width-100 mt--30">Title of Programs</div>
-          <div class="width-90 py-2 mt-2 centered rounded-50 lightBlue--bg">
-            <div class="fs--16 primary text-center justify-center pt-1 pb-1">No. of Courses
-              <span class="primary--bg border-radius-20 ml-1 text-center pl-3 pt-1 pb-1 pr-3 fs--16">76</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
+  <div class="inner-body mt-5">
+    <router-view />
   </div>
 </div>
 </template>
 <style lang="scss">
+.z-1000{
+  z-index: 1000;
+}
 .text-center{
   text-align: center;
 }
 .justify-space-around{
-  justify-content: space-evenly;
+  justify-content: space-evenly !important;
+}
+.grid-de-la-dept{
+  grid-template-columns: 150px auto 300px;
+}
+.hidden{
+  display: none;
+}
+.d-grid{
+  display: grid;
+}
+.height-100px{
+  height: 100px;
+}
+.width-100px{
+  width: 100px;
 }
 .border-radius-50{
   border-radius: 50px;
@@ -221,6 +140,9 @@
 .width-100{
   width: 100%;
 }
+.rounded-100px{
+  border-radius: 100px !important;
+}
 .fs--16{
   font-size: 16pt;
 }
@@ -245,6 +167,9 @@
 .rounded-100{
   border-radius: 100%;
 }
+.lightGray--bg{
+  background: #f1f1f1
+}
 .mt--30{
   margin-top: -30px;
 }
@@ -265,6 +190,12 @@
   top: 0px;
   left: 0px;
   z-index: 999999;
+}
+.left-65{
+  left: 50px;
+}
+.bottom-60{
+  bottom: 60px;
 }
 .height-100{
   height: 100%;
@@ -305,7 +236,7 @@ body{
   color: #edf9fd;
 }
 .width-90{
-  width: 90%;
+  width: 90% !important;
 }
 .height-40{
   height: 40px;
@@ -316,6 +247,10 @@ body{
 }
 .primary--bg{
   background-image: linear-gradient(287deg, rgb(12, 158, 226), rgb(6, 232, 167)) !important;
+}
+.vertical-centered{
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .header-logo{
@@ -374,9 +309,8 @@ body{
 
 .inner-body{
   grid-area: innerbody;
-  opacity: 0.6;
   height: 100vh;
-  padding-top: 6vh;
+  padding-left: 80px;
 }
 
 .grid{
@@ -584,4 +518,86 @@ body{
     .button_logout .fa-sign-out-alt{
       font-size: 20px;
     }
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 120px;
+  height: 40px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 8px;
+  bottom: 7px;
+  background-color: red;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+// .slider::before{
+//   background-color: #24e8a6;
+// }
+
+input:checked + .slider {
+  background-color: white;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px white;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(75px);
+  -ms-transform: translateX(75px);
+  transform: translateX(75px);
+  background-color: #24e8a6;
+}
+input:checked + .slider{
+  border: 1px solid #24e8a6;
+}
+input:checked + .slider .enabled{
+  display: block;
+}
+input:checked + .slider .disabled{
+  display: none;
+}
+input + .slider .enabled{
+  display: none;
+  color: #24e8a6;
+}
+input + .slider .disabled{
+  display: block;
+  margin-left: 30px;
+  color: red;
+}
+input + .slider{
+  border: 1px solid red;
+}
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
 </style>

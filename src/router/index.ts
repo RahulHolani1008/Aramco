@@ -1,5 +1,7 @@
 import Vue from "vue";
 import VueRouter, { RouteConfig } from "vue-router";
+import Specializations from "../pages/content/Specializations.vue";
+import Departments from "../pages/content/Departments.vue"
 
 Vue.use(VueRouter);
 
@@ -18,6 +20,16 @@ const routes: Array<RouteConfig> = [
   //   component: () =>
   //     import(/* webpackChunkName: "about" */ "../views/About.vue")
   // }
+  {
+    path: "/content/specializations",
+    name: "Specializations",
+    component: Specializations
+  },
+  {
+    path: "/content/departments",
+    name: "Departments",
+    component: Departments
+  }
 ];
 
 const router = new VueRouter({
