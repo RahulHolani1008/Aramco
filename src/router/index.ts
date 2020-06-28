@@ -1,7 +1,11 @@
 import Vue from "vue";
 import VueRouter, { RouteConfig } from "vue-router";
 import Specializations from "../pages/content/Specializations.vue";
-import Departments from "../pages/content/Departments.vue"
+import Departments from "../pages/content/Departments.vue";
+import Programs from "../pages/content/Programs.vue";
+import ScientificContentPeople from "../pages/content/ScientificContentPeople.vue";
+import ScientificContentAssessment from "../pages/content/ScientificContentAssessment.vue";
+import ScientificContentSession from "../pages/content/ScientificContentSessions.vue";
 
 Vue.use(VueRouter);
 
@@ -29,6 +33,26 @@ const routes: Array<RouteConfig> = [
     path: "/content/departments",
     name: "Departments",
     component: Departments
+  },
+  {
+    path: "/content/programs",
+    name: "Programs",
+    component: Programs
+  },
+  {
+    path: "/content/specializations/people",
+    name: "SpecializationPeople",
+    component: ScientificContentPeople
+  },
+  {
+    path: "/content/specializations/assessment",
+    name: "SpecializationAssessment",
+    component: ScientificContentAssessment
+  },
+  {
+    path: "/content/specializations/session",
+    name: "SpecializationSession",
+    component: ScientificContentSession
   }
 ];
 
