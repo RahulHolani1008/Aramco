@@ -49,6 +49,9 @@
 .grid-de-la-tnc {
   grid-template-columns: 50px auto auto 200px;
 }
+.grid-de-la-faq {
+  grid-template-columns: 50px auto auto 200px;
+}
 .height-80{
   height: 80% !important;
 }
@@ -143,6 +146,9 @@ a {
 }
 .rounded-100px {
   border-radius: 100px !important;
+}
+.fs--10 {
+  font-size: 10px !important;
 }
 .fs--16 {
   font-size: 16pt;

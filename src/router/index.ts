@@ -7,6 +7,8 @@ import ScientificContentPeople from "../pages/content/ScientificContentPeople.vu
 import ScientificContentAssessment from "../pages/content/ScientificContentAssessment.vue";
 import ScientificContentSession from "../pages/content/ScientificContentSessions.vue";
 import TermsAndConditions from "../pages/service/TermsAndConditions.vue"
+import MergingServices from "../pages/service/MergingServices.vue"
+import FAQ from "../pages/service/FAQ.vue"
 
 Vue.use(VueRouter);
 
@@ -59,6 +61,16 @@ const routes: Array<RouteConfig> = [
     path: "/services/tnc",
     name: "TermsAndConditions",
     component: TermsAndConditions
+  },
+  {
+    path: "/services/merging-services",
+    name: "MergingServices",
+    component: MergingServices
+  },
+  {
+    path: "/services/FAQ",
+    name: "FAQ",
+    component: FAQ
   }
 ];
 
