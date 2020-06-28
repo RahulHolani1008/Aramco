@@ -6,9 +6,10 @@ import Programs from "../pages/content/Programs.vue";
 import ScientificContentPeople from "../pages/content/ScientificContentPeople.vue";
 import ScientificContentAssessment from "../pages/content/ScientificContentAssessment.vue";
 import ScientificContentSession from "../pages/content/ScientificContentSessions.vue";
-import TermsAndConditions from "../pages/service/TermsAndConditions.vue"
-import MergingServices from "../pages/service/MergingServices.vue"
-import FAQ from "../pages/service/FAQ.vue"
+import TermsAndConditions from "../pages/service/TermsAndConditions.vue";
+import MergingServices from "../pages/service/MergingServices.vue";
+import FAQ from "../pages/service/FAQ.vue";
+import Setup from "../pages/service/Setup.vue";
 
 Vue.use(VueRouter);
 
@@ -63,7 +64,7 @@ const routes: Array<RouteConfig> = [
     component: TermsAndConditions
   },
   {
-    path: "/services/merging-services",
+    path: "/services/merging",
     name: "MergingServices",
     component: MergingServices
   },
@@ -71,6 +72,11 @@ const routes: Array<RouteConfig> = [
     path: "/services/FAQ",
     name: "FAQ",
     component: FAQ
+  },
+  {
+    path: "/services/setup",
+    name: "Setup",
+    component: Setup
   }
 ];
 

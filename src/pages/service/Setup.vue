@@ -1,27 +1,37 @@
 <template>
   <div>
-    <div class="d-flex mb-2 justify-flex-start" style="width: 40%">
-      <div class="position-relative ml-5 pl-4">
+    <div class="d-flex ml-4 mb-2">
+      <div class="col-sm-3 position-relative">
         <input
           type="text"
-          class="form-control pt-2 pb-2 pr-5 search rounded-50"
+          class="form-control pt-2 pb-2 ml-5 pr-5 search rounded-50"
           placeholder="Search"
         />
-        <i class="fas position-absolute right-20 bottom-15 fa-search"></i>
+        <i class="fas position-absolute right--10 bottom-15 fa-search"></i>
       </div>
     </div>
     <nav aria-label="Departments Pagination">
       <div class="position-relative">
-        <div class="card height-max width-90 rounded-100px centered mb-3">
-          <div class="card-body d-grid px-3 grid-de-la-tnc">
+        <div class="card width-90 rounded-100px centered mb-3">
+          <div class="card-body d-grid grid-de-la-setup px-1">
             <div
               class="rounded-100 lightGray--bg width-90 height-80 text-center vertical-centered centered"
               style="padding-top: inherit"
             >
               1
             </div>
-            <div class="vertical-centered pl-4 gray">Agreements</div>
-            <div class="vertical-centered pl-4">2020-02-25 10:46:46</div>
+            <span
+              class="vertical-centered gray rounded-50 py-3 px-4 max-content ml-4"
+              >services_agreement</span
+            >
+            <span
+              class="vertical-centered mx-2 gray rounded-50 py-3 px-4 max-content"
+              >Terms of service</span
+            >
+            <span
+              class="vertical-centered mx-2 black rounded-50 py-3 px-4 max-content"
+              >2020-02-05 10:46:46</span
+            >
             <button type="button" class="btn btn-no-border btn-sm">
               <div
                 class="rounded-100 pt-2 pb-2 px-2 vertical-centered d-flex justify-space-around black--bg"
@@ -39,16 +49,26 @@
         </div>
       </div>
       <div class="position-relative">
-        <div class="card height-max width-90 rounded-100px centered mb-3">
-          <div class="card-body d-grid px-3 grid-de-la-tnc">
+        <div class="card width-90 rounded-100px centered mb-3">
+          <div class="card-body d-grid grid-de-la-setup px-1">
             <div
               class="rounded-100 lightGray--bg width-90 height-80 text-center vertical-centered centered"
               style="padding-top: inherit"
             >
               1
             </div>
-            <div class="vertical-centered pl-4 gray">Agreements</div>
-            <div class="vertical-centered pl-4">2020-02-25 10:46:46</div>
+            <span
+              class="vertical-centered gray rounded-50 py-3 px-4 max-content ml-4"
+              >services_agreement</span
+            >
+            <span
+              class="vertical-centered mx-2 gray rounded-50 py-3 px-4 max-content"
+              >Terms of service</span
+            >
+            <span
+              class="vertical-centered mx-2 black rounded-50 py-3 px-4 max-content"
+              >2020-02-05 10:46:46</span
+            >
             <button type="button" class="btn btn-no-border btn-sm">
               <div
                 class="rounded-100 pt-2 pb-2 px-2 vertical-centered d-flex justify-space-around black--bg"
@@ -66,16 +86,26 @@
         </div>
       </div>
       <div class="position-relative">
-        <div class="card height-max width-90 rounded-100px centered mb-3">
-          <div class="card-body d-grid px-3 grid-de-la-tnc">
+        <div class="card width-90 rounded-100px centered mb-3">
+          <div class="card-body d-grid grid-de-la-setup px-1">
             <div
               class="rounded-100 lightGray--bg width-90 height-80 text-center vertical-centered centered"
               style="padding-top: inherit"
             >
               1
             </div>
-            <div class="vertical-centered pl-4 gray">Agreements</div>
-            <div class="vertical-centered pl-4">2020-02-25 10:46:46</div>
+            <span
+              class="vertical-centered gray rounded-50 py-3 px-4 max-content ml-4"
+              >services_agreement</span
+            >
+            <span
+              class="vertical-centered mx-2 gray rounded-50 py-3 px-4 max-content"
+              >Terms of service</span
+            >
+            <span
+              class="vertical-centered mx-2 black rounded-50 py-3 px-4 max-content"
+              >2020-02-05 10:46:46</span
+            >
             <button type="button" class="btn btn-no-border btn-sm">
               <div
                 class="rounded-100 pt-2 pb-2 px-2 vertical-centered d-flex justify-space-around black--bg"
@@ -93,16 +123,26 @@
         </div>
       </div>
       <div class="position-relative">
-        <div class="card height-max width-90 rounded-100px centered mb-3">
-          <div class="card-body d-grid px-3 grid-de-la-tnc">
+        <div class="card width-90 rounded-100px centered mb-3">
+          <div class="card-body d-grid grid-de-la-setup px-1">
             <div
               class="rounded-100 lightGray--bg width-90 height-80 text-center vertical-centered centered"
               style="padding-top: inherit"
             >
               1
             </div>
-            <div class="vertical-centered pl-4 gray">Agreements</div>
-            <div class="vertical-centered pl-4">2020-02-25 10:46:46</div>
+            <span
+              class="vertical-centered gray rounded-50 py-3 px-4 max-content ml-4"
+              >services_agreement</span
+            >
+            <span
+              class="vertical-centered mx-2 gray rounded-50 py-3 px-4 max-content"
+              >Terms of service</span
+            >
+            <span
+              class="vertical-centered mx-2 black rounded-50 py-3 px-4 max-content"
+              >2020-02-05 10:46:46</span
+            >
             <button type="button" class="btn btn-no-border btn-sm">
               <div
                 class="rounded-100 pt-2 pb-2 px-2 vertical-centered d-flex justify-space-around black--bg"
@@ -120,16 +160,26 @@
         </div>
       </div>
       <div class="position-relative">
-        <div class="card height-max width-90 rounded-100px centered mb-3">
-          <div class="card-body d-grid px-3 grid-de-la-tnc">
+        <div class="card width-90 rounded-100px centered mb-3">
+          <div class="card-body d-grid grid-de-la-setup px-1">
             <div
               class="rounded-100 lightGray--bg width-90 height-80 text-center vertical-centered centered"
               style="padding-top: inherit"
             >
               1
             </div>
-            <div class="vertical-centered pl-4 gray">Agreements</div>
-            <div class="vertical-centered pl-4">2020-02-25 10:46:46</div>
+            <span
+              class="vertical-centered gray rounded-50 py-3 px-4 max-content ml-4"
+              >services_agreement</span
+            >
+            <span
+              class="vertical-centered mx-2 gray rounded-50 py-3 px-4 max-content"
+              >Terms of service</span
+            >
+            <span
+              class="vertical-centered mx-2 black rounded-50 py-3 px-4 max-content"
+              >2020-02-05 10:46:46</span
+            >
             <button type="button" class="btn btn-no-border btn-sm">
               <div
                 class="rounded-100 pt-2 pb-2 px-2 vertical-centered d-flex justify-space-around black--bg"
@@ -160,7 +210,7 @@
         </li>
       </ul>
     </nav>
-    <div class="modal fade" id="newSpecializationModal" role="dialog">
+    <div class="modal fade" id="newDeptModal" role="dialog">
       <div class="modal-dialog">
         <!-- Modal content-->
         <div class="modal-content">
@@ -168,32 +218,24 @@
             <input
               type="text"
               class="primary--border rounded-20 form-control width-75"
-              placeholder="The name of the Scientific Subject"
+              placeholder="The name of Department"
             />
           </div>
           <div class="modal-body d-flex justify-space-around">
-            <div class="dropdown mt-1 width-75 position-relative">
-              <button
-                type="button"
-                class="btn gray--border rounded-20 width-100 text-left white--bg"
-                style="padding: 5px 20px; outline: none;"
-                id="dropdownMenuButton"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="true"
-              >
-                Select Departments
-              </button>
-              <i
-                class="fas fa-angle-down position-absolute right-20 top-10"
-              ></i>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Financial Management</a>
-                <a class="dropdown-item" href="#">Computer Sciences</a>
-                <a class="dropdown-item" href="#">Economics</a>
-                <a class="dropdown-item" href="#">Mathematics</a>
-              </div>
-            </div>
+            <input
+              type="file"
+              name="file"
+              id="file"
+              class="rounded-20 inputfile gray--border width-90 text-wrap height-100px px-5"
+            />
+            <label
+              for="file"
+              class="text-wrap gray-dashed-border px-5 py-4 text-center rounded-50"
+            >
+              <i class="fas fa-upload mb-2" style="font-size: 68px;"></i>
+              <BR />
+              Upload the university logo image from your device here</label
+            >
           </div>
           <div class="d-flex justify-space-around mb-5 mt-2">
             <button
@@ -220,7 +262,12 @@
 <script lang="ts">
 import Vue from "vue";
 import { Component } from "vue-property-decorator";
+import Slider from "../../components/Slider.vue";
 
-@Component
-export default class TermsAndConditions extends Vue {}
+@Component({
+  components: {
+    Slider
+  }
+})
+export default class Setup extends Vue {}
 </script>

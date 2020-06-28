@@ -22,9 +22,20 @@
       <div class="position-relative">
         <div class="card width-90 rounded-100px centered mb-3">
           <div class="card-body d-grid grid-de-la-faq px-1">
-            <div class="rounded-100 lightGray--bg width-90 height-80 text-center vertical-centered centered" style="padding-top: inherit">2</div>
-            <span class="vertical-centered lightGray--bg gray rounded-50 py-3 px-4 max-content ml-4">Why was an aramco platform built?</span>
-            <span class="vertical-centered mx-2 lightGray--bg gray rounded-50 py-3 px-4 max-content">Lectures built specifically for the trainees</span>
+            <div
+              class="rounded-100 lightGray--bg width-90 height-80 text-center vertical-centered centered"
+              style="padding-top: inherit"
+            >
+              2
+            </div>
+            <span
+              class="vertical-centered lightGray--bg gray rounded-50 py-3 px-4 max-content ml-4"
+              >Why was an aramco platform built?</span
+            >
+            <span
+              class="vertical-centered mx-2 lightGray--bg gray rounded-50 py-3 px-4 max-content"
+              >Lectures built specifically for the trainees</span
+            >
             <div
               class="rounded-50 width-100 height-100 d-flex justify-space-around"
             >
@@ -46,9 +57,20 @@
       <div class="position-relative">
         <div class="card width-90 rounded-100px centered mb-3">
           <div class="card-body d-grid grid-de-la-faq px-1">
-            <div class="rounded-100 lightGray--bg width-90 height-80 text-center vertical-centered centered" style="padding-top: inherit">2</div>
-            <span class="vertical-centered lightGray--bg gray rounded-50 py-3 px-4 max-content ml-4">Why was an aramco platform built?</span>
-            <span class="vertical-centered mx-2 lightGray--bg gray rounded-50 py-3 px-4 max-content">Lectures built specifically for the trainees</span>
+            <div
+              class="rounded-100 lightGray--bg width-90 height-80 text-center vertical-centered centered"
+              style="padding-top: inherit"
+            >
+              2
+            </div>
+            <span
+              class="vertical-centered lightGray--bg gray rounded-50 py-3 px-4 max-content ml-4"
+              >Why was an aramco platform built?</span
+            >
+            <span
+              class="vertical-centered mx-2 lightGray--bg gray rounded-50 py-3 px-4 max-content"
+              >Lectures built specifically for the trainees</span
+            >
             <div
               class="rounded-50 width-100 height-100 d-flex justify-space-around"
             >
@@ -70,9 +92,20 @@
       <div class="position-relative">
         <div class="card width-90 rounded-100px centered mb-3">
           <div class="card-body d-grid grid-de-la-faq px-1">
-            <div class="rounded-100 lightGray--bg width-90 height-80 text-center vertical-centered centered" style="padding-top: inherit">2</div>
-            <span class="vertical-centered lightGray--bg gray rounded-50 py-3 px-4 max-content ml-4">Why was an aramco platform built?</span>
-            <span class="vertical-centered mx-2 lightGray--bg gray rounded-50 py-3 px-4 max-content">Lectures built specifically for the trainees</span>
+            <div
+              class="rounded-100 lightGray--bg width-90 height-80 text-center vertical-centered centered"
+              style="padding-top: inherit"
+            >
+              2
+            </div>
+            <span
+              class="vertical-centered lightGray--bg gray rounded-50 py-3 px-4 max-content ml-4"
+              >Why was an aramco platform built?</span
+            >
+            <span
+              class="vertical-centered mx-2 lightGray--bg gray rounded-50 py-3 px-4 max-content"
+              >Lectures built specifically for the trainees</span
+            >
             <div
               class="rounded-50 width-100 height-100 d-flex justify-space-around"
             >
@@ -94,9 +127,20 @@
       <div class="position-relative">
         <div class="card width-90 rounded-100px centered mb-3">
           <div class="card-body d-grid grid-de-la-faq px-1">
-            <div class="rounded-100 lightGray--bg width-90 height-80 text-center vertical-centered centered" style="padding-top: inherit">2</div>
-            <span class="vertical-centered lightGray--bg gray rounded-50 py-3 px-4 max-content ml-4">Why was an aramco platform built?</span>
-            <span class="vertical-centered mx-2 lightGray--bg gray rounded-50 py-3 px-4 max-content">Lectures built specifically for the trainees</span>
+            <div
+              class="rounded-100 lightGray--bg width-90 height-80 text-center vertical-centered centered"
+              style="padding-top: inherit"
+            >
+              2
+            </div>
+            <span
+              class="vertical-centered lightGray--bg gray rounded-50 py-3 px-4 max-content ml-4"
+              >Why was an aramco platform built?</span
+            >
+            <span
+              class="vertical-centered mx-2 lightGray--bg gray rounded-50 py-3 px-4 max-content"
+              >Lectures built specifically for the trainees</span
+            >
             <div
               class="rounded-50 width-100 height-100 d-flex justify-space-around"
             >
@@ -118,9 +162,20 @@
       <div class="position-relative">
         <div class="card width-90 rounded-100px centered mb-3">
           <div class="card-body d-grid grid-de-la-faq px-1">
-            <div class="rounded-100 lightGray--bg width-90 height-80 text-center vertical-centered centered" style="padding-top: inherit">2</div>
-            <span class="vertical-centered lightGray--bg gray rounded-50 py-3 px-4 max-content ml-4">Why was an aramco platform built?</span>
-            <span class="vertical-centered mx-2 lightGray--bg gray rounded-50 py-3 px-4 max-content">Lectures built specifically for the trainees</span>
+            <div
+              class="rounded-100 lightGray--bg width-90 height-80 text-center vertical-centered centered"
+              style="padding-top: inherit"
+            >
+              2
+            </div>
+            <span
+              class="vertical-centered lightGray--bg gray rounded-50 py-3 px-4 max-content ml-4"
+              >Why was an aramco platform built?</span
+            >
+            <span
+              class="vertical-centered mx-2 lightGray--bg gray rounded-50 py-3 px-4 max-content"
+              >Lectures built specifically for the trainees</span
+            >
             <div
               class="rounded-50 width-100 height-100 d-flex justify-space-around"
             >

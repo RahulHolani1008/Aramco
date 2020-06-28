@@ -52,7 +52,10 @@
 .grid-de-la-faq {
   grid-template-columns: 50px auto auto 200px;
 }
-.height-80{
+.grid-de-la-setup {
+  grid-template-columns: 50px auto auto auto 200px;
+}
+.height-80 {
   height: 80% !important;
 }
 .bottom-40p {
