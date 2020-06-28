@@ -46,6 +46,12 @@
 .grid-de-la-scientific-sessions {
   grid-template-columns: auto 180px 220px 50px;
 }
+.grid-de-la-tnc {
+  grid-template-columns: 50px auto auto 200px;
+}
+.height-80{
+  height: 80% !important;
+}
 .bottom-40p {
   bottom: 40%;
 }

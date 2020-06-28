@@ -96,6 +96,17 @@
           <span class="menu_name">Services</span>
           <i class="fas fa-angle-right"></i>
         </a>
+        <ul class="list-unstyled sub-menu">
+          <li>
+            <a href="/services/merging" class="nav-link">Merging services</a>
+          </li>
+          <li>
+            <a href="/services/tnc" class="nav-link">Terms and Conditions</a>
+          </li>
+          <li>
+            <a href="/services/faq" class="nav-link">FAQ</a>
+          </li>
+        </ul>
       </li>
       <li class="nav-item">
         <a class="nav-link disabled" href="#">

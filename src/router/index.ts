@@ -6,6 +6,7 @@ import Programs from "../pages/content/Programs.vue";
 import ScientificContentPeople from "../pages/content/ScientificContentPeople.vue";
 import ScientificContentAssessment from "../pages/content/ScientificContentAssessment.vue";
 import ScientificContentSession from "../pages/content/ScientificContentSessions.vue";
+import TermsAndConditions from "../pages/service/TermsAndConditions.vue"
 
 Vue.use(VueRouter);
 
@@ -53,6 +54,11 @@ const routes: Array<RouteConfig> = [
     path: "/content/specializations/session",
     name: "SpecializationSession",
     component: ScientificContentSession
+  },
+  {
+    path: "/services/tnc",
+    name: "TermsAndConditions",
+    component: TermsAndConditions
   }
 ];
 
