@@ -26,6 +26,8 @@
               <div
                 class="rounded-100 pt-2 pb-2 px-2 vertical-centered d-flex justify-space-around black--bg"
                 style="fill: white;"
+                data-toggle="modal"
+                data-target="#edittncModal"
               >
                 <svg width="30" height="30" viewBox="0 0 17 19">
                   <path
@@ -53,6 +55,8 @@
               <div
                 class="rounded-100 pt-2 pb-2 px-2 vertical-centered d-flex justify-space-around black--bg"
                 style="fill: white;"
+                data-toggle="modal"
+                data-target="#edittncModal"
               >
                 <svg width="30" height="30" viewBox="0 0 17 19">
                   <path
@@ -80,6 +84,8 @@
               <div
                 class="rounded-100 pt-2 pb-2 px-2 vertical-centered d-flex justify-space-around black--bg"
                 style="fill: white;"
+                data-toggle="modal"
+                data-target="#edittncModal"
               >
                 <svg width="30" height="30" viewBox="0 0 17 19">
                   <path
@@ -107,6 +113,8 @@
               <div
                 class="rounded-100 pt-2 pb-2 px-2 vertical-centered d-flex justify-space-around black--bg"
                 style="fill: white;"
+                data-toggle="modal"
+                data-target="#edittncModal"
               >
                 <svg width="30" height="30" viewBox="0 0 17 19">
                   <path
@@ -134,6 +142,8 @@
               <div
                 class="rounded-100 pt-2 pb-2 px-2 vertical-centered d-flex justify-space-around black--bg"
                 style="fill: white;"
+                data-toggle="modal"
+                data-target="#edittncModal"
               >
                 <svg width="30" height="30" viewBox="0 0 17 19">
                   <path
@@ -215,6 +225,48 @@
         </div>
       </div>
     </div>
+
+
+    <!-- Edit termsandcondition-->
+    <div class="modal fade" id="edittncModal" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-body d-flex justify-space-around">
+            <div class="group">      
+              <input type="text" required>
+              <span class="highlight"></span>
+              <label>the key</label>
+            </div>
+          </div>
+
+          <div class="modal-body d-flex justify-space-around">
+            <textarea placeholder="The Answer" 
+                  class="border-radius-12 border-on-focus gray--border-2 width-75 height-170 outine-none pt-2 pb-2 pl-2 pr-2">
+            </textarea>
+          </div>
+          
+          <div class="d-flex justify-space-around mb-5 mt-2">
+            <button
+              type="button"
+              class="btn white rounded-20 btn-no-border width-33 primary--bg btn-lg"
+              data-dismiss="modal"
+            >
+              Save edits
+            </button>
+            <button
+              type="button"
+              class="btn white--bg rounded-20 width-33 btn-lg gray--border"
+              style="outline: none;"
+              data-dismiss="modal"
+            >
+              Cancel
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 </template>
 <script lang="ts">
