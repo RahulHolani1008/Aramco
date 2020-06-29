@@ -88,6 +88,10 @@
 .d-grid {
   display: grid;
 }
+.page-link{
+  margin: 0px 10px;
+  border-radius: 10px;
+}
 .height-75px {
   height: 75px;
 }
@@ -194,7 +198,7 @@ a {
   background: #f1f1f1;
 }
 .gray {
-  color: #cacaca;
+  color: #cacaca !important;
 }
 .fs--10 {
   font-size: 10px;
