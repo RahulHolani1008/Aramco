@@ -7,7 +7,7 @@
         data-target="#newDeptModal"
       >
         <i class="fas fa-plus white--bg rounded-100 mr-2 transparent"></i>
-        New model
+        Add a notification
       </button>
       <div class="col-sm-3 position-relative">
         <input
@@ -19,31 +19,34 @@
       </div>
     </div>
     <nav aria-label="Departments Pagination">
-      <div class="position-relative" v-for="survey in surveys" :key="survey.index">
+      <div class="position-relative" v-for="notification in notifications" :key="notification.index">
         <div class="card width-90 rounded-100px centered mb-3">
-          <div class="card-body d-grid grid-de-la-survey px-1">
+          <div class="card-body d-grid grid-de-la-notification px-1">
             <div
               class="rounded-100 lightGray--bg width-90 height-80 text-center vertical-centered centered"
               style="padding-top: inherit"
             >
-              {{survey.index}}
+              {{notification.index}}
             </div>
             <span
               class="vertical-centered gray rounded-50 py-3 max-content"
-              >{{survey.text}}</span
+              >{{notification.text}}</span
             >
+            <div class="d-flex justify-flex-end">
             <span
               class="vertical-centered mx-2 black rounded-50 py-3 px-4 max-content"
-              >{{survey.name}}</span
-            >
+              >{{notification.name}}</span
+            ></div>
+            <div class="d-flex justify-flex-end">
             <span
               class="vertical-centered mx-2 black rounded-50 py-3 px-4 max-content"
-              >{{survey.dateTime}}</span
+              >{{notification.dateTime}}</span
             >
+            </div>
             <div
               class="rounded-50 width-100 height-100 d-flex justify-space-around"
             >
-              <Slider :enabled="survey.enabled"/>
+              <Slider :enabled="notification.enabled"/>
               <div
                 class="rounded-100 pt-2 pb-2 px-2 vertical-centered black--bg"
                 style="fill: white;"
@@ -132,37 +135,37 @@ import Slider from "../../components/Slider.vue";
   }
 })
 export default class Notifications extends Vue {
-    surveys = [{
+    notifications = [{
         index: 1,
-        text: "Template about Survey forms",
+        text: "Create a new article",
         name: "Zaid Al-Suleman",
         dateTime: "2020-02-25 10:46:46",
         enabled: true
     },
     {
         index: 2,
-        text: "Template about Survey forms",
+        text: "Create a new article",
         name: "Zaid Al-Suleman",
         dateTime: "2020-02-25 10:46:46",
         enabled: true
     },
     {
         index: 3,
-        text: "Template about Survey forms",
+        text: "Create a new article",
         name: "Zaid Al-Suleman",
         dateTime: "2020-02-25 10:46:46",
         enabled: true
     },
     {
         index: 4,
-        text: "Template about Survey forms",
+        text: "Create a new article",
         name: "Zaid Al-Suleman",
         dateTime: "2020-02-25 10:46:46",
         enabled: true
     },
     {
         index: 5,
-        text: "Template about Survey forms",
+        text: "Create a new article",
         name: "Zaid Al-Suleman",
         dateTime: "2020-02-25 10:46:46",
         enabled: true

@@ -31,6 +31,9 @@
 .justify-space-between {
   justify-content: space-between !important;
 }
+.justify-flex-end {
+  justify-content: flex-end !important;
+}
 .grid-de-la-dept {
   grid-template-columns: 80px auto 225px;
 }
@@ -63,6 +66,9 @@
 }
 .grid-de-la-survey {
   grid-template-columns: 50px auto auto auto auto;
+}
+.grid-de-la-notification {
+  grid-template-columns: 50px auto auto max-content auto;
 }
 .yellow--bg {
   background-color: #f6b900;
