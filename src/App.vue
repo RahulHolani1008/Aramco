@@ -70,6 +70,9 @@
 .grid-de-la-notification {
   grid-template-columns: 50px auto auto max-content auto;
 }
+.grid-de-la-mailing {
+  grid-template-columns: auto auto auto auto;
+}
 .yellow--bg {
   background-color: #f6b900;
 }
@@ -78,6 +81,9 @@
 }
 .bottom-40p {
   bottom: 40%;
+}
+.bottom-30p {
+  bottom: 30%;
 }
 .max-content {
   width: max-content;
@@ -242,6 +248,9 @@ a {
 }
 .left-65 {
   left: 5%;
+}
+.left-30{
+  left: 3%
 }
 .bottom-60 {
   bottom: 60px;

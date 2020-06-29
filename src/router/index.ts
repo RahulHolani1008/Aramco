@@ -14,6 +14,7 @@ import Complaint from "../pages/settings/Complaint.vue";
 import Logs from "../pages/settings/Logs.vue";
 import Survey from "../pages/communication/Survey.vue";
 import Notifications from "../pages/communication/Notifications.vue";
+import MailingSystem from "../pages/communication/MailingSystem.vue";
 
 Vue.use(VueRouter);
 
@@ -87,6 +88,11 @@ const routes: Array<RouteConfig> = [
     path: "/communication/notifications",
     name: "Notifications",
     component: Notifications
+  },
+  {
+    path: "/communication/mailing",
+    name: "MailingSystem",
+    component: MailingSystem
   }
 ];
 
