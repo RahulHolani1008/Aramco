@@ -122,6 +122,16 @@
 .border-radius-50 {
   border-radius: 50px;
 }
+
+.border-radius-12 {
+  border-radius: 12px;
+}
+
+.border-on-focus:focus{
+  transition: ease .3s;
+  border-color: #acbbd0;
+}
+
 .btn {
   border: 0px !important;
   outline: none !important;
@@ -260,6 +270,13 @@ a {
 }
 .width-100 {
   width: 100%;
+}
+.height-170{
+  height: 170px;
+}
+
+.outine-none{
+  outline: none;
 }
 
 body {
@@ -719,6 +736,11 @@ input + .slider {
 .black--border {
   border: 1px solid black !important;
 }
+
+.gray--border-2{
+  border: 2px solid #919191 !important;
+}
+
 .gray--border {
   border: 1px solid #919191 !important;
 }
@@ -760,6 +782,67 @@ input + .slider {
 .inputfile + label {
   cursor: pointer; /* "hand" cursor */
 }
+
+
+// css for custom material design input 
+.group{ 
+  position:relative; 
+  margin-top: 20px;
+}
+
+.group input{
+  font-size:18px;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:300px;
+  border:none;
+  border:1px solid #757575;
+  border-radius: 15px;
+  outline:none;
+}
+
+.group input:focus{
+  border-color: #06e8a7;
+}
+
+.group label{
+  color:#999; 
+  font-size:18px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+
+.group input:focus ~ label,
+.group input:valid ~ label 		{
+    top: -9px;
+    left: 20px;
+    background-color: #fff;
+    padding: 0 5px;
+    font-size: 14px;
+    color: #19bdc1;
+}
+
+.group .highlight {
+  position:absolute;
+  height:60%; 
+  width:100px; 
+  top:25%; 
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
+
+.group input:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
 </style>
 <script lang="ts">
 import Vue from "vue";
@@ -775,3 +858,4 @@ import Header from "./components/Header.vue";
 })
 export default class App extends Vue {}
 </script>
+

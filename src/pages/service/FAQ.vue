@@ -213,28 +213,19 @@
         <!-- Modal content-->
         <div class="modal-content">
           <div class="modal-body d-flex justify-space-around">
-            <input
-              type="text"
-              class="primary--border rounded-20 form-control width-75"
-              placeholder="The name of Department"
-            />
+            <div class="group">      
+              <input type="text" required>
+              <span class="highlight"></span>
+              <label>the question</label>
+            </div>
           </div>
+
           <div class="modal-body d-flex justify-space-around">
-            <input
-              type="file"
-              name="file"
-              id="file"
-              class="rounded-20 inputfile gray--border width-90 text-wrap height-100px px-5"
-            />
-            <label
-              for="file"
-              class="text-wrap gray-dashed-border px-5 py-4 text-center rounded-50"
-            >
-              <i class="fas fa-upload mb-2" style="font-size: 68px;"></i>
-              <BR />
-              Upload the university logo image from your device here</label
-            >
+            <textarea placeholder="The Answer" 
+                  class="border-radius-12 border-on-focus gray--border-2 width-75 height-170 outine-none pt-2 pb-2 pl-2 pr-2">
+            </textarea>
           </div>
+          
           <div class="d-flex justify-space-around mb-5 mt-2">
             <button
               type="button"
