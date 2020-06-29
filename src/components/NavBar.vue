@@ -83,6 +83,17 @@
           <span class="menu_name">Communication</span>
           <i class="fas fa-angle-right"></i>
         </a>
+        <ul class="list-unstyled sub-menu">
+          <li>
+            <a href="/communication/survey" class="nav-link">Survey forms</a>
+          </li>
+          <li>
+            <a href="/communication/notifications" class="nav-link">Notifications</a>
+          </li>
+          <li>
+            <a href="/communication/mailing" class="nav-link">Mailing system</a>
+          </li>
+        </ul>
       </li>
       <li class="nav-item">
         <a class="nav-link disabled" href="#">

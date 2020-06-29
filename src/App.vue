@@ -61,6 +61,9 @@
 .grid-de-la-logs {
   grid-template-columns: 80px auto auto auto;
 }
+.grid-de-la-survey {
+  grid-template-columns: 50px auto auto auto auto;
+}
 .yellow--bg {
   background-color: #f6b900;
 }
