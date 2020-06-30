@@ -156,17 +156,23 @@
           </div>
         </div>
       </div>
-      <ul class="pagination justify-content-center pb-0 mb-0">
-        <li class="page-item disabled">
-          <a class="page-link" href="#" tabindex="-1" aria-disabled="true"
-            >Prev</a
+      <ul class="pagination pagination-lg justify-content-center pb-0 mb-0">
+        <li class="page-item hidden">
+          <a
+            class="page-link gray px-5"
+            href="#"
+            tabindex="-1"
+            aria-disabled="true"
+            >PREVIOUS</a
           >
         </li>
-        <li class="page-item"><a class="page-link" href="#">1</a></li>
-        <li class="page-item"><a class="page-link" href="#">2</a></li>
-        <li class="page-item"><a class="page-link" href="#">3</a></li>
         <li class="page-item">
-          <a class="page-link" href="#">Next</a>
+          <a class="page-link primary--bg white" href="#">1</a>
+        </li>
+        <li class="page-item"><a class="page-link gray" href="#">2</a></li>
+        <li class="page-item"><a class="page-link gray" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link gray px-5" href="#">NEXT</a>
         </li>
       </ul>
     </nav>
@@ -175,11 +181,11 @@
         <!-- Modal content-->
         <div class="modal-content">
           <div class="modal-body d-flex justify-space-around">
-            <input
-              type="text"
-              class="primary--border rounded-20 form-control width-75"
-              placeholder="The name of the Scientific Subject"
-            />
+            <div class="group maxwidth-350">
+              <input type="text" class="pl-4" required />
+              <span class="highlight"></span>
+              <label>Terms and Conditions name</label>
+            </div>
           </div>
           <div class="modal-body d-flex justify-space-around">
             <div class="dropdown mt-1 width-75 position-relative">
@@ -225,27 +231,27 @@
         </div>
       </div>
     </div>
-
-
     <!-- Edit termsandcondition-->
     <div class="modal fade" id="edittncModal" role="dialog">
       <div class="modal-dialog">
         <!-- Modal content-->
         <div class="modal-content">
           <div class="modal-body d-flex justify-space-around">
-            <div class="group">      
-              <input type="text" required>
+            <div class="group">
+              <input type="text" class="pl-4" required />
               <span class="highlight"></span>
               <label>the key</label>
             </div>
           </div>
 
           <div class="modal-body d-flex justify-space-around">
-            <textarea placeholder="The Answer" 
-                  class="border-radius-12 border-on-focus gray--border-2 width-75 height-170 outine-none pt-2 pb-2 pl-2 pr-2">
+            <textarea
+              placeholder="The Answer"
+              class="border-radius-12 border-on-focus gray--border-2 width-75 height-170 outine-none pt-2 pb-2 pl-2 pr-2"
+            >
             </textarea>
           </div>
-          
+
           <div class="d-flex justify-space-around mb-5 mt-2">
             <button
               type="button"
@@ -266,7 +272,6 @@
         </div>
       </div>
     </div>
-
   </div>
 </template>
 <script lang="ts">

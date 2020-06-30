@@ -7,33 +7,52 @@
         data-target="#newDeptModal"
       >
         <i class="fas fa-plus white--bg rounded-100 mr-2 transparent"></i>
-        New template
+        New role
       </button>
-      <div class="col-sm-3 position-relative">
-        <input
-          type="text"
-          class="form-control pt-2 pb-2 ml-5 pr-5 search rounded-50"
-          placeholder="Search"
-        />
-        <i class="fas position-absolute right--10 bottom-25 fa-search"></i>
-      </div>
+    </div>
+    <div
+      class="width-90 d-flex violet--bg ml-5 my-3 pl-4 rounded-50 py-3 vertical-centered"
+    >
+      <i class="fas fa-3x red fa-exclamation-circle"></i
+      ><span class="vertical-centered pl-4">
+        The amendment to the powers will be reflected on all users of the
+        system, according to the modified rile, to modify powers individually,
+        you can go to members option</span
+      >
     </div>
     <nav aria-label="Departments Pagination">
+      <div class="position-relative">
+        <div
+          class="card width-90 rounded-100px centered mb-3 none--bg border--none shadow--none"
+        >
+          <div class="card-body d-grid grid-de-la-powers py-2 none--bg px-5">
+            <span class="vertical-centered">The name of the role</span>
+            <span class="vertical-centered">Modified date</span>
+            <span class="vertical-centered">Date created</span>
+            <div></div>
+          </div>
+        </div>
+      </div>
       <div
         class="position-relative"
-        v-for="(system, index) in systems"
+        v-for="(power, index) in powers"
         :key="index"
       >
         <span class="position-absolute left-30 bottom-30p">#</span>
         <div class="card width-90 rounded-100px centered mb-3">
-          <div class="card-body d-grid grid-de-la-mailing py-2 px-5">
-            <span class="vertical-centered">{{ system.name }}</span>
-            <span class="vertical-centered">{{ system.startDate }}</span>
-            <span class="vertical-centered">{{ system.endDate }}</span>
+          <div class="card-body d-grid grid-de-la-powers py-2 px-5">
+            <span class="vertical-centered">{{ power.role }}</span>
+            <span class="vertical-centered">{{ power.startDate }}</span>
+            <span class="vertical-centered">{{ power.endDate }}</span>
             <div
               class="rounded-50 width-100 py-2 lightGray--bg height-100 d-flex justify-space-around"
             >
-              <Slider />
+              <button
+                type="button"
+                class="btn btn-no-border green--bg btn-md px-4 py-3 white rounded-50"
+              >
+                Activated
+              </button>
               <div
                 class="rounded-100 pt-2 pb-2 px-2 vertical-centered black--bg"
                 style="fill: white;"
@@ -137,40 +156,34 @@ import Slider from "../../components/Slider.vue";
     Slider
   }
 })
-export default class MailingSystem extends Vue {
-  systems = [
+export default class Powers extends Vue {
+  powers = [
     {
-      name: "Refuse to subscribe",
+      role: "Administrator",
       startDate: "2019-11-18",
       endDate: "2019-12-18",
       enabled: true
     },
     {
-      name: "Refuse to subscribe",
+      role: "General Supervisor",
       startDate: "2019-11-18",
       endDate: "2019-12-18",
       enabled: true
     },
     {
-      name: "Refuse to subscribe",
+      role: "Scientific site supervisor",
       startDate: "2019-11-18",
       endDate: "2019-12-18",
       enabled: true
     },
     {
-      name: "Refuse to subscribe",
+      role: "Live broadcast supervisor",
       startDate: "2019-11-18",
       endDate: "2019-12-18",
       enabled: true
     },
     {
-      name: "Refuse to subscribe",
-      startDate: "2019-11-18",
-      endDate: "2019-12-18",
-      enabled: true
-    },
-    {
-      name: "Refuse to subscribe",
+      role: "Content officer",
       startDate: "2019-11-18",
       endDate: "2019-12-18",
       enabled: true

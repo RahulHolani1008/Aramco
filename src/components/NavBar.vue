@@ -17,7 +17,11 @@
           <li>Overview</li>
           <li>Trainees Anayltics</li>
           <li>Trainers Anayltics</li>
-          <li>Courses/Sessions Anayltics</li>
+          <li>
+            <router-link to="/statistics/course-analytics" class="nav-link"
+              >Courses/Sessions Anayltics</router-link
+            >
+          </li>
           <li>Quizzes and Assessments</li>
         </ul>
       </li>
@@ -33,6 +37,28 @@
           <span class="menu_name">Members</span>
           <i class="fas fa-angle-right"></i>
         </a>
+        <ul class="list-unstyled sub-menu">
+          <li>
+            <router-link to="/members/trainers" class="nav-link"
+              >Trainers</router-link
+            >
+          </li>
+          <li>
+            <router-link to="/members/trainees" class="nav-link"
+              >Trainees</router-link
+            >
+          </li>
+          <li>
+            <router-link to="/members/ban-log" class="nav-link"
+              >Ban log</router-link
+            >
+          </li>
+          <li>
+            <router-link to="/members/powers" class="nav-link"
+              >Powers and roles</router-link
+            >
+          </li>
+        </ul>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">
@@ -46,6 +72,18 @@
           <span class="menu_name">Complaints</span>
           <i class="fas fa-angle-right"></i>
         </a>
+        <ul class="list-unstyled sub-menu">
+          <li>
+            <router-link to="/complaints/requests" class="nav-link"
+              >Course requests</router-link
+            >
+          </li>
+          <li>
+            <router-link to="/complaints/complaints" class="nav-link"
+              >Complaints</router-link
+            >
+          </li>
+        </ul>
       </li>
       <li class="nav-item">
         <a class="nav-link disabled" href="#">
@@ -61,13 +99,19 @@
         </a>
         <ul class="list-unstyled sub-menu">
           <li>
-            <a href="/content/departments" class="nav-link">Departments</a>
+            <router-link to="/content/departments" class="nav-link"
+              >Departments</router-link
+            >
           </li>
           <li>
-            <a href="/content/specializations" class="nav-link">Programs</a>
+            <router-link to="/content/specializations" class="nav-link"
+              >Programs</router-link
+            >
           </li>
           <li>
-            <a href="/content/programs" class="nav-link">Scientific content</a>
+            <router-link to="/content/programs" class="nav-link"
+              >Scientific content</router-link
+            >
           </li>
         </ul>
       </li>
@@ -85,13 +129,19 @@
         </a>
         <ul class="list-unstyled sub-menu">
           <li>
-            <a href="/communication/survey" class="nav-link">Survey forms</a>
+            <router-link to="/communication/survey" class="nav-link"
+              >Survey forms</router-link
+            >
           </li>
           <li>
-            <a href="/communication/notifications" class="nav-link">Notifications</a>
+            <router-link to="/communication/notifications" class="nav-link"
+              >Notifications</router-link
+            >
           </li>
           <li>
-            <a href="/communication/mailing" class="nav-link">Mailing system</a>
+            <router-link to="/communication/mailing" class="nav-link"
+              >Mailing system</router-link
+            >
           </li>
         </ul>
       </li>
@@ -109,13 +159,17 @@
         </a>
         <ul class="list-unstyled sub-menu">
           <li>
-            <a href="/services/merging" class="nav-link">Merging services</a>
+            <router-link to="/services/merging" class="nav-link"
+              >Merging services</router-link
+            >
           </li>
           <li>
-            <a href="/services/tnc" class="nav-link">Terms and Conditions</a>
+            <router-link to="/services/tnc" class="nav-link"
+              >Terms and Conditions</router-link
+            >
           </li>
           <li>
-            <a href="/services/faq" class="nav-link">FAQ</a>
+            <router-link to="/services/faq" class="nav-link">FAQ</router-link>
           </li>
         </ul>
       </li>
@@ -133,26 +187,28 @@
         </a>
         <ul class="list-unstyled sub-menu">
           <li>
-            <a href="/settings/logs" class="nav-link">Archiving log</a>
+            <router-link to="/settings/logs" class="nav-link"
+              >Archiving log</router-link
+            >
           </li>
           <li>
-            <a href="/settings/complaint" class="nav-link"
-              >Complaints settings</a
+            <router-link to="/settings/complaint" class="nav-link"
+              >Complaints settings</router-link
             >
           </li>
         </ul>
       </li>
     </ul>
     <div class="side_bottom_buttons">
-      <a href="#" class="button_printreport">
+      <router-link to="##" class="button_printreport">
         <span><i class="fas fa-print"></i></span>
         <span class="button_text">Print reports</span>
-      </a>
+      </router-link>
 
-      <a href="" class="button_logout">
+      <router-link to="#" class="button_logout">
         <span><i class="fas fa-sign-out-alt"></i></span>
         <span class="button_text">Log out</span>
-      </a>
+      </router-link>
     </div>
   </nav>
 </template>

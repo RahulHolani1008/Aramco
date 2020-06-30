@@ -19,34 +19,39 @@
       </div>
     </div>
     <nav aria-label="Departments Pagination">
-      <div class="position-relative" v-for="survey in surveys" :key="survey.index">
+      <div
+        class="position-relative"
+        v-for="(survey, index) in surveys"
+        :key="index"
+      >
         <div class="card width-90 rounded-100px centered mb-3">
           <div class="card-body d-grid grid-de-la-survey px-1">
             <div
               class="rounded-100 lightGray--bg width-90 height-80 text-center vertical-centered centered"
               style="padding-top: inherit"
             >
-              {{survey.index}}
+              {{ index + 1 }}
             </div>
+            <span class="vertical-centered gray rounded-50 py-3 max-content">{{
+              survey.text
+            }}</span>
             <span
-              class="vertical-centered gray rounded-50 py-3 max-content"
-              >{{survey.text}}</span
+              class="vertical-centered mx-2 black rounded-50 py-3 px-4 max-content"
+              >{{ survey.name }}</span
             >
             <span
               class="vertical-centered mx-2 black rounded-50 py-3 px-4 max-content"
-              >{{survey.name}}</span
-            >
-            <span
-              class="vertical-centered mx-2 black rounded-50 py-3 px-4 max-content"
-              >{{survey.dateTime}}</span
+              >{{ survey.dateTime }}</span
             >
             <div
               class="rounded-50 width-100 height-100 d-flex justify-space-around"
             >
-              <Slider :enabled="survey.enabled"/>
+              <Slider :enabled="survey.enabled" />
               <div
                 class="rounded-100 pt-2 pb-2 px-2 vertical-centered black--bg"
                 style="fill: white;"
+                data-toggle="modal"
+                data-target="#editDeptModal"
               >
                 <svg width="30" height="30" viewBox="0 0 17 19">
                   <path
@@ -58,63 +63,302 @@
           </div>
         </div>
       </div>
-      <ul class="pagination justify-content-center pb-0 mb-0">
-        <li class="page-item disabled">
-          <a class="page-link" href="#" tabindex="-1" aria-disabled="true"
-            >Prev</a
+      <ul class="pagination pagination-lg justify-content-center pb-0 mb-0">
+        <li class="page-item hidden">
+          <a
+            class="page-link gray px-5"
+            href="#"
+            tabindex="-1"
+            aria-disabled="true"
+            >PREVIOUS</a
           >
         </li>
-        <li class="page-item"><a class="page-link" href="#">1</a></li>
-        <li class="page-item"><a class="page-link" href="#">2</a></li>
-        <li class="page-item"><a class="page-link" href="#">3</a></li>
         <li class="page-item">
-          <a class="page-link" href="#">Next</a>
+          <a class="page-link primary--bg white" href="#">1</a>
+        </li>
+        <li class="page-item"><a class="page-link gray" href="#">2</a></li>
+        <li class="page-item"><a class="page-link gray" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link gray px-5" href="#">NEXT</a>
         </li>
       </ul>
     </nav>
-    <div class="modal fade" id="newDeptModal" role="dialog">
-      <div class="modal-dialog">
+
+    <div class="modal fade mt-0" id="newDeptModal" role="dialog">
+      <div class="modal-dialog modal-dialog-centered modal-lg mt-0">
         <!-- Modal content-->
-        <div class="modal-content">
-          <div class="modal-body d-flex justify-space-around">
-            <input
-              type="text"
-              class="primary--border rounded-20 form-control width-75"
-              placeholder="The name of Department"
-            />
+        <div
+          class="modal-content mt-0 height-500px overflow-y-scroll aramco-scrollbar"
+        >
+          <div>
+            <div class="modal-body d-flex justify-space-around">
+              <div class="group maxwidth-350">
+                <input type="text" class="pl-4" required />
+                <span class="highlight"></span>
+                <label>Form title</label>
+              </div>
+            </div>
+
+            <div
+              class="modal-body d-flex justify-space-around custom-survey-question"
+            >
+              <div class="row width-100">
+                <div class="col-sm-6 mb-2">
+                  <span class="ml-3 gray--color">
+                    <i class="fas fa-plus-circle mr-1"></i>
+                    <i class="fas fa-minus-circle"></i>
+                  </span>
+                </div>
+                <div class="col-sm-6 gray--color">
+                  <span class="ml-3">the answer</span>
+                </div>
+                <div class="col-sm-6">
+                  <div class="group width-100 maxwidth-350 mt-0 mx-2">
+                    <input type="text" class="pl-4" required />
+                    <span class="highlight"></span>
+                    <label>the question</label>
+                  </div>
+                </div>
+
+                <div class="col-sm-6">
+                  <select
+                    class="width-100 border-radius-20 height-50 gray--border-1 gray--color outline-none maxwidth-350 mx-2"
+                  >
+                    <option disabled selected
+                      >A scale from 1 to 5 with excellent</option
+                    >
+                    <option>option</option>
+                    <option>option</option>
+                  </select>
+                  <p class="fs--13 gray--color mb-0 ml-3 mt-2">
+                    <i class="fas fa-exclamation-circle"></i>
+                    Choose the type of answer to this question
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="modal-body d-flex justify-space-around custom-survey-question mt-3"
+            >
+              <div class="row width-100">
+                <div class="col-sm-6 mb-2">
+                  <span class="ml-3 gray--color">
+                    <i class="fas fa-plus-circle mr-1"></i>
+                    <i class="fas fa-minus-circle"></i>
+                  </span>
+                </div>
+                <div class="col-sm-6 gray--color">
+                  <span class="ml-3">the answer</span>
+                </div>
+                <div class="col-sm-6">
+                  <div class="group width-100 maxwidth-350 mt-0 mx-2">
+                    <input type="text" class="pl-4" required />
+                    <span class="highlight"></span>
+                    <label>the question</label>
+                  </div>
+                </div>
+
+                <div class="col-sm-6">
+                  <select
+                    class="width-100 border-radius-20 height-50 gray--border-1 gray--color outline-none maxwidth-350 mx-2"
+                  >
+                    <option disabled selected
+                      >A scale from 1 to 5 with excellent</option
+                    >
+                    <option>option</option>
+                    <option>option</option>
+                  </select>
+                  <p class="fs--13 gray--color mb-0 ml-3 mt-2">
+                    <i class="fas fa-exclamation-circle"></i>
+                    Choose the type of answer to this question
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal-body d-flex justify-space-around">
+              <select
+                class="width-75 border-radius-20 height-50 gray--border-1 gray--color outline-none maxwidth-350"
+              >
+                <option disabled selected>Type of users</option>
+                <option>option</option>
+                <option>option</option>
+              </select>
+            </div>
+
+            <p class="mb-0 fs--12 gray--color text-center">
+              <i class="fas fa-exclamation-circle"></i>
+              Choose the users whose form you want to appear
+            </p>
+
+            <div class="modal-body d-flex justify-space-around">
+              <select
+                class="width-75 border-radius-20 height-50 gray--border-1 gray--color outline-none  maxwidth-350"
+              >
+                <option disabled selected>When does the survey Appear</option>
+                <option>option</option>
+                <option>option</option>
+              </select>
+            </div>
+
+            <div class="d-flex justify-space-around mb-5 mt-2">
+              <button
+                type="button"
+                class="btn white rounded-20 btn-no-border width-33 primary--bg btn-lg"
+                data-dismiss="modal"
+              >
+                Add
+              </button>
+              <button
+                type="button"
+                class="btn white--bg rounded-20 width-33 btn-lg gray--border"
+                style="outline: none;"
+                data-dismiss="modal"
+              >
+                Cancel
+              </button>
+            </div>
           </div>
-          <div class="modal-body d-flex justify-space-around">
-            <input
-              type="file"
-              name="file"
-              id="file"
-              class="rounded-20 inputfile gray--border width-90 text-wrap height-100px px-5"
-            />
-            <label
-              for="file"
-              class="text-wrap gray-dashed-border px-5 py-4 text-center rounded-50"
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade mt-0" id="editDeptModal" role="dialog">
+      <div class="modal-dialog modal-dialog-centered modal-lg mt-0">
+        <!-- Modal content-->
+        <div
+          class="modal-content mt-0 height-500px overflow-y-scroll aramco-scrollbar"
+        >
+          <div>
+            <div class="modal-body d-flex justify-space-around">
+              <div class="group maxwidth-350">
+                <input type="text" class="pl-4" required />
+                <span class="highlight"></span>
+                <label>Form title</label>
+              </div>
+            </div>
+
+            <div
+              class="modal-body d-flex justify-space-around custom-survey-question"
             >
-              <i class="fas fa-upload mb-2" style="font-size: 68px;"></i>
-              <BR />
-              Upload the university logo image from your device here</label
+              <div class="row width-100">
+                <div class="col-sm-6 mb-2">
+                  <span class="ml-3 gray--color">
+                    <i class="fas fa-plus-circle mr-1"></i>
+                    <i class="fas fa-minus-circle"></i>
+                  </span>
+                </div>
+                <div class="col-sm-6 gray--color">
+                  <span class="ml-3">the answer</span>
+                </div>
+                <div class="col-sm-6">
+                  <div class="group width-100 maxwidth-350 mt-0 mx-2">
+                    <input type="text" class="pl-4" required />
+                    <span class="highlight"></span>
+                    <label>the question</label>
+                  </div>
+                </div>
+
+                <div class="col-sm-6">
+                  <select
+                    class="width-100 border-radius-20 height-50 gray--border-1 gray--color outline-none maxwidth-350 mx-2"
+                  >
+                    <option disabled selected
+                      >A scale from 1 to 5 with excellent</option
+                    >
+                    <option>option</option>
+                    <option>option</option>
+                  </select>
+                  <p class="fs--13 gray--color mb-0 ml-3 mt-2">
+                    <i class="fas fa-exclamation-circle"></i>
+                    Choose the type of answer to this question
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="modal-body d-flex justify-space-around custom-survey-question mt-3"
             >
-          </div>
-          <div class="d-flex justify-space-around mb-5 mt-2">
-            <button
-              type="button"
-              class="btn white rounded-20 btn-no-border width-33 primary--bg btn-lg"
-              data-dismiss="modal"
-            >
-              Add
-            </button>
-            <button
-              type="button"
-              class="btn white--bg rounded-20 width-33 btn-lg gray--border"
-              style="outline: none;"
-              data-dismiss="modal"
-            >
-              Cancel
-            </button>
+              <div class="row width-100">
+                <div class="col-sm-6 mb-2">
+                  <span class="ml-3 gray--color">
+                    <i class="fas fa-plus-circle mr-1"></i>
+                    <i class="fas fa-minus-circle"></i>
+                  </span>
+                </div>
+                <div class="col-sm-6 gray--color">
+                  <span class="ml-3">the answer</span>
+                </div>
+                <div class="col-sm-6">
+                  <div class="group width-100 maxwidth-350 mt-0 mx-2">
+                    <input type="text" class="pl-4" required />
+                    <span class="highlight"></span>
+                    <label>the question</label>
+                  </div>
+                </div>
+
+                <div class="col-sm-6">
+                  <select
+                    class="width-100 border-radius-20 height-50 gray--border-1 gray--color outline-none maxwidth-350 mx-2"
+                  >
+                    <option disabled selected
+                      >A scale from 1 to 5 with excellent</option
+                    >
+                    <option>option</option>
+                    <option>option</option>
+                  </select>
+                  <p class="fs--13 gray--color mb-0 ml-3 mt-2">
+                    <i class="fas fa-exclamation-circle"></i>
+                    Choose the type of answer to this question
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal-body d-flex justify-space-around">
+              <select
+                class="width-75 border-radius-20 height-50 gray--border-1 gray--color outline-none maxwidth-350"
+              >
+                <option disabled selected>Type of users</option>
+                <option>option</option>
+                <option>option</option>
+              </select>
+            </div>
+
+            <p class="mb-0 fs--12 gray--color text-center">
+              <i class="fas fa-exclamation-circle"></i>
+              Choose the users whose form you want to appear
+            </p>
+
+            <div class="modal-body d-flex justify-space-around">
+              <select
+                class="width-75 border-radius-20 height-50 gray--border-1 gray--color outline-none  maxwidth-350"
+              >
+                <option disabled selected>When does the survey Appear</option>
+                <option>option</option>
+                <option>option</option>
+              </select>
+            </div>
+
+            <div class="d-flex justify-space-around mb-5 mt-2">
+              <button
+                type="button"
+                class="btn white rounded-20 btn-no-border width-33 primary--bg btn-lg"
+                data-dismiss="modal"
+              >
+                Save settings
+              </button>
+              <button
+                type="button"
+                class="btn white--bg rounded-20 width-33 btn-lg gray--border"
+                style="outline: none;"
+                data-dismiss="modal"
+              >
+                Cancel
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -132,40 +376,37 @@ import Slider from "../../components/Slider.vue";
   }
 })
 export default class Survey extends Vue {
-    surveys = [{
-        index: 1,
-        text: "Template about Survey forms",
-        name: "Zaid Al-Suleman",
-        dateTime: "2020-02-25 10:46:46",
-        enabled: true
+  surveys = [
+    {
+      text: "Template about Survey forms",
+      name: "Zaid Al-Suleman",
+      dateTime: "2020-02-25 10:46:46",
+      enabled: true
     },
     {
-        index: 2,
-        text: "Template about Survey forms",
-        name: "Zaid Al-Suleman",
-        dateTime: "2020-02-25 10:46:46",
-        enabled: true
+      text: "Template about Survey forms",
+      name: "Zaid Al-Suleman",
+      dateTime: "2020-02-25 10:46:46",
+      enabled: true
     },
     {
-        index: 3,
-        text: "Template about Survey forms",
-        name: "Zaid Al-Suleman",
-        dateTime: "2020-02-25 10:46:46",
-        enabled: true
+      text: "Template about Survey forms",
+      name: "Zaid Al-Suleman",
+      dateTime: "2020-02-25 10:46:46",
+      enabled: true
     },
     {
-        index: 4,
-        text: "Template about Survey forms",
-        name: "Zaid Al-Suleman",
-        dateTime: "2020-02-25 10:46:46",
-        enabled: true
+      text: "Template about Survey forms",
+      name: "Zaid Al-Suleman",
+      dateTime: "2020-02-25 10:46:46",
+      enabled: true
     },
     {
-        index: 5,
-        text: "Template about Survey forms",
-        name: "Zaid Al-Suleman",
-        dateTime: "2020-02-25 10:46:46",
-        enabled: true
-    },]
+      text: "Template about Survey forms",
+      name: "Zaid Al-Suleman",
+      dateTime: "2020-02-25 10:46:46",
+      enabled: true
+    }
+  ];
 }
 </script>
