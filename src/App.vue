@@ -235,7 +235,7 @@ a {
 }
 body {
   opacity: 1;
-  overflow: hidden;
+  overflow: overlay;
   font-size: 16px !important;
   font-family: "AJannatLT", sans-serif !important;
   background-image: linear-gradient(to top, #cad9f3, #eaf2ff);
@@ -310,7 +310,8 @@ body {
     margin-bottom: 0px !important;
   }
   .inner-body {
-    margin-top: 5px !important;
+    padding-top: 5px !important;
+    height: 100vh !important;
   }
 }
 @media screen and (max-width: 1700px) {
@@ -346,7 +347,7 @@ body {
 }
 @media screen and (max-height: 660px) {
   .inner-body {
-    margin-top: 20px;
+    padding-top: 20px;
   }
 }
 .bottom-15 {
@@ -365,7 +366,7 @@ body {
   grid-area: innerbody;
   height: 100vh;
   padding-left: 20px;
-  margin-top: 3rem;
+  padding-top: 3rem;
 }
 .grid {
   display: grid;
