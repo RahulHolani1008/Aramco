@@ -257,15 +257,13 @@
     </div>
   </div>
 </template>
-<script lang="ts">
+<script>
 import Vue from "vue";
-import { Component } from "vue-property-decorator";
 import Slider from "../../components/Slider.vue";
 
-@Component({
+export default {
   components: {
     Slider
   }
-})
-export default class FAQ extends Vue {}
+}
 </script>

@@ -210,15 +210,13 @@
     </div>
   </div>
 </template>
-<script lang="ts">
+<script>
 import Vue from "vue";
-import { Component } from "vue-property-decorator";
 import Slider from "../../components/Slider.vue";
 
-@Component({
+export default {
   components: {
-    Slider
+    'Slider': Slider
   }
-})
-export default class Departments extends Vue {}
+}
 </script>

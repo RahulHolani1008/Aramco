@@ -743,17 +743,15 @@ input + .slider {
   cursor: pointer; /* "hand" cursor */
 }
 </style>
-<script lang="ts">
+<script>
 import Vue from "vue";
-import { Component } from "vue-property-decorator";
 import NavBar from "./components/NavBar.vue";
 import Header from "./components/Header.vue";
 
-@Component({
+export default{
   components: {
-    NavBar,
-    Header
+    'NavBar' : NavBar,
+    'Header' : Header
   }
-})
-export default class App extends Vue {}
+}
 </script>

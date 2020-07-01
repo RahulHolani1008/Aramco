@@ -261,13 +261,5 @@
 </template>
 <script lang="ts">
 import Vue from "vue";
-import { Component } from "vue-property-decorator";
-import Slider from "../../components/Slider.vue";
-
-@Component({
-  components: {
-    Slider
-  }
-})
-export default class Setup extends Vue {}
+export default{}
 </script>
