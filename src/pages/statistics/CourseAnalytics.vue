@@ -1,7 +1,7 @@
 <template>
 <div>
   <div class="d-flex justify-space-around">
-    <card class="card card-left fit-content ml-4" style="height: max-content">
+    <div class="card card-left fit-content ml-4" style="height: max-content">
       <div
         class="card-title gray--color pt-3 mx-4 mt-2 px-4 blue-gradient left-rounded"
       >
@@ -57,8 +57,8 @@
           aria-valuemax="100"
         ></div>
       </div>
-    </card>
-    <card class="card card-right fit-content ml-4">
+    </div>
+    <div class="card card-right fit-content ml-4">
       <div
         class="card-title gray--color pt-3 mx-4 mt-2 px-4 blue-gradient left-rounded"
       >
@@ -136,10 +136,24 @@
           aria-valuemax="100"
         ></div>
       </div>
-    </card>
+    </div>
   </div>
   <div class="d-flex justify-space-around">
     <div class="card card-left ml-5 mt-2" style="width: 35%; height: 400px;">
+      <div
+        class="card-title gray--color pt-3 mx-4 mt-2 px-4 blue-gradient left-rounded"
+      >
+        <img
+          src="../../assets/icons/analytics_2.svg"
+          class="pb-3 mr-2"
+          height="5%"
+          width="5%"
+        />&nbsp;&nbsp;TIME PERIOD WHERE MOST SESSIONS HAPPENED
+        <span class="position-absolute right-0 top--10 mr-2 pr-2 blue-gradient-reverse py-3 right-rounded">Past 7 days</span>
+      </div>
+      <chart :options="chartOptions"></chart>
+    </div>
+  <div class="card card-left ml-5 mt-2" style="width: 35%; height: 400px;">
       <div
         class="card-title gray--color pt-3 mx-4 mt-2 px-4 blue-gradient left-rounded"
       >
