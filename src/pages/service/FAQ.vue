@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="d-flex ml-4 mb-2">
+    <div class="d-flex mt-4 ml-4 mb-2">
       <button
         class="btn primary--bg btn-no-border btn-lg white rounded-50 ml-100 mb-2"
         data-toggle="modal"
@@ -18,7 +18,7 @@
         <i class="fas position-absolute right--10 bottom-25 fa-search"></i>
       </div>
     </div>
-    <nav aria-label="Departments Pagination">
+    <nav aria-label="Departments Pagination" class="mt-4">
       <div class="position-relative">
         <div class="card width-90 rounded-100px centered mb-3">
           <div class="card-body d-grid grid-de-la-faq px-1">
@@ -43,6 +43,8 @@
               <div
                 class="rounded-100 pt-2 pb-2 px-2 vertical-centered black--bg"
                 style="fill: white;"
+                data-toggle="modal"
+                data-target="#editDeptModal"
               >
                 <svg width="30" height="30" viewBox="0 0 17 19">
                   <path
@@ -78,6 +80,8 @@
               <div
                 class="rounded-100 pt-2 pb-2 px-2 vertical-centered black--bg"
                 style="fill: white;"
+                data-toggle="modal"
+                data-target="#editDeptModal"
               >
                 <svg width="30" height="30" viewBox="0 0 17 19">
                   <path
@@ -113,6 +117,8 @@
               <div
                 class="rounded-100 pt-2 pb-2 px-2 vertical-centered black--bg"
                 style="fill: white;"
+                data-toggle="modal"
+                data-target="#editDeptModal"
               >
                 <svg width="30" height="30" viewBox="0 0 17 19">
                   <path
@@ -148,6 +154,8 @@
               <div
                 class="rounded-100 pt-2 pb-2 px-2 vertical-centered black--bg"
                 style="fill: white;"
+                data-toggle="modal"
+                data-target="#editDeptModal"
               >
                 <svg width="30" height="30" viewBox="0 0 17 19">
                   <path
@@ -183,6 +191,8 @@
               <div
                 class="rounded-100 pt-2 pb-2 px-2 vertical-centered black--bg"
                 style="fill: white;"
+                data-toggle="modal"
+                data-target="#editDeptModal"
               >
                 <svg width="30" height="30" viewBox="0 0 17 19">
                   <path
@@ -194,17 +204,23 @@
           </div>
         </div>
       </div>
-      <ul class="pagination justify-content-center pb-0 mb-0">
-        <li class="page-item disabled">
-          <a class="page-link" href="#" tabindex="-1" aria-disabled="true"
-            >Prev</a
+      <ul class="pagination pagination-lg justify-content-center pb-0 mb-0">
+        <li class="page-item hidden">
+          <a
+            class="page-link gray px-5"
+            href="#"
+            tabindex="-1"
+            aria-disabled="true"
+            >PREVIOUS</a
           >
         </li>
-        <li class="page-item"><a class="page-link" href="#">1</a></li>
-        <li class="page-item"><a class="page-link" href="#">2</a></li>
-        <li class="page-item"><a class="page-link" href="#">3</a></li>
         <li class="page-item">
-          <a class="page-link" href="#">Next</a>
+          <a class="page-link primary--bg white" href="#">1</a>
+        </li>
+        <li class="page-item"><a class="page-link gray" href="#">2</a></li>
+        <li class="page-item"><a class="page-link gray" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link gray px-5" href="#">NEXT</a>
         </li>
       </ul>
     </nav>
@@ -213,28 +229,20 @@
         <!-- Modal content-->
         <div class="modal-content">
           <div class="modal-body d-flex justify-space-around">
-            <input
-              type="text"
-              class="primary--border rounded-20 form-control width-75"
-              placeholder="The name of Department"
-            />
+            <div class="group">
+              <input type="text" class="pl-4" required />
+              <span class="highlight"></span>
+              <label>the question</label>
+            </div>
           </div>
           <div class="modal-body d-flex justify-space-around">
-            <input
-              type="file"
-              name="file"
-              id="file"
-              class="rounded-20 inputfile gray--border width-90 text-wrap height-100px px-5"
-            />
-            <label
-              for="file"
-              class="text-wrap gray-dashed-border px-5 py-4 text-center rounded-50"
+            <textarea
+              placeholder="The Answer"
+              class="border-radius-12 border-on-focus gray--border-2 width-75 height-170 outine-none pt-2 pb-2 pl-2 pr-2"
             >
-              <i class="fas fa-upload mb-2" style="font-size: 68px;"></i>
-              <BR />
-              Upload the university logo image from your device here</label
-            >
+            </textarea>
           </div>
+
           <div class="d-flex justify-space-around mb-5 mt-2">
             <button
               type="button"
@@ -255,8 +263,55 @@
         </div>
       </div>
     </div>
+
+    <!-- Edit faq-->
+    <div class="modal fade" id="editDeptModal" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-body d-flex justify-space-around">
+            <div class="group">
+              <input type="text" class="pl-4" required />
+              <span class="highlight"></span>
+              <label>the question</label>
+            </div>
+          </div>
+
+          <div class="modal-body d-flex justify-space-around">
+            <textarea
+              placeholder="The Answer"
+              class="border-radius-12 border-on-focus gray--border-2 width-75 height-170 outine-none pt-2 pb-2 pl-2 pr-2"
+            >
+            </textarea>
+          </div>
+
+          <div class="d-flex justify-space-around mb-5 mt-2">
+            <button
+              type="button"
+              class="btn white rounded-20 btn-no-border width-33 primary--bg btn-lg"
+              data-dismiss="modal"
+            >
+              Save edits
+            </button>
+            <button
+              type="button"
+              class="btn white--bg rounded-20 width-33 btn-lg gray--border"
+              style="outline: none;"
+              data-dismiss="modal"
+            >
+              Cancel
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
+<style lang="scss" scoped>
+.grid-de-la-faq {
+  grid-template-columns: 50px auto auto 200px;
+}
+</style>
 <script>
 import Vue from "vue";
 import Slider from "../../components/Slider.vue";

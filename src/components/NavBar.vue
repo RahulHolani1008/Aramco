@@ -17,7 +17,11 @@
           <li>Overview</li>
           <li>Trainees Anayltics</li>
           <li>Trainers Anayltics</li>
-          <li>Courses/Sessions Anayltics</li>
+          <li>
+            <router-link to="/statistics/course-analytics" class="nav-link"
+              >Courses/Sessions Anayltics</router-link
+            >
+          </li>
           <li>Quizzes and Assessments</li>
         </ul>
       </li>
@@ -33,6 +37,28 @@
           <span class="menu_name">Members</span>
           <i class="fas fa-angle-right"></i>
         </a>
+        <ul class="list-unstyled sub-menu">
+          <li>
+            <router-link to="/members/trainers" class="nav-link"
+              >Trainers</router-link
+            >
+          </li>
+          <li>
+            <router-link to="/members/trainees" class="nav-link"
+              >Trainees</router-link
+            >
+          </li>
+          <li>
+            <router-link to="/members/ban-log" class="nav-link"
+              >Ban log</router-link
+            >
+          </li>
+          <li>
+            <router-link to="/members/powers" class="nav-link"
+              >Powers and roles</router-link
+            >
+          </li>
+        </ul>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">
@@ -46,6 +72,18 @@
           <span class="menu_name">Complaints</span>
           <i class="fas fa-angle-right"></i>
         </a>
+        <ul class="list-unstyled sub-menu">
+          <li>
+            <router-link to="/complaints/requests" class="nav-link"
+              >Course requests</router-link
+            >
+          </li>
+          <li>
+            <router-link to="/complaints/complaints" class="nav-link"
+              >Complaints</router-link
+            >
+          </li>
+        </ul>
       </li>
       <li class="nav-item">
         <a class="nav-link disabled" href="#">
@@ -61,13 +99,19 @@
         </a>
         <ul class="list-unstyled sub-menu">
           <li>
-            <a href="/content/departments" class="nav-link">Departments</a>
+            <router-link to="/content/departments" class="nav-link"
+              >Departments</router-link
+            >
           </li>
           <li>
-            <a href="/content/specializations" class="nav-link">Programs</a>
+            <router-link to="/content/specializations" class="nav-link"
+              >Programs</router-link
+            >
           </li>
           <li>
-            <a href="/content/programs" class="nav-link">Scientific content</a>
+            <router-link to="/content/programs" class="nav-link"
+              >Scientific content</router-link
+            >
           </li>
         </ul>
       </li>
@@ -83,6 +127,23 @@
           <span class="menu_name">Communication</span>
           <i class="fas fa-angle-right"></i>
         </a>
+        <ul class="list-unstyled sub-menu">
+          <li>
+            <router-link to="/communication/survey" class="nav-link"
+              >Survey forms</router-link
+            >
+          </li>
+          <li>
+            <router-link to="/communication/notifications" class="nav-link"
+              >Notifications</router-link
+            >
+          </li>
+          <li>
+            <router-link to="/communication/mailing" class="nav-link"
+              >Mailing system</router-link
+            >
+          </li>
+        </ul>
       </li>
       <li class="nav-item">
         <a class="nav-link disabled" href="#">
@@ -98,13 +159,17 @@
         </a>
         <ul class="list-unstyled sub-menu">
           <li>
-            <a href="/services/merging" class="nav-link">Merging services</a>
+            <router-link to="/services/merging" class="nav-link"
+              >Merging services</router-link
+            >
           </li>
           <li>
-            <a href="/services/tnc" class="nav-link">Terms and Conditions</a>
+            <router-link to="/services/tnc" class="nav-link"
+              >Terms and Conditions</router-link
+            >
           </li>
           <li>
-            <a href="/services/faq" class="nav-link">FAQ</a>
+            <router-link to="/services/faq" class="nav-link">FAQ</router-link>
           </li>
         </ul>
       </li>
@@ -122,29 +187,271 @@
         </a>
         <ul class="list-unstyled sub-menu">
           <li>
-            <a href="/settings/logs" class="nav-link">Archiving log</a>
+            <router-link to="/settings/logs" class="nav-link"
+              >Archiving log</router-link
+            >
           </li>
           <li>
-            <a href="/settings/complaint" class="nav-link"
-              >Complaints settings</a
+            <router-link to="/settings/complaint" class="nav-link"
+              >Complaints settings</router-link
             >
           </li>
         </ul>
       </li>
     </ul>
+
     <div class="side_bottom_buttons">
-      <a href="#" class="button_printreport">
+      <div
+        class="button_printreport"
+        data-toggle="modal"
+        data-target="#printreportModal"
+      >
         <span><i class="fas fa-print"></i></span>
         <span class="button_text">Print reports</span>
-      </a>
+      </div>
 
-      <a href="" class="button_logout">
-        <span><i class="fas fa-sign-out-alt"></i></span>
+      <div class="button_logout" data-toggle="modal" data-target="#logoutModal">
+        <span><i class="fas fa-power-off"></i></span>
         <span class="button_text">Log out</span>
-      </a>
+      </div>
     </div>
+
+    <div class="modal fade mt-0" id="logoutModal" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-body justify-space-around text-center">
+            <div class="red fs--70">
+              <i class="fas fa-power-off"></i>
+            </div>
+            <div class="fs--20 bold">Do you want to log out?</div>
+          </div>
+
+          <div class="d-flex justify-space-around mb-5 mt-2">
+            <button
+              type="button"
+              class="btn white rounded-20 btn-no-border width-33 red--bg btn-lg"
+              data-dismiss="modal"
+            >
+              yes, confirm
+            </button>
+            <button
+              type="button"
+              class="btn white--bg rounded-20 width-33 btn-lg gray--border"
+              style="outline: none;"
+              data-dismiss="modal"
+            >
+              Cancel
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade mt-0" id="printreportModal" role="dialog">
+      <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+            
+            <div class="modal-body d-flex justify-space-around">
+              <div class="select-wrapper maxwidth-350 width-75">
+              <select class="width-100 border-radius-20 height-50 gray--border-1 gray--color outline-none">
+                <option disabled selected>Please select a report type</option>
+                <option>option</option>
+                <option>option</option>
+              </select>
+              </div>
+            </div>
+
+            <div class="modal-body d-flex justify-space-around">
+              <div class="select-wrapper maxwidth-350 width-75">
+              <select class="width-100 border-radius-20 height-50 gray--border-1 gray--color outline-none">
+                <option disabled selected>Select the school year</option>
+                <option>option</option>
+                <option>option</option>
+              </select>
+              </div>
+            </div>         
+
+            <div class="modal-body d-flex justify-space-around">
+              <div class="select-wrapper maxwidth-350 width-75">
+              <select class="width-100 border-radius-20 height-50 gray--border-1 gray--color outline-none">
+                <option disabled selected>Determining the academic term</option>
+                <option>option</option>
+                <option>option</option>
+              </select>
+              </div>
+            </div>
+
+            <div class="d-flex justify-space-around mb-5 mt-2">
+              <button
+                type="button"
+                class="btn white rounded-20 btn-no-border width-75 primary--bg btn-lg"
+                data-dismiss="modal"
+              >
+                Print the report
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
   </nav>
 </template>
+<style lang="scss" scoped>
+.fs--70 {
+  font-size: 72px !important;
+}
+.nav {
+  grid-area: navigation;
+  height: 93vh;
+  position: absolute;
+  bottom: 0px;
+  box-shadow: -2px 0 4px 0 rgba(0, 0, 0, 0.02);
+  background-color: rgb(255, 255, 255);
+  border-radius: 0 80px 0 0;
+  min-width: 240px;
+}
+.nav-ul {
+  padding-top: 30px;
+}
+.nav-link {
+  color: white;
+  padding: 0 !important;
+  &:hover {
+    color: white !important;
+  }
+  .fa-angle-right {
+    float: right;
+    margin-right: 15px;
+    margin-top: 18px;
+    color: #acbbd0;
+  }
+}
+li.nav-item {
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 25px;
+  position: relative;
+  height: 50px;
+  transition: ease 0.3s;
+}
+li.nav-item:hover {
+  background-image: linear-gradient(284deg, #0c9ee212, #06e8a712);
+  box-shadow: 0 0 37px 0 rgba(16, 29, 113, 0.08);
+}
+li.nav-item:hover .sub-menu {
+  display: block;
+}
+.menu_icon {
+  display: inline-block;
+  position: absolute;
+  left: -15px;
+  width: 50px;
+  height: 50px;
+  transform: rotate(-45deg);
+  border-radius: 25px;
+  border-bottom-right-radius: 0;
+  transition: ease 0.3s;
+}
+.menu_icon svg {
+  transform: rotate(45deg);
+  position: absolute;
+  top: 12px;
+  right: 8px;
+  font-size: 24px;
+  fill: #acbbd0;
+}
+li.nav-item.active .menu_icon,
+li.nav-item:hover .menu_icon {
+  box-shadow: 0 0 37px 0 rgba(16, 29, 113, 0.08);
+  background-image: linear-gradient(130deg, #0c9ee2, #06e8a7);
+}
+li.nav-item.active .menu_icon svg,
+li.nav-item:hover .menu_icon svg {
+  fill: #fff;
+}
+.menu_name {
+  display: inline-block;
+  padding: 15px 0 0 65px;
+  font-size: 14.9px;
+  font-weight: bold;
+  color: #acbbd0;
+}
+.sub-menu {
+  position: absolute;
+  top: 0;
+  left: 200px;
+  margin: 0;
+  padding: 15px !important;
+  width: max-content;
+  border-radius: 10px;
+  background-image: linear-gradient(248deg, #06e8a7bf, #0c9ee2);
+  z-index: 999999;
+  display: none;
+}
+.sub-menu::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: -8px;
+  top: 16px;
+  transform: rotate(45deg);
+  background: #0c9ee280;
+  z-index: -3;
+}
+.sub-menu li {
+  color: #fff;
+  padding: 2px 0;
+}
+.sub-menu li:hover {
+  font-weight: bold;
+  cursor: pointer;
+}
+.side_bottom_buttons {
+  margin-top: auto;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.side_bottom_buttons div {
+  display: block;
+  padding: 12px;
+  border-radius: 25px;
+  text-decoration: none !important;
+  color: unset;
+  position: relative;
+  box-shadow: 0 0 37px 0 rgba(16, 29, 113, 0.08);
+  background-image: linear-gradient(284deg, #0c9ee212, #06e8a712);
+  margin-bottom: 15px;
+  font-size: 14.9px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.side_bottom_buttons div:hover {
+  color: unset;
+}
+.button_printreport .fa-print {
+  color: #0c9ee2;
+  font-size: 20px;
+}
+.button_printreport .button_text {
+  background: linear-gradient(284deg, #0c9ee2, #06e8a7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.button_text {
+  padding-left: 25px;
+}
+.button_logout {
+  background: #ff004412 !important;
+  color: #ff0044 !important;
+}
+.button_logout .fa-sign-out-alt {
+  font-size: 20px;
+}
+</style>
+
 <script>
 import Vue from "vue";
 export default {}

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="d-flex mb-2 justify-flex-start ml-5">
+    <div class="d-flex mb-2 mt-4 justify-flex-start ml-5">
       <button
         class="btn primary--bg btn-no-border white rounded-50"
         style="padding: 5px 20px; outline: none;"
@@ -19,8 +19,8 @@
         <i class="fas position-absolute right-30 bottom-15 fa-search"></i>
       </div>
     </div>
-    <nav aria-label="Departments Pagination">
-      <div class="position-relative" v-for="log in logs" v-bind:key="log.index">
+    <nav aria-label="Departments Pagination" class="mt-4">
+      <div class="position-relative" v-for="(log, index) in logs" v-bind:key="index">
         <input
           class="form-check-input position-absolute left-65 bottom-40p"
           type="radio"
@@ -31,16 +31,18 @@
         <div class="card width-90 rounded-100px centered mb-3">
           <div class="card-body d-grid grid-de-la-logs py-1 px-1">
             <div class="rounded-100 lightBlue--bg height-75px width-75px">
-              <img
-                v-bind:src="'../../assets/' + log.logo"
-                height="100%"
-                width="100%"
-              />
+              <img :src="require('@/assets/' + log.logo)" height="100%" width="100%" />
             </div>
             <span class="vertical-centered">{{ log.header }}</span>
             <ul class="vertical-centered list-none">
-              <li><i class="fas fa-user"></i> {{ log.name }}</li>
-              <li><i class="fas fa-clipboard-list"></i> {{ log.type }}</li>
+              <li>
+                <i class="fas fa-user"></i>
+                {{ log.name }}
+              </li>
+              <li>
+                <i class="fas fa-clipboard-list"></i>
+                {{ log.type }}
+              </li>
             </ul>
             <div
               class="rounded-50 width-100 lightGray--bg my-2 height-100p d-flex justify-space-around"
@@ -70,13 +72,17 @@
       </div>
       <ul class="pagination pagination-lg justify-content-center pb-0 mb-0">
         <li class="page-item hidden">
-          <a class="page-link gray px-5" href="#" tabindex="-1" aria-disabled="true"
-            >PREVIOUS</a
-          >
+          <a class="page-link gray px-5" href="#" tabindex="-1" aria-disabled="true">PREVIOUS</a>
         </li>
-        <li class="page-item"><a class="page-link primary--bg white" href="#">1</a></li>
-        <li class="page-item"><a class="page-link gray" href="#">2</a></li>
-        <li class="page-item"><a class="page-link gray" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link primary--bg white" href="#">1</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link gray" href="#">2</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link gray" href="#">3</a>
+        </li>
         <li class="page-item">
           <a class="page-link gray px-5" href="#">NEXT</a>
         </li>
@@ -87,11 +93,11 @@
         <!-- Modal content-->
         <div class="modal-content">
           <div class="modal-body d-flex justify-space-around">
-            <input
-              type="text"
-              class="primary--border rounded-20 form-control width-75"
-              placeholder="The name of the Scientific Subject"
-            />
+            <div class="group maxwidth-350">
+              <input type="text" class="pl-4" required />
+              <span class="highlight"></span>
+              <label>template name</label>
+            </div>
           </div>
           <div class="modal-body d-flex justify-space-around">
             <div class="dropdown mt-1 width-75 position-relative">
@@ -103,12 +109,8 @@
                 data-toggle="dropdown"
                 aria-haspopup="true"
                 aria-expanded="true"
-              >
-                Select Departments
-              </button>
-              <i
-                class="fas fa-angle-down position-absolute right-20 top-10"
-              ></i>
+              >Select Departments</button>
+              <i class="fas fa-angle-down position-absolute right-20 top-10"></i>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                 <a class="dropdown-item" href="#">Financial Management</a>
                 <a class="dropdown-item" href="#">Computer Sciences</a>
@@ -122,70 +124,67 @@
               type="button"
               class="btn white rounded-20 btn-no-border width-33 primary--bg btn-lg"
               data-dismiss="modal"
-            >
-              Add
-            </button>
+            >Add</button>
             <button
               type="button"
               class="btn white--bg rounded-20 width-33 btn-lg gray--border"
               style="outline: none;"
               data-dismiss="modal"
-            >
-              Cancel
-            </button>
+            >Cancel</button>
           </div>
         </div>
       </div>
     </div>
   </div>
 </template>
-<script lang="ts">
+<script>
 import Vue from "vue";
-import { Component } from "vue-property-decorator";
 import Slider from "../../components/Slider.vue";
 
-@Component({
+export default {
   components: {
     Slider
+  },
+  data() {
+    return {
+      logs: [
+        {
+          logo: "atom.png",
+          header: "Financial Management",
+          name: "Rahul Holani",
+          type: "Program",
+          enabled: true
+        },
+        {
+          logo: "atom.png",
+          header: "Financial Management",
+          name: "Rahul Holani",
+          type: "Program",
+          enabled: true
+        },
+        {
+          logo: "atom.png",
+          header: "Financial Management",
+          name: "Rahul Holani",
+          type: "Program",
+          enabled: true
+        },
+        {
+          logo: "atom.png",
+          header: "Financial Management",
+          name: "Rahul Holani",
+          type: "Program",
+          enabled: true
+        },
+        {
+          logo: "atom.png",
+          header: "Financial Management",
+          name: "Rahul Holani",
+          type: "Program",
+          enabled: true
+        }
+      ]
+    };
   }
-})
-export default class Logs extends Vue {
-  logs = [
-    {
-      logo: "atom.png",
-      header: "Financial Management",
-      name: "Rahul Holani",
-      type: "Program",
-      enabled: true
-    },
-    {
-      logo: "atom.png",
-      header: "Financial Management",
-      name: "Rahul Holani",
-      type: "Program",
-      enabled: true
-    },
-    {
-      logo: "atom.png",
-      header: "Financial Management",
-      name: "Rahul Holani",
-      type: "Program",
-      enabled: true
-    },
-    {
-      logo: "atom.png",
-      header: "Financial Management",
-      name: "Rahul Holani",
-      type: "Program",
-      enabled: true
-    },
-    {
-      logo: "atom.png",
-      header: "Financial Management",
-      name: "Rahul Holani",
-      type: "Program",
-      enabled: true
-    }
-  ];
-}
+};
 </script>
