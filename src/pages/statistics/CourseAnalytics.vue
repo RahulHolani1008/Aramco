@@ -289,7 +289,7 @@ export default {
             },
     padding: 1,
     style:{
-      fontFamily: '@AJannatLT'
+      fontFamily: 'AJannatLT'
     }
   }
 }
