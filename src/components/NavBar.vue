@@ -1,5 +1,5 @@
 <template>
-  <nav class="nav flex-column white--bg">
+  <nav class="nav flex-column white--bg" v-on:click="alertit">
     <ul class="nav-ul list-unstyled">
       <li class="nav-item">
         <a class="nav-link active" href="#">
@@ -250,51 +250,56 @@
 
     <div class="modal fade mt-0" id="printreportModal" role="dialog">
       <div class="modal-dialog">
-          <!-- Modal content-->
-          <div class="modal-content">
-            
-            <div class="modal-body d-flex justify-space-around">
-              <div class="select-wrapper maxwidth-350 width-75">
-              <select class="width-100 border-radius-20 height-50 gray--border-1 gray--color outline-none">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-body d-flex justify-space-around">
+            <div class="select-wrapper maxwidth-350 width-75">
+              <select
+                class="width-100 border-radius-20 height-50 gray--border-1 gray--color outline-none"
+              >
                 <option disabled selected>Please select a report type</option>
                 <option>option</option>
                 <option>option</option>
               </select>
-              </div>
             </div>
+          </div>
 
-            <div class="modal-body d-flex justify-space-around">
-              <div class="select-wrapper maxwidth-350 width-75">
-              <select class="width-100 border-radius-20 height-50 gray--border-1 gray--color outline-none">
+          <div class="modal-body d-flex justify-space-around">
+            <div class="select-wrapper maxwidth-350 width-75">
+              <select
+                class="width-100 border-radius-20 height-50 gray--border-1 gray--color outline-none"
+              >
                 <option disabled selected>Select the school year</option>
                 <option>option</option>
                 <option>option</option>
               </select>
-              </div>
-            </div>         
+            </div>
+          </div>
 
-            <div class="modal-body d-flex justify-space-around">
-              <div class="select-wrapper maxwidth-350 width-75">
-              <select class="width-100 border-radius-20 height-50 gray--border-1 gray--color outline-none">
+          <div class="modal-body d-flex justify-space-around">
+            <div class="select-wrapper maxwidth-350 width-75">
+              <select
+                class="width-100 border-radius-20 height-50 gray--border-1 gray--color outline-none"
+              >
                 <option disabled selected>Determining the academic term</option>
                 <option>option</option>
                 <option>option</option>
               </select>
-              </div>
             </div>
+          </div>
 
-            <div class="d-flex justify-space-around mb-5 mt-2">
-              <button
-                type="button"
-                class="btn white rounded-20 btn-no-border width-75 primary--bg btn-lg"
-                data-dismiss="modal"
-              >
-                Print the report
-              </button>
-            </div>
+          <div class="d-flex justify-space-around mb-5 mt-2">
+            <button
+              type="button"
+              class="btn white rounded-20 btn-no-border width-75 primary--bg btn-lg"
+              data-dismiss="modal"
+            >
+              Print the report
+            </button>
           </div>
         </div>
       </div>
+    </div>
   </nav>
 </template>
 <style lang="scss" scoped>
@@ -454,5 +459,18 @@ li.nav-item:hover .menu_icon svg {
 
 <script>
 import Vue from "vue";
-export default {}
+export default {
+  props: {
+    isSmall: {
+      default () {
+        return false;
+      }
+    }
+  },
+  watch:{
+    isSmall: function() {
+          alert('Prop changed: '+this.isSmall)
+        }
+  }
+};
 </script>

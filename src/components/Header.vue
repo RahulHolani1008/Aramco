@@ -6,7 +6,7 @@
         <img src="../assets/Logo.png" height="100%" />
       </div>
     </div>
-    <div class="waterdrop_button">
+    <div class="waterdrop_button" v-on:click="changeHeader">
       <i class="fas fa-angle-left white fs--28"></i>
     </div>
   </div>
@@ -54,5 +54,15 @@
 </style>
 <script>
 import Vue from "vue";
-export default {}
+export default {
+  data() {
+    return {isSmall: false }
+  },
+  methods: {
+    changeHeader: function(){
+      this.isSmall = !this.isSmall;
+      this.$emit("clicked",this.isSmall);;
+    }
+  }
+};
 </script>

@@ -1,8 +1,8 @@
 <template>
   <div>
     <div class="grid outer-div" v-if="!isLogin">
-      <Header></Header>
-      <NavBar></NavBar>
+      <Header @clicked="sendDataToNavBar"></Header>
+      <NavBar :isSmall = "isSmall"></NavBar>
       <div class="inner-body">
         <router-view />
       </div>
@@ -686,8 +686,14 @@ export default {
   },
   data() {
     return {
-        isLogin: false
+      isLogin: false,
+      isSmall: false
     };
+  },
+  methods:{
+    sendDataToNavBar(value){
+      this.isSmall = value
+    }
   }
 };
 </script>
