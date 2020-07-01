@@ -91,7 +91,7 @@
           aria-valuemax="100"
         ></div>
       </div>
-      <div class="d-flex width-100 mt-4">
+      <div class="d-flex width-100 mt-2">
         <div
           class="fs--12 pt-3 gray d-flex px-4 mb-2 justify-flex-start vertical-centered"
         >
@@ -113,7 +113,7 @@
           aria-valuemax="100"
         ></div>
       </div>
-      <div class="d-flex width-100 mt-4">
+      <div class="d-flex width-100 mt-2">
         <div
           class="fs--12 pt-3 gray d-flex px-4 mb-2 justify-flex-start vertical-centered"
         >
@@ -138,8 +138,8 @@
       </div>
     </card>
   </div>
-  <div>
-    <div class="card card-left ml-5 mt-4" style="width: 60%; height: 50vh;">
+  <div class="d-flex justify-space-around">
+    <div class="card card-left ml-5 mt-2" style="width: 35%; height: 400px;">
       <div
         class="card-title gray--color pt-3 mx-4 mt-2 px-4 blue-gradient left-rounded"
       >
@@ -149,7 +149,7 @@
           height="5%"
           width="5%"
         />&nbsp;&nbsp;TIME PERIOD WHERE MOST SESSIONS HAPPENED
-        <span class="position-absolute right-0 top-40 pr-4">Past 7 days</span>
+        <span class="position-absolute right-0 top--10 mr-2 pr-2 blue-gradient-reverse py-3 right-rounded">Past 7 days</span>
       </div>
       <chart :options="chartOptions"></chart>
     </div>
@@ -157,6 +157,12 @@
   </div>
 </template>
 <style lang="scss" scoped>
+.top--10{
+  top: 25px;
+}
+.right-rounded{
+  border-radius: 0px 20px 0px 0px;
+}
 .right-0 {
   right: 0px;
 }
@@ -195,6 +201,13 @@
     283deg,
     rgba(12, 158, 226, 0) 50%,
     rgba(0, 208, 211, 0.1)
+  );
+}
+.blue-gradient-reverse {
+  background-image: linear-gradient(
+    283deg,
+    rgba(0, 208, 211, 0.1) 0%,
+    rgba(12, 158, 226, 0)100%
   );
 }
 .gray--color {
@@ -251,10 +264,11 @@ export default class CourseAnalytics extends Vue {
     },
     yAxis:{
       title: {text: "Time of day"},
-      categories: ["0", "12:00", "1:00", "2:00", "3:00","4:00", "5:00","6:00","7:00","8:00"]
+      categories: ["0", "12:00", "1:00", "2:00", "3:00","4:00", "5:00","6:00","7:00","8:00"],
+      padding: 0.1
     },
     chart:{
-
+      padding: 0.1
     },
     title: {
       text: ""
@@ -264,27 +278,10 @@ export default class CourseAnalytics extends Vue {
                     return "Thursday, 3:00"
                 }
             },
-  //   plotOptions: {
-  //               scatter: {
-  //                   marker: {
-  //                       radius: 5,
-  //                       states: {
-  //                           hover: {
-  //                               enabled: true,
-  //                               lineColor: 'red'
-  //                           }
-  //                       }
-  //                   },
-  //                   states: {
-  //                       hover: {
-  //                           marker: {
-  //                               enabled: false
-  //                           }
-  //                       }
-  //                   }
-  //               }
-  //           },
-  // };
+    padding: 1,
+    style:{
+      fontFamily: '@AJannatLT'
+    }
   }
 }
 </script>
