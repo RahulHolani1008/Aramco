@@ -139,7 +139,7 @@
     </div>
   </div>
   <div class="d-flex justify-space-around">
-    <div class="card card-left ml-5 mt-2" style="width: 35%; height: 400px;">
+    <div class="card card-left ml-5 mt-2" style="width: 35%; height: 490px;">
       <div
         class="card-title gray--color pt-3 mx-4 mt-2 px-4 blue-gradient left-rounded"
       >
@@ -153,7 +153,7 @@
       </div>
       <chart :options="chartOptions"></chart>
     </div>
-  <div class="card card-left ml-5 mt-2" style="width: 35%; height: 400px;">
+  <div class="card card-left ml-5 mt-2" style="width: 35%; height: 490px;">
       <div
         class="card-title gray--color pt-3 mx-4 mt-2 px-4 blue-gradient left-rounded"
       >
