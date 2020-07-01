@@ -99,7 +99,7 @@
               <!-- Modal dashboard_members_teacher_select_block -->
 
               <div class="modal fade" id="teacherSelectBlock" role="dialog">
-                <div class="modal-dialog dialog_width">
+                <div class="modal-dialog block_modal">
                   <!-- Modal content-->
                   <div class="modal-content" style="border-radius: 30px;">
                     <div class="modal-body d-flex justify-space-around">
@@ -118,7 +118,7 @@
                     <div class="d-flex justify-space-around mb-5 mt-2">
                       <button
                         type="button"
-                        class="btn white rounded-50 btn-no-border width-33 red--bg white btn-lg"
+                        class="btn white rounded-50 btn-no-border width-33 red-bg white btn-lg"
                         data-dismiss="modal"
                       >
                         Yes, confirm
@@ -160,7 +160,7 @@
                       <span class="user_view mt-5p position-relative"
                         ><i class="fas fa-user-circle"></i
                       ></span>
-                      <span class="mt-5p ml-2">
+                      <span class="ml-2 data">
                         <p>
                           Zaid Al-Suleiman<br />
                           <span class="trainee_color">trainee</span><br />
@@ -195,7 +195,7 @@
                     <div class="d-flex justify-space-around mb-5 mt-2">
                       <button
                         type="button"
-                        class="btn white rounded-50 btn-no-border width-30 red--bg white btn-sm py-2"
+                        class="btn white rounded-50 btn-no-border width-30 red--bg white btn-sm py-1"
                         data-dismiss="modal"
                       >
                         Membership ban
@@ -203,7 +203,7 @@
 
                       <button
                         type="button"
-                        class="btn white--bg rounded-50 btn-no-border width-28 black--border btn-sm py-2"
+                        class="btn white--bg rounded-50 btn-no-border width-30 black--border btn-sm py-1"
                         data-dismiss="modal"
                       >
                         <svg
@@ -222,7 +222,7 @@
 
                       <button
                         type="button"
-                        class="btn white rounded-50 width-18 btn-sm black--bg py-2"
+                        class="btn white rounded-50 width-20 btn-sm black--bg py-1"
                         style="outline: none;"
                         data-dismiss="modal"
                       >
@@ -264,8 +264,7 @@
                     <div class="modal-body d-flex justify-space-around">
                       <div class="group">
                         <select
-                          class="width-100 border-radius-20 height-40 primary--border  outline-none"
-                        >
+                          class="width-100 border-radius-20 height-40 primary--border  outline-none">
                           <option>Trainees</option>
                           <option>option</option>
                           <option>option</option>
@@ -276,7 +275,7 @@
                     <div class="d-flex justify-space-around mb-5 mt-3">
                       <button
                         type="button"
-                        class="btn white rounded-50 btn-no-border width-30 primary--bg btn-sm"
+                        class="btn white rounded-50 btn-no-border width-32 primary--bg btn-sm"
                         data-dismiss="modal"
                       >
                         Save settings
@@ -344,11 +343,14 @@
   font-size: 12px;
   font-weight: 700;
 }
-.width-18 {
-  width: 18%;
+.width-20 {
+  width: 20%;
 }
-.width-28 {
-  width: 28%;
+.width-30 {
+  width: 30%;
+}
+.width-32{
+  width: 32%;
 }
 .mail_info {
   color: #929191;
@@ -365,6 +367,18 @@
 .communication_info {
   font-size: 12px;
   font-weight: 700;
+}
+.red-bg{
+  background-color: #ff0044 !important;
+}
+.fs--70{
+  font-size: 70px;
+}
+.modal-dialog.block_modal {
+    width: 380px;
+}
+.data {
+    margin-top: 8%;
 }
 </style>
 <script lang="ts">
