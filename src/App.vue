@@ -603,21 +603,21 @@ button:focus {
   -webkit-appearance: none;
 }
 
-.select-wrapper{
+.select-wrapper {
   position: relative;
 }
 
-.select-wrapper::after{
-    content: "";
-    background: url(/img/chevron.5429b6f7.svg);
-    width: 20px;
-    height: 20px;
-    background-size: 11px;
-    background-repeat: no-repeat;
-    position: absolute;
-    right: 5px;
-    top: 18px;
-    pointer-events: none;
+.select-wrapper::after {
+  content: "";
+  background: url(/img/chevron.5429b6f7.svg);
+  width: 20px;
+  height: 20px;
+  background-size: 11px;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 5px;
+  top: 18px;
+  pointer-events: none;
 }
 
 .modal-content {

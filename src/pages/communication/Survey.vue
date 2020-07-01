@@ -226,7 +226,8 @@
       <div class="modal-dialog modal-dialog-centered modal-lg mt-0">
         <!-- Modal content-->
         <div class="modal-content mt-0" style="overflow: hidden;">
-          <div class="height-500px overflow-y-scroll aramco-scrollbar">>
+          <div class="height-500px overflow-y-scroll aramco-scrollbar">
+            >
             <div class="modal-body d-flex justify-space-around">
               <div class="group maxwidth-350">
                 <input type="text" class="pl-4" required />
@@ -297,13 +298,15 @@
 
                 <div class="col-sm-6">
                   <div class="select-wrapper maxwidth-350 width-100">
-                  <select class="width-100 border-radius-20 height-50 gray--border-1 gray--color outline-none  mx-2">
-                    <option disabled selected
-                      >A scale from 1 to 5 with excellent</option
+                    <select
+                      class="width-100 border-radius-20 height-50 gray--border-1 gray--color outline-none  mx-2"
                     >
-                    <option>option</option>
-                    <option>option</option>
-                  </select>
+                      <option disabled selected
+                        >A scale from 1 to 5 with excellent</option
+                      >
+                      <option>option</option>
+                      <option>option</option>
+                    </select>
                   </div>
                   <p class="fs--13 gray--color mb-0 ml-3 mt-2">
                     <i class="fas fa-exclamation-circle"></i>

@@ -4,7 +4,12 @@
       <div
         class="card-title gray--color pt-3 mx-4 mt-2 px-4 blue-gradient left-rounded"
       >
-        <img src="../../assets/icons/analytics_2.svg" class="pb-3" height="5%" width="5%" />&nbsp;&nbsp;AVERAGE TRAINING TIME
+        <img
+          src="../../assets/icons/analytics_2.svg"
+          class="pb-3"
+          height="5%"
+          width="5%"
+        />&nbsp;&nbsp;AVERAGE TRAINING TIME
       </div>
       <h6 class="card-subtitle mb-2 text-muted">
         <div class="btn-group btn-group-toggle px-4" data-toggle="buttons">
@@ -56,19 +61,28 @@
       <div
         class="card-title gray--color pt-3 mx-4 mt-2 px-4 blue-gradient left-rounded"
       >
-        <img src="../../assets/icons/analytics_2.svg" class="pb-3" height="5%" width="5%" />&nbsp;&nbsp;GENERAL NUMBER OF SESSIONS
+        <img
+          src="../../assets/icons/analytics_2.svg"
+          class="pb-3"
+          height="5%"
+          width="5%"
+        />&nbsp;&nbsp;GENERAL NUMBER OF SESSIONS
       </div>
       <div class="d-flex width-100">
-        <div class="fs--12 pt-3 gray d-flex px-4 mb-2 justify-flex-start vertical-centered">
+        <div
+          class="fs--12 pt-3 gray d-flex px-4 mb-2 justify-flex-start vertical-centered"
+        >
           AVERAGE TIME PER SESSION
         </div>
-        <div class="fs--28 d-flex px-4 justify-flex-end vertical-centered position-absolute right-0">
+        <div
+          class="fs--28 d-flex px-4 justify-flex-end vertical-centered position-absolute right-0"
+        >
           60<span class="fs--16 pb-1 vertical-bottom pl-1">mins</span>
         </div>
       </div>
       <div class="progress rounded-50 mx-4" style="height: 10px;">
         <div
-          class="progress-bar primary--bg rounded-50" 
+          class="progress-bar primary--bg rounded-50"
           role="progressbar"
           style="width: 70%;"
           aria-valuenow="70"
@@ -77,10 +91,14 @@
         ></div>
       </div>
       <div class="d-flex width-100 mt-4">
-        <div class="fs--12 pt-3 gray d-flex px-4 mb-2 justify-flex-start vertical-centered">
+        <div
+          class="fs--12 pt-3 gray d-flex px-4 mb-2 justify-flex-start vertical-centered"
+        >
           NUMBER OF SCHEDULED SESSIONS
         </div>
-        <div class="fs--28 d-flex px-4 justify-flex-end vertical-centered position-absolute right-0">
+        <div
+          class="fs--28 d-flex px-4 justify-flex-end vertical-centered position-absolute right-0"
+        >
           220
         </div>
       </div>
@@ -95,10 +113,15 @@
         ></div>
       </div>
       <div class="d-flex width-100 mt-4">
-        <div class="fs--12 pt-3 gray d-flex px-4 mb-2 justify-flex-start vertical-centered">
-          NUMBER OF ACTIVE SESSIONS <span class="primary bold pl-2"> (LIVE) </span>
+        <div
+          class="fs--12 pt-3 gray d-flex px-4 mb-2 justify-flex-start vertical-centered"
+        >
+          NUMBER OF ACTIVE SESSIONS
+          <span class="primary bold pl-2"> (LIVE) </span>
         </div>
-        <div class="fs--28 d-flex px-4 justify-flex-end vertical-centered position-absolute right-0">
+        <div
+          class="fs--28 d-flex px-4 justify-flex-end vertical-centered position-absolute right-0"
+        >
           410
         </div>
       </div>
@@ -119,10 +142,10 @@
   </div>
 </template>
 <style lang="scss" scoped>
-.right-0{
-  right:0px;
+.right-0 {
+  right: 0px;
 }
-.fs--12{
+.fs--12 {
   font-size: 12px;
 }
 .btn-group {
@@ -171,13 +194,13 @@
 .vertical-bottom {
   margin-top: auto;
 }
-.card-right{
+.card-right {
   border-radius: 20px 60px 20px 20px !important;
   padding-top: 1rem;
   padding-bottom: 3rem;
 }
-.card{
-    padding-bottom: 3rem;
+.card {
+  padding-bottom: 3rem;
 }
 </style>
 <script lang="ts">
