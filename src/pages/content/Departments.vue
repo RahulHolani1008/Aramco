@@ -48,6 +48,8 @@
               <div
                 class="rounded-100 pt-2 pb-2 px-2 vertical-centered black--bg"
                 style="fill: white;"
+                data-toggle="modal"
+                data-target="#editDeptModal"
               >
                 <svg width="30" height="30" viewBox="0 0 17 19">
                   <path
@@ -79,6 +81,7 @@
         </li>
       </ul>
     </nav>
+
     <div class="modal fade" id="newDeptModal" role="dialog">
       <div class="modal-dialog">
         <!-- Modal content-->
@@ -126,6 +129,56 @@
         </div>
       </div>
     </div>
+
+    <div class="modal fade" id="editDeptModal" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-body d-flex justify-space-around">
+            <div class="group maxwidth-350">
+              <input type="text" class="pl-4" required />
+              <span class="highlight"></span>
+              <label>The name of department</label>
+            </div>
+          </div>
+          <div class="modal-body d-flex justify-space-around">
+            <input
+              type="file"
+              name="file"
+              id="file"
+              class="rounded-20 inputfile gray--border width-90 text-wrap height-100px px-5"
+            />
+            <label
+              for="file"
+              class="text-wrap gray-dashed-border px-5 py-4 text-center rounded-50"
+            >
+              <i class="fas fa-upload mb-2" style="font-size: 68px;"></i>
+              <BR />
+              Upload the university logo image from your device here</label
+            >
+          </div>
+          <div class="d-flex justify-space-around mb-5 mt-2">
+            <button
+              type="button"
+              class="btn white rounded-20 btn-no-border width-33 primary--bg btn-lg"
+              data-dismiss="modal"
+            >
+              Save settings
+            </button>
+            <button
+              type="button"
+              class="btn white--bg rounded-20 width-33 btn-lg gray--border"
+              style="outline: none;"
+              data-dismiss="modal"
+            >
+              Cancel
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
   </div>
 </template>
 <style lang="scss" scoped>

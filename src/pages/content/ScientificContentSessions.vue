@@ -92,7 +92,9 @@
             >
               <div class="px-3">View Assessments</div>
             </button>
-            <button type="button" class="btn btn-no-border btn-sm">
+            <button type="button" class="btn btn-no-border btn-sm"
+              data-toggle="modal"
+              data-target="#editSpecializationModal">
               <i
                 class="fas fa-3x white fa-cog rounded-100 px-2 py-2 black--bg"
               ></i>
@@ -120,6 +122,7 @@
         </li>
       </ul>
     </nav>
+
     <div class="modal fade" id="newSpecializationModal" role="dialog">
       <div class="modal-dialog">
         <!-- Modal content-->
@@ -131,30 +134,19 @@
               <label>The name of scientific subject</label>
             </div>
           </div>
+          
           <div class="modal-body d-flex justify-space-around">
-            <div class="dropdown mt-1 width-75 position-relative">
-              <button
-                type="button"
-                class="btn gray--border rounded-20 width-100 text-left white--bg"
-                style="padding: 5px 20px; outline: none;"
-                id="dropdownMenuButton"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="true"
-              >
-                Select Departments
-              </button>
-              <i
-                class="fas fa-angle-down position-absolute right-20 top-10"
-              ></i>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Financial Management</a>
-                <a class="dropdown-item" href="#">Computer Sciences</a>
-                <a class="dropdown-item" href="#">Economics</a>
-                <a class="dropdown-item" href="#">Mathematics</a>
+              <div class="select-wrapper maxwidth-350 width-75">
+              <select class="width-100 border-radius-20 height-50 gray--border-1 gray--color outline-none">
+                <option disabled selected>Select Departments</option>
+                <option>Financial Management</option>
+                <option>Computer Sciences</option>
+                <option>Economics</option>
+                <option>Mathematics</option>
+              </select>
               </div>
-            </div>
-          </div>
+          </div>  
+
           <div class="d-flex justify-space-around mb-5 mt-2">
             <button
               type="button"
@@ -175,6 +167,52 @@
         </div>
       </div>
     </div>
+
+    <div class="modal fade" id="editSpecializationModal" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-body d-flex justify-space-around">
+            <div class="group maxwidth-350">
+              <input type="text" class="pl-4" required />
+              <span class="highlight"></span>
+              <label>The name of scientific subject</label>
+            </div>
+          </div>
+          
+          <div class="modal-body d-flex justify-space-around">
+              <div class="select-wrapper maxwidth-350 width-75">
+              <select class="width-100 border-radius-20 height-50 gray--border-1 gray--color outline-none">
+                <option disabled selected>Select Departments</option>
+                <option>Financial Management</option>
+                <option>Computer Sciences</option>
+                <option>Economics</option>
+                <option>Mathematics</option>
+              </select>
+              </div>
+          </div>  
+
+          <div class="d-flex justify-space-around mb-5 mt-2">
+            <button
+              type="button"
+              class="btn white rounded-20 btn-no-border width-33 primary--bg btn-lg"
+              data-dismiss="modal"
+            >
+              save settings
+            </button>
+            <button
+              type="button"
+              class="btn white--bg rounded-20 width-33 btn-lg gray--border"
+              style="outline: none;"
+              data-dismiss="modal"
+            >
+              Cancel
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
   </div>
 </template>
 <style lang="scss" scoped>
