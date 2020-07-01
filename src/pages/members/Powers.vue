@@ -4,7 +4,7 @@
       <button
         class="btn primary--bg btn-no-border btn-lg white rounded-50 ml-100 mb-2"
         data-toggle="modal"
-        data-target="#newDeptModal"
+        data-target="#teacherEdit"
       >
         <i class="fas fa-plus white--bg rounded-100 mr-2 transparent"></i>
         New role
@@ -88,53 +88,67 @@
       </ul>
     </nav>
 
-    <div class="modal fade mt-0" id="newDeptModal" role="dialog">
+    <div class="modal fade mt-0" id="teacherEdit" role="dialog">
       <div class="modal-dialog ">
         <!-- Modal content-->
         <div class="modal-content mt-0">
-          <div class="modal-body d-flex justify-space-around mt-0">
-            <div class="group maxwidth-350">
-              <input type="text" class="pl-4" required />
-              <span class="highlight"></span>
-              <label>template name</label>
-            </div>
-          </div>
-
-          <div class="modal-body d-flex justify-space-around">
-            <textarea
-              placeholder="Notice text"
-              class="border-radius-12 border-on-focus gray--border-2 width-75 height-170 outine-none pt-2 pb-2 pl-2 pr-2"
-            >
-            </textarea>
-          </div>
-
-          <div class="modal-body d-flex justify-space-around">
+        <div class="modal-body modal_pdng d-flex justify-space-around">
             <input
               type="file"
               name="file"
               id="file"
-              class="rounded-20 inputfile gray--border width-90 text-wrap height-100px px-5"
+              class="rounded-20 inputfile gray--border width-90 text-wrap height-100px"
             />
             <label
               for="file"
-              class="text-wrap gray-dashed-border px-5 py-4 text-center rounded-20"
+              class="text-wrap gray-dashed-border text-center rounded-50 width-75"
             >
-              <i class="fas fa-upload mb-2" style="font-size: 50px;"></i>
-              <BR />
-              Upload the template file from your device here
-            </label>
-          </div>
-          <div class="d-flex justify-space-around mb-5 mt-2">
-            <button
+              <span class="span_display"><i class="fas fa-user-circle mt-2" style="font-size: 60px;"></i></span>
+             <span class="span_display ml-3 mt-0 mb-2"> Upload your avatar</span>
+           <span class="span_display"><button
               type="button"
-              class="btn white rounded-20 btn-no-border width-33 primary--bg btn-lg"
+              class="btn white rounded-20 btn-no-border width-75 primary--bg btn-sm ml-4 mb-4"
               data-dismiss="modal"
             >
-              Add
+              Upload
+            </button>
+            </span>
+            </label>
+          </div>
+
+          <div class="modal-body modal_pdng d-flex justify-space-around mt-0">
+            <div class="group maxwidth-350">
+              <input type="text" class="pl-4" required />
+              <span class="highlight"></span>
+              <label>Trainer name</label>
+            </div>
+            </div>
+          <div class="modal-body modal_pdng d-flex justify-space-around mt-0">
+             <div class="group maxwidth-350">
+              <input type="text" class="pl-4" required />
+              <span class="highlight"></span>
+              <label>Email</label>
+            </div>
+            </div>
+
+            <div class="modal-body modal_pdng d-flex justify-space-around mt-0">
+               <div class="group maxwidth-350">
+              <input type="text" class="pl-4" required />
+              <span class="highlight"></span>
+              <label>Mobile number</label>
+            </div>
+          </div>
+       <div class="d-flex justify-space-around mb-5 mt-4">
+            <button
+              type="button"
+              class="btn white rounded-20 btn-no-border width-33 primary--bg btn-sm"
+              data-dismiss="modal"
+            >
+              Save settings
             </button>
             <button
               type="button"
-              class="btn white--bg rounded-20 width-33 btn-lg gray--border"
+              class="btn white--bg rounded-20 width-33 btn-sm gray--border"
               style="outline: none;"
               data-dismiss="modal"
             >
@@ -165,6 +179,12 @@
 }
 .left-30 {
   left: 3%;
+}
+.modal-body.modal_pdng{
+    padding: .5rem;
+}
+.span_display{
+  display: inline-block;
 }
 </style>
 <script lang="ts">
