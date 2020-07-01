@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="14px" viewBox="0 0 8 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Arrow</title>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Nav_close" transform="translate(-25.000000, -22.000000)" fill="#FFFFFF">
+            <g id="Arrow">
+                <path d="M32.7071,22.29289 C32.3166,21.90237 31.6834,21.90237 31.2929,22.29289 L25.29289,28.2929 C24.90237,28.6834 24.90237,29.3166 25.29289,29.7071 L31.2929,35.7071 C31.6834,36.0976 32.3166,36.0976 32.7071,35.7071 C33.0976,35.3166 33.0976,34.6834 32.7071,34.2929 L27.4142,29 L32.7071,23.70711 C33.0976,23.31658 33.0976,22.68342 32.7071,22.29289 Z" transform="translate(28.999988, 28.999987) scale(-1, 1) translate(-28.999988, -28.999987) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

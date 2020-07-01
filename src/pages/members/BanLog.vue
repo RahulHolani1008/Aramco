@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="d-flex mb-2 justify-flex-start">
-      <div class="dropdown mt-1 ml-5">
+      <div class="dropdown mt-4 ml-5">
         <button
           type="button"
           class="btn black--border rounded-20 search"
@@ -27,7 +27,7 @@
         <i class="fas position-absolute right-30 bottom-15 fa-search"></i>
       </div>
     </div>
-    <nav aria-label="Departments Pagination">
+    <nav aria-label="Departments Pagination" class="mt-4">
       <div
         class="position-relative"
         v-for="(program, index) in programs"
@@ -55,10 +55,13 @@
               <li>{{ program.personName }}</li>
               <li class="gray fs--10">Last appearance: {{ program.date }}</li>
             </ul>
+
             <button type="button" class="btn btn-no-border btn-sm">
               <div
                 class="rounded-100 py-3 px-2 vertical-centered d-flex justify-space-around black--bg"
                 style="fill: white;"
+                data-toggle="modal"
+                data-target="#blockinginfoModal"
               >
                 <span class="white vertical-centered"
                   >Blocking information</span
@@ -70,9 +73,7 @@
                 class="rounded-100 py-3 px-2 vertical-centered d-flex justify-space-around primary--bg"
                 style="fill: white;"
               >
-                <span class="white vertical-centered"
-                  >Blocking information</span
-                >
+                <span class="white vertical-centered">unblock</span>
               </div>
             </button>
           </div>
@@ -98,8 +99,73 @@
         </li>
       </ul>
     </nav>
+
+    <div class="modal fade" id="blockinginfoModal" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-body d-flex justify-space-around">
+            <label class="complaint_view banlog_label"
+              >Responsible of the ban</label
+            >
+            <div class="avtar_main px-2 py-2">
+              <span class="banlog_avtar"
+                ><i class="fas fa-user fs--28 mt-3"></i
+              ></span>
+              <span class="banlog_text bold pl-3">Zaid Al-Suleiman</span>
+            </div>
+          </div>
+
+          <div class="modal-body d-flex justify-space-around">
+            <label class="complaint_view">date of the ban</label>
+            <input
+              type="text"
+              class="pl-4 disabled"
+              value="Thursday, April 16 2020, 5 pm"
+              disabled
+            />
+          </div>
+
+          <div class="modal-body d-flex justify-space-around">
+            <label class="complaint_view">reason of the ban</label>
+            <input
+              type="text"
+              class="pl-4 disabled"
+              value="Speak out words during the live broadcast"
+              disabled
+            />
+          </div>
+
+          <div class="d-flex justify-space-around mb-5 mt-2">
+            <button
+              type="button"
+              class="btn white rounded-20 btn-no-border width-33 primary--bg btn-lg"
+              data-dismiss="modal"
+            >
+              unblock
+            </button>
+            <button
+              type="button"
+              class="btn white--bg rounded-20 width-33 btn-lg gray--border"
+              style="outline: none;"
+              data-dismiss="modal"
+            >
+              Cancel
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
+<style lang="scss" scoped>
+.fs--28 {
+  font-size: 28px !important;
+}
+.information {
+  width: 85%;
+}
+</style>
 <script lang="ts">
 import Vue from "vue";
 import { Component } from "vue-property-decorator";

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="d-flex mb-2 justify-space-around" style="width: 40%">
+    <div class="d-flex mb-2 justify-space-around mt-4" style="width: 40%">
       <button
         class="btn rounded-100 search primary--border mt-1"
         style="height:40px; width: 40px;"
@@ -18,11 +18,15 @@
         <i class="fas position-absolute right-20 bottom-15 fa-search"></i>
       </div>
     </div>
-    <nav aria-label="Departments Pagination">
-      <div class="position-relative">
+    <nav aria-label="Departments Pagination" class="mt-4">
+      <div
+        class="position-relative"
+        v-for="(assessment, index) in assessments"
+        :key="index"
+      >
         <div class="card height-max width-90 rounded-100px centered mb-3">
           <div class="card-body d-grid px-3 grid-de-la-scientific-assessment">
-            <div class="vertical-centered pl-4">Pre assessment</div>
+            <div class="vertical-centered pl-4">{{ assessment.name }}</div>
             <button
               type="button"
               class="btn red red--border rounded-50 pr-3 py-3 d-flex max-content"
@@ -44,92 +48,23 @@
           </div>
         </div>
       </div>
-      <div class="position-relative">
-        <div class="card height-max width-90 rounded-100px centered mb-3">
-          <div class="card-body d-grid px-3 grid-de-la-scientific-assessment">
-            <div class="vertical-centered pl-4">Pre assessment</div>
-            <button
-              type="button"
-              class="btn red red--border rounded-50 pr-3 py-3 d-flex max-content"
-            >
-              <div class="pl-3 pr-1 min-content">
-                <i class="far fa-eye"></i>
-              </div>
-              view absentees
-            </button>
-            <button
-              type="button"
-              class="btn primary--bg white rounded-50 btn-no-border pr-3 py-3 d-flex max-content"
-            >
-              <div class="pl-3 pr-1 min-content">
-                <i class="fas fa-user-friends"></i>
-              </div>
-              Follow up trainees grades
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="position-relative">
-        <div class="card height-max width-90 rounded-100px centered mb-3">
-          <div class="card-body d-grid pr-3 grid-de-la-scientific-assessment">
-            <div class="vertical-centered pl-4">Post assessment</div>
-            <button
-              type="button"
-              class="btn red red--border rounded-50 pr-3 py-3 d-flex max-content"
-            >
-              <div class="pl-3 pr-1 min-content">
-                <i class="far fa-eye"></i>
-              </div>
-              view absentees
-            </button>
-            <button
-              type="button"
-              class="btn primary--bg white rounded-50 btn-no-border pr-3 py-3 d-flex max-content"
-            >
-              <div class="pl-3 pr-1 min-content">
-                <i class="fas fa-user-friends"></i>
-              </div>
-              Follow up trainees grades
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="position-relative">
-        <div class="card height-max width-90 rounded-100px centered mb-3">
-          <div class="card-body d-grid px-3 grid-de-la-scientific-assessment">
-            <div class="vertical-centered pl-4">Pre assessment</div>
-            <button
-              type="button"
-              class="btn red red--border rounded-50 pr-3 py-3 d-flex max-content"
-            >
-              <div class="pl-3 pr-1 min-content">
-                <i class="far fa-eye"></i>
-              </div>
-              view absentees
-            </button>
-            <button
-              type="button"
-              class="btn primary--bg white rounded-50 btn-no-border pr-3 py-3 d-flex max-content"
-            >
-              <div class="pl-3 pr-1 min-content">
-                <i class="fas fa-user-friends"></i>
-              </div>
-              Follow up trainees grades
-            </button>
-          </div>
-        </div>
-      </div>
-      <ul class="pagination justify-content-center pb-0 mb-0">
-        <li class="page-item disabled">
-          <a class="page-link" href="#" tabindex="-1" aria-disabled="true"
-            >Prev</a
+      <ul class="pagination pagination-lg justify-content-center pb-0 mb-0">
+        <li class="page-item hidden">
+          <a
+            class="page-link gray px-5"
+            href="#"
+            tabindex="-1"
+            aria-disabled="true"
+            >PREVIOUS</a
           >
         </li>
-        <li class="page-item"><a class="page-link" href="#">1</a></li>
-        <li class="page-item"><a class="page-link" href="#">2</a></li>
-        <li class="page-item"><a class="page-link" href="#">3</a></li>
         <li class="page-item">
-          <a class="page-link" href="#">Next</a>
+          <a class="page-link primary--bg white" href="#">1</a>
+        </li>
+        <li class="page-item"><a class="page-link gray" href="#">2</a></li>
+        <li class="page-item"><a class="page-link gray" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link gray px-5" href="#">NEXT</a>
         </li>
       </ul>
     </nav>
@@ -138,11 +73,11 @@
         <!-- Modal content-->
         <div class="modal-content">
           <div class="modal-body d-flex justify-space-around">
-            <input
-              type="text"
-              class="primary--border rounded-20 form-control width-75"
-              placeholder="The name of the Scientific Subject"
-            />
+            <div class="group maxwidth-350">
+              <input type="text" class="pl-4" required />
+              <span class="highlight"></span>
+              <label>The name of scientific subject</label>
+            </div>
           </div>
           <div class="modal-body d-flex justify-space-around">
             <div class="dropdown mt-1 width-75 position-relative">
@@ -190,6 +125,11 @@
     </div>
   </div>
 </template>
+<style lang="scss" scoped>
+.grid-de-la-scientific-assessment {
+  grid-template-columns: auto 200px 255px;
+}
+</style>
 <script lang="ts">
 import Vue from "vue";
 import { Component } from "vue-property-decorator";
@@ -200,5 +140,16 @@ import Slider from "../../components/Slider.vue";
     Slider
   }
 })
-export default class ScientificContentAssessment extends Vue {}
+export default class ScientificContentAssessment extends Vue {
+  assessments = [
+    {
+      name: "Pre assessment",
+      absentees: ["Rahul Holani", "Deeksha Pathak"]
+    },
+    {
+      name: "Post assessment",
+      absentees: ["Rahul Holani", "Deeksha Pathak"]
+    }
+  ];
+}
 </script>

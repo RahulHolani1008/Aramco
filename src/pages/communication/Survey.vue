@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="d-flex ml-5 mb-2">
+    <div class="d-flex ml-5 mt-4 mb-2">
       <button
         class="btn primary--bg btn-no-border btn-lg white rounded-50 ml-100 mb-2"
         data-toggle="modal"
@@ -18,7 +18,7 @@
         <i class="fas position-absolute right--10 bottom-25 fa-search"></i>
       </div>
     </div>
-    <nav aria-label="Departments Pagination">
+    <nav aria-label="Departments Pagination" class="mt-4">
       <div
         class="position-relative"
         v-for="(survey, index) in surveys"
@@ -87,10 +87,8 @@
     <div class="modal fade mt-0" id="newDeptModal" role="dialog">
       <div class="modal-dialog modal-dialog-centered modal-lg mt-0">
         <!-- Modal content-->
-        <div
-          class="modal-content mt-0 height-500px overflow-y-scroll aramco-scrollbar"
-        >
-          <div>
+        <div class="modal-content mt-0" style="overflow: hidden;">
+          <div class="height-500px overflow-y-scroll aramco-scrollbar">
             <div class="modal-body d-flex justify-space-around">
               <div class="group maxwidth-350">
                 <input type="text" class="pl-4" required />
@@ -227,10 +225,8 @@
     <div class="modal fade mt-0" id="editDeptModal" role="dialog">
       <div class="modal-dialog modal-dialog-centered modal-lg mt-0">
         <!-- Modal content-->
-        <div
-          class="modal-content mt-0 height-500px overflow-y-scroll aramco-scrollbar"
-        >
-          <div>
+        <div class="modal-content mt-0" style="overflow: hidden;">
+          <div class="height-500px overflow-y-scroll aramco-scrollbar">>
             <div class="modal-body d-flex justify-space-around">
               <div class="group maxwidth-350">
                 <input type="text" class="pl-4" required />
@@ -300,15 +296,15 @@
                 </div>
 
                 <div class="col-sm-6">
-                  <select
-                    class="width-100 border-radius-20 height-50 gray--border-1 gray--color outline-none maxwidth-350 mx-2"
-                  >
+                  <div class="select-wrapper maxwidth-350 width-100">
+                  <select class="width-100 border-radius-20 height-50 gray--border-1 gray--color outline-none  mx-2">
                     <option disabled selected
                       >A scale from 1 to 5 with excellent</option
                     >
                     <option>option</option>
                     <option>option</option>
                   </select>
+                  </div>
                   <p class="fs--13 gray--color mb-0 ml-3 mt-2">
                     <i class="fas fa-exclamation-circle"></i>
                     Choose the type of answer to this question
@@ -319,7 +315,7 @@
 
             <div class="modal-body d-flex justify-space-around">
               <select
-                class="width-75 border-radius-20 height-50 gray--border-1 gray--color outline-none maxwidth-350"
+                class="width-75 border-radius-20 height-50 gray--border-1 gray--color outline-none maxwidth-350 .fa-angle-down"
               >
                 <option disabled selected>Type of users</option>
                 <option>option</option>
@@ -365,6 +361,17 @@
     </div>
   </div>
 </template>
+<style lang="scss" scoped>
+.custom-survey-question {
+  border: 1.8px dashed #919191 !important;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-radius: 20px;
+}
+.fs--13 {
+  font-size: 13px !important;
+}
+</style>
 <script lang="ts">
 import Vue from "vue";
 import { Component } from "vue-property-decorator";

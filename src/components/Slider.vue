@@ -7,6 +7,19 @@
     </span>
   </label>
 </template>
+<style lang="scss">
+@media screen and (max-width: 1500px) {
+  .pt-1-5 {
+    padding-top: 12px !important;
+  }
+}
+.z-1000 {
+  z-index: 1000;
+}
+.pt-1-5 {
+  padding-top: 6px;
+}
+</style>
 <script lang="ts">
 import Vue from "vue";
 import { Component } from "vue-property-decorator";

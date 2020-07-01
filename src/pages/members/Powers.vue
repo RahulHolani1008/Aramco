@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="d-flex ml-4 mb-2">
+    <div class="d-flex mt-4 ml-4 mb-2">
       <button
         class="btn primary--bg btn-no-border btn-lg white rounded-50 ml-100 mb-2"
         data-toggle="modal"
@@ -20,7 +20,7 @@
         you can go to members option</span
       >
     </div>
-    <nav aria-label="Departments Pagination">
+    <nav aria-label="Departments Pagination" class="mt-4">
       <div class="position-relative">
         <div
           class="card width-90 rounded-100px centered mb-3 none--bg border--none shadow--none"
@@ -146,6 +146,27 @@
     </div>
   </div>
 </template>
+<style lang="scss" scoped>
+.bottom-30p {
+  bottom: 30%;
+}
+.none--bg {
+  background: none !important;
+}
+.violet--bg {
+  background-image: linear-gradient(
+    90deg,
+    rgba(172, 187, 208, 0.2) 20%,
+    rgba(172, 187, 208, 0) 100%
+  ) !important;
+}
+.green--bg {
+  background-color: #6dd400 !important;
+}
+.left-30 {
+  left: 3%;
+}
+</style>
 <script lang="ts">
 import Vue from "vue";
 import { Component } from "vue-property-decorator";

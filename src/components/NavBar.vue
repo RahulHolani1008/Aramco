@@ -199,19 +199,302 @@
         </ul>
       </li>
     </ul>
+
     <div class="side_bottom_buttons">
-      <router-link to="##" class="button_printreport">
+      <div
+        class="button_printreport"
+        data-toggle="modal"
+        data-target="#printreportModal"
+      >
         <span><i class="fas fa-print"></i></span>
         <span class="button_text">Print reports</span>
-      </router-link>
+      </div>
 
-      <router-link to="#" class="button_logout">
-        <span><i class="fas fa-sign-out-alt"></i></span>
+      <div class="button_logout" data-toggle="modal" data-target="#logoutModal">
+        <span><i class="fas fa-power-off"></i></span>
         <span class="button_text">Log out</span>
-      </router-link>
+      </div>
+    </div>
+
+    <div class="modal fade mt-0" id="logoutModal" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-body justify-space-around text-center">
+            <div class="red fs--70">
+              <i class="fas fa-power-off"></i>
+            </div>
+            <div class="fs--20 bold">Do you want to log out?</div>
+          </div>
+
+          <div class="d-flex justify-space-around mb-5 mt-2">
+            <button
+              type="button"
+              class="btn white rounded-20 btn-no-border width-33 red--bg btn-lg"
+              data-dismiss="modal"
+            >
+              yes, confirm
+            </button>
+            <button
+              type="button"
+              class="btn white--bg rounded-20 width-33 btn-lg gray--border"
+              style="outline: none;"
+              data-dismiss="modal"
+            >
+              Cancel
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade mt-0" id="printreportModal" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-body d-flex justify-space-around pt-5">
+            <div class="dropdown mt-1 width-75 position-relative">
+              <button
+                type="button"
+                class="btn gray--border rounded-20 width-100 text-left white--bg"
+                style="padding: 5px 20px; outline: none;"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="true"
+              >
+                Please select a report type
+              </button>
+              <i
+                class="fas fa-angle-down position-absolute right-20 top-10"
+              ></i>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Financial Management</a>
+                <a class="dropdown-item" href="#">Computer Sciences</a>
+                <a class="dropdown-item" href="#">Economics</a>
+                <a class="dropdown-item" href="#">Mathematics</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-body d-flex justify-space-around">
+            <div class="dropdown mt-1 width-75 position-relative">
+              <button
+                type="button"
+                class="btn gray--border rounded-20 width-100 text-left white--bg"
+                style="padding: 5px 20px; outline: none;"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="true"
+              >
+                Select the scholl year
+              </button>
+              <i
+                class="fas fa-angle-down position-absolute right-20 top-10"
+              ></i>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Financial Management</a>
+                <a class="dropdown-item" href="#">Computer Sciences</a>
+                <a class="dropdown-item" href="#">Economics</a>
+                <a class="dropdown-item" href="#">Mathematics</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-body d-flex justify-space-around">
+            <div class="dropdown mt-1 width-75 position-relative">
+              <button
+                type="button"
+                class="btn gray--border rounded-20 width-100 text-left white--bg"
+                style="padding: 5px 20px; outline: none;"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="true"
+              >
+                Determining the academic term
+              </button>
+              <i
+                class="fas fa-angle-down position-absolute right-20 top-10"
+              ></i>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Financial Management</a>
+                <a class="dropdown-item" href="#">Computer Sciences</a>
+                <a class="dropdown-item" href="#">Economics</a>
+                <a class="dropdown-item" href="#">Mathematics</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex justify-space-around mb-5 mt-2">
+            <button
+              type="button"
+              class="btn white rounded-20 btn-no-border width-75 primary--bg btn-lg"
+              data-dismiss="modal"
+            >
+              Print the report
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   </nav>
 </template>
+<style lang="scss" scoped>
+.fs--70 {
+  font-size: 72px !important;
+}
+.nav {
+  grid-area: navigation;
+  height: 93vh;
+  position: absolute;
+  bottom: 0px;
+  box-shadow: -2px 0 4px 0 rgba(0, 0, 0, 0.02);
+  background-color: rgb(255, 255, 255);
+  border-radius: 0 80px 0 0;
+  min-width: 240px;
+}
+.nav-ul {
+  padding-top: 30px;
+}
+.nav-link {
+  color: white;
+  padding: 0 !important;
+  &:hover {
+    color: white !important;
+  }
+  .fa-angle-right {
+    float: right;
+    margin-right: 15px;
+    margin-top: 18px;
+    color: #acbbd0;
+  }
+}
+li.nav-item {
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 25px;
+  position: relative;
+  height: 50px;
+  transition: ease 0.3s;
+}
+li.nav-item:hover {
+  background-image: linear-gradient(284deg, #0c9ee212, #06e8a712);
+  box-shadow: 0 0 37px 0 rgba(16, 29, 113, 0.08);
+}
+li.nav-item:hover .sub-menu {
+  display: block;
+}
+.menu_icon {
+  display: inline-block;
+  position: absolute;
+  left: -15px;
+  width: 50px;
+  height: 50px;
+  transform: rotate(-45deg);
+  border-radius: 25px;
+  border-bottom-right-radius: 0;
+  transition: ease 0.3s;
+}
+.menu_icon svg {
+  transform: rotate(45deg);
+  position: absolute;
+  top: 12px;
+  right: 8px;
+  font-size: 24px;
+  fill: #acbbd0;
+}
+li.nav-item.active .menu_icon,
+li.nav-item:hover .menu_icon {
+  box-shadow: 0 0 37px 0 rgba(16, 29, 113, 0.08);
+  background-image: linear-gradient(130deg, #0c9ee2, #06e8a7);
+}
+li.nav-item.active .menu_icon svg,
+li.nav-item:hover .menu_icon svg {
+  fill: #fff;
+}
+.menu_name {
+  display: inline-block;
+  padding: 15px 0 0 65px;
+  font-size: 14.9px;
+  font-weight: bold;
+  color: #acbbd0;
+}
+.sub-menu {
+  position: absolute;
+  top: 0;
+  left: 200px;
+  margin: 0;
+  padding: 15px !important;
+  width: max-content;
+  border-radius: 10px;
+  background-image: linear-gradient(248deg, #06e8a7bf, #0c9ee2);
+  z-index: 999999;
+  display: none;
+}
+.sub-menu::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: -8px;
+  top: 16px;
+  transform: rotate(45deg);
+  background: #0c9ee280;
+  z-index: -3;
+}
+.sub-menu li {
+  color: #fff;
+  padding: 2px 0;
+}
+.sub-menu li:hover {
+  font-weight: bold;
+  cursor: pointer;
+}
+.side_bottom_buttons {
+  margin-top: auto;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.side_bottom_buttons div {
+  display: block;
+  padding: 12px;
+  border-radius: 25px;
+  text-decoration: none !important;
+  color: unset;
+  position: relative;
+  box-shadow: 0 0 37px 0 rgba(16, 29, 113, 0.08);
+  background-image: linear-gradient(284deg, #0c9ee212, #06e8a712);
+  margin-bottom: 15px;
+  font-size: 14.9px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.side_bottom_buttons div:hover {
+  color: unset;
+}
+.button_printreport .fa-print {
+  color: #0c9ee2;
+  font-size: 20px;
+}
+.button_printreport .button_text {
+  background: linear-gradient(284deg, #0c9ee2, #06e8a7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.button_text {
+  padding-left: 25px;
+}
+.button_logout {
+  background: #ff004412 !important;
+  color: #ff0044 !important;
+}
+.button_logout .fa-sign-out-alt {
+  font-size: 20px;
+}
+</style>
 <script lang="ts">
 import Vue from "vue";
 import { Component } from "vue-property-decorator";

@@ -15,6 +15,13 @@ import Logs from "../pages/settings/Logs.vue";
 import Survey from "../pages/communication/Survey.vue";
 import Notifications from "../pages/communication/Notifications.vue";
 import MailingSystem from "../pages/communication/MailingSystem.vue";
+import CourseAnalytics from "../pages/statistics/CourseAnalytics.vue";
+import Complaints from "../pages/complaints/Complaints.vue";
+import CourseRequests from "../pages/complaints/CourseRequests.vue";
+import Powers from "../pages/members/Powers.vue";
+import BanLog from "../pages/members/BanLog.vue";
+import Trainers from "../pages/members/Trainers.vue";
+import Trainees from "../pages/members/Trainees.vue";
 
 Vue.use(VueRouter);
 
@@ -93,11 +100,46 @@ const routes: Array<RouteConfig> = [
     path: "/communication/mailing",
     name: "MailingSystem",
     component: MailingSystem
+  },
+  {
+    path: "/statistics/course-analytics",
+    name: "CourseAnalytics",
+    component: CourseAnalytics
+  },
+  {
+    path: "/complaints/complaints",
+    name: "Complaints",
+    component: Complaints
+  },
+  {
+    path: "/complaints/requests",
+    name: "CourseRequests",
+    component: CourseRequests
+  },
+  {
+    path: "/members/powers",
+    name: "Powers",
+    component: Powers
+  },
+  {
+    path: "/members/ban-log",
+    name: "BanLog",
+    component: BanLog
+  },
+  {
+    path: "/members/trainers",
+    name: "Trainers",
+    component: Trainers
+  },
+  {
+    path: "/members/trainees",
+    name: "Trainees",
+    component: Trainees
   }
 ];
 
 const router = new VueRouter({
-  mode: "history",
+  mode: "hash",
   base: process.env.BASE_URL,
   routes
 });

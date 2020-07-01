@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="d-flex ml-4 mb-2">
+    <div class="d-flex mt-4 ml-4 mb-2">
       <div class="col-sm-3 position-relative">
         <input
           type="text"
@@ -10,7 +10,7 @@
         <i class="fas position-absolute right--10 bottom-15 fa-search"></i>
       </div>
     </div>
-    <nav aria-label="Departments Pagination">
+    <nav aria-label="Departments Pagination" class="mt-4">
       <div class="position-relative">
         <div class="card width-90 rounded-100px centered mb-3">
           <div class="card-body d-grid grid-de-la-setup px-1">
@@ -265,6 +265,11 @@
     </div>
   </div>
 </template>
+<style lang="scss" scoped>
+.grid-de-la-setup {
+  grid-template-columns: 50px auto auto auto 200px;
+}
+</style>
 <script lang="ts">
 import Vue from "vue";
 import { Component } from "vue-property-decorator";

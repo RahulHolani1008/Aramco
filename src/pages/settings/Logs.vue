@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="d-flex mb-2 justify-flex-start ml-5">
+    <div class="d-flex mb-2 mt-4 justify-flex-start ml-5">
       <button
         class="btn primary--bg btn-no-border white rounded-50"
         style="padding: 5px 20px; outline: none;"
@@ -19,7 +19,7 @@
         <i class="fas position-absolute right-30 bottom-15 fa-search"></i>
       </div>
     </div>
-    <nav aria-label="Departments Pagination">
+    <nav aria-label="Departments Pagination" class="mt-4">
       <div
         class="position-relative"
         v-for="(log, index) in logs"

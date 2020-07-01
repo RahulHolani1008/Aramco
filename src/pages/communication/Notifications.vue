@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="d-flex ml-5 mb-2">
+    <div class="d-flex ml-5 mt-4 mb-2">
       <button
         class="btn primary--bg btn-no-border btn-lg white rounded-50 ml-100 mb-2"
         data-toggle="modal"
@@ -18,7 +18,7 @@
         <i class="fas position-absolute right--10 bottom-25 fa-search"></i>
       </div>
     </div>
-    <nav aria-label="Departments Pagination">
+    <nav aria-label="Departments Pagination" class="mt-4">
       <div
         class="position-relative"
         v-for="(notification, index) in notifications"
@@ -110,9 +110,11 @@
 
           <div class="modal-body d-flex justify-space-around">
             <select
-              class="width-75 border-radius-20 height-50 gray--border-1 gray--color outline-none"
+              class="width-75 border-radius-20 height-50 gray--border-1 gray--color outline-none maxwidth-350"
             >
-              <option>When will the notification appear?</option>
+              <option disabled selected
+                >When will the notification appear?</option
+              >
               <option>option</option>
               <option>option</option>
             </select>
@@ -162,9 +164,11 @@
 
           <div class="modal-body d-flex justify-space-around">
             <select
-              class="width-75 border-radius-20 height-50 gray--border-1 gray--color outline-none"
+              class="width-75 border-radius-20 height-50 gray--border-1 gray--color outline-none maxwidth-350"
             >
-              <option>When will the notification appear?</option>
+              <option disabled selected
+                >When will the notification appear?</option
+              >
               <option>option</option>
               <option>option</option>
             </select>
@@ -192,6 +196,11 @@
     </div>
   </div>
 </template>
+<style lang="scss" scoped>
+.justify-flex-end {
+  justify-content: flex-end !important;
+}
+</style>
 <script lang="ts">
 import Vue from "vue";
 import { Component } from "vue-property-decorator";

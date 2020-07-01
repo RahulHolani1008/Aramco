@@ -10,7 +10,7 @@
         <i class="fas position-absolute right-20 bottom-15 fa-search"></i>
       </div>
     </div>
-    <nav aria-label="Departments Pagination">
+    <nav aria-label="Departments Pagination" class="mt-4">
       <div class="position-relative">
         <div class="card height-max width-90 rounded-100px centered mb-3">
           <div class="card-body d-grid px-3 grid-de-la-tnc">
@@ -223,6 +223,11 @@
     </div>
   </div>
 </template>
+<style lang="scss" scoped>
+.grid-de-la-tnc {
+  grid-template-columns: 50px auto auto 200px;
+}
+</style>
 <script lang="ts">
 import Vue from "vue";
 import { Component } from "vue-property-decorator";

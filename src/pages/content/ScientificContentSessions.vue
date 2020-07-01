@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="d-flex mb-2 justify-space-around">
+    <div class="d-flex mt-4 mb-2 justify-space-around">
       <button
         class="btn rounded-100 search primary--border mt-1"
         style="height:40px; width: 40px;"
@@ -71,11 +71,15 @@
         <i class="fas position-absolute right-30 bottom-15 fa-search"></i>
       </div>
     </div>
-    <nav aria-label="Departments Pagination">
-      <div class="position-relative">
+    <nav aria-label="Departments Pagination" class="mt-4">
+      <div
+        class="position-relative"
+        v-for="(session, index) in sessions"
+        :key="index"
+      >
         <div class="card height-max width-90 rounded-100px centered mb-3">
           <div class="card-body d-grid px-3 grid-de-la-scientific-sessions">
-            <div class="vertical-centered pl-4">General Statistics</div>
+            <div class="vertical-centered pl-4">session.name</div>
             <button
               type="button"
               class="btn gray gray--border white--bg rounded-50 pr-3 py-3 d-flex max-content"
@@ -96,113 +100,23 @@
           </div>
         </div>
       </div>
-      <div class="position-relative">
-        <div class="card height-max width-90 rounded-100px centered mb-3">
-          <div class="card-body d-grid px-3 grid-de-la-scientific-sessions">
-            <div class="vertical-centered pl-4">General Statistics</div>
-            <button
-              type="button"
-              class="btn gray gray--border white--bg rounded-50 pr-3 py-3 d-flex max-content"
-            >
-              <div class="px-3">View Quizzes</div>
-            </button>
-            <button
-              type="button"
-              class="btn gray--border gray white--bg rounded-50 pr-3 py-3 d-flex max-content"
-            >
-              <div class="px-3">View Assessments</div>
-            </button>
-            <button type="button" class="btn btn-no-border btn-sm">
-              <i
-                class="fas fa-3x white fa-cog rounded-100 px-2 py-2 black--bg"
-              ></i>
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="position-relative">
-        <div class="card height-max width-90 rounded-100px centered mb-3">
-          <div class="card-body d-grid px-3 grid-de-la-scientific-sessions">
-            <div class="vertical-centered pl-4">General Statistics</div>
-            <button
-              type="button"
-              class="btn gray gray--border white--bg rounded-50 pr-3 py-3 d-flex max-content"
-            >
-              <div class="px-3">View Quizzes</div>
-            </button>
-            <button
-              type="button"
-              class="btn gray--border gray white--bg rounded-50 pr-3 py-3 d-flex max-content"
-            >
-              <div class="px-3">View Assessments</div>
-            </button>
-            <button type="button" class="btn btn-no-border btn-sm">
-              <i
-                class="fas fa-3x white fa-cog rounded-100 px-2 py-2 black--bg"
-              ></i>
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="position-relative">
-        <div class="card height-max width-90 rounded-100px centered mb-3">
-          <div class="card-body d-grid px-3 grid-de-la-scientific-sessions">
-            <div class="vertical-centered pl-4">General Statistics</div>
-            <button
-              type="button"
-              class="btn gray gray--border white--bg rounded-50 pr-3 py-3 d-flex max-content"
-            >
-              <div class="px-3">View Quizzes</div>
-            </button>
-            <button
-              type="button"
-              class="btn gray--border gray white--bg rounded-50 pr-3 py-3 d-flex max-content"
-            >
-              <div class="px-3">View Assessments</div>
-            </button>
-            <button type="button" class="btn btn-no-border btn-sm">
-              <i
-                class="fas fa-3x white fa-cog rounded-100 px-2 py-2 black--bg"
-              ></i>
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="position-relative">
-        <div class="card height-max width-90 rounded-100px centered mb-3">
-          <div class="card-body d-grid px-3 grid-de-la-scientific-sessions">
-            <div class="vertical-centered pl-4">General Statistics</div>
-            <button
-              type="button"
-              class="btn gray gray--border white--bg rounded-50 pr-3 py-3 d-flex max-content"
-            >
-              <div class="px-3">View Quizzes</div>
-            </button>
-            <button
-              type="button"
-              class="btn gray--border gray white--bg rounded-50 pr-3 py-3 d-flex max-content"
-            >
-              <div class="px-3">View Assessments</div>
-            </button>
-            <button type="button" class="btn btn-no-border btn-sm">
-              <i
-                class="fas fa-3x white fa-cog rounded-100 px-2 py-2 black--bg"
-              ></i>
-            </button>
-          </div>
-        </div>
-      </div>
-      <ul class="pagination justify-content-center pb-0 mb-0">
-        <li class="page-item disabled">
-          <a class="page-link" href="#" tabindex="-1" aria-disabled="true"
-            >Prev</a
+      <ul class="pagination pagination-lg justify-content-center pb-0 mb-0">
+        <li class="page-item hidden">
+          <a
+            class="page-link gray px-5"
+            href="#"
+            tabindex="-1"
+            aria-disabled="true"
+            >PREVIOUS</a
           >
         </li>
-        <li class="page-item"><a class="page-link" href="#">1</a></li>
-        <li class="page-item"><a class="page-link" href="#">2</a></li>
-        <li class="page-item"><a class="page-link" href="#">3</a></li>
         <li class="page-item">
-          <a class="page-link" href="#">Next</a>
+          <a class="page-link primary--bg white" href="#">1</a>
+        </li>
+        <li class="page-item"><a class="page-link gray" href="#">2</a></li>
+        <li class="page-item"><a class="page-link gray" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link gray px-5" href="#">NEXT</a>
         </li>
       </ul>
     </nav>
@@ -211,11 +125,11 @@
         <!-- Modal content-->
         <div class="modal-content">
           <div class="modal-body d-flex justify-space-around">
-            <input
-              type="text"
-              class="primary--border rounded-20 form-control width-75"
-              placeholder="The name of the Scientific Subject"
-            />
+            <div class="group maxwidth-350">
+              <input type="text" class="pl-4" required />
+              <span class="highlight"></span>
+              <label>The name of scientific subject</label>
+            </div>
           </div>
           <div class="modal-body d-flex justify-space-around">
             <div class="dropdown mt-1 width-75 position-relative">
@@ -263,6 +177,11 @@
     </div>
   </div>
 </template>
+<style lang="scss" scoped>
+.grid-de-la-scientific-sessions {
+  grid-template-columns: auto 180px 220px 50px;
+}
+</style>
 <script lang="ts">
 import Vue from "vue";
 import { Component } from "vue-property-decorator";
@@ -273,5 +192,23 @@ import Slider from "../../components/Slider.vue";
     Slider
   }
 })
-export default class ScientificContentSessions extends Vue {}
+export default class ScientificContentSessions extends Vue {
+  sessions = [
+    {
+      name: "General Statistics"
+    },
+    {
+      name: "General Statistics"
+    },
+    {
+      name: "General Statistics"
+    },
+    {
+      name: "General Statistics"
+    },
+    {
+      name: "General Statistics"
+    }
+  ];
+}
 </script>

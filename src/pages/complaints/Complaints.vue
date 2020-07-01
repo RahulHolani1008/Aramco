@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="d-flex ml-4 mb-2">
+    <div class="d-flex mt-4 ml-4 mb-2">
       <div class="col-sm-3 position-relative">
         <input
           type="text"
@@ -10,7 +10,7 @@
         <i class="fas position-absolute right--10 bottom-15 fa-search"></i>
       </div>
     </div>
-    <nav aria-label="Departments Pagination">
+    <nav aria-label="Departments Pagination" class="mt-4">
       <div
         class="position-relative"
         v-for="(complaint, index) in complaints"
@@ -51,6 +51,8 @@
               <div
                 class="rounded-100 pt-2 pb-2 px-2 vertical-centered primary--bg"
                 style="fill: white;"
+                data-toggle="modal"
+                data-target="#viewDeptModal"
               >
                 <svg width="30" height="30" viewBox="0 -1 30 22">
                   <path
@@ -83,53 +85,85 @@
       </ul>
     </nav>
 
-    <div class="modal fade" id="newDeptModal" role="dialog">
+    <div class="modal fade mt-0" id="viewDeptModal" role="dialog">
       <div class="modal-dialog">
         <!-- Modal content-->
-        <div class="modal-content">
+        <div
+          class="modal-content height-500px pb-5 overflow-y-scroll aramco-scrollbar"
+        >
           <div class="modal-body d-flex justify-space-around">
-            <div class="group">
-              <input type="text" class="pl-4" required />
-              <span class="highlight"></span>
-              <label>title</label>
-            </div>
+            <label class="complaint_view">Course Name</label>
+            <input
+              type="text"
+              class="pl-4 disabled"
+              value="Modern statistics"
+              disabled
+            />
           </div>
 
           <div class="modal-body d-flex justify-space-around">
-            <select
-              class="width-75 border-radius-20 height-50 gray--border-1 gray--color outline-none"
-            >
-              <option>Effectivness</option>
-              <option>option</option>
-              <option>option</option>
-            </select>
+            <label class="complaint_view">e-mail</label>
+            <input
+              type="email"
+              class="pl-4 disabled"
+              value="nini.great@academi.sa"
+              disabled
+            />
           </div>
 
           <div class="modal-body d-flex justify-space-around">
-            <select
-              class="width-75 border-radius-20 height-50 gray--border-1 gray--color outline-none"
-            >
-              <option>Type</option>
-              <option>option</option>
-              <option>option</option>
-            </select>
+            <label class="complaint_view">Department</label>
+            <input
+              type="text"
+              class="pl-4 disabled"
+              value="Mechanical engineering"
+              disabled
+            />
           </div>
 
-          <div class="d-flex justify-space-around mb-5 mt-2">
+          <div class="modal-body d-flex justify-space-around">
+            <label class="complaint_view">Specialization</label>
+            <input
+              type="text"
+              class="pl-4 disabled"
+              value="General Mathematics"
+              disabled
+            />
+          </div>
+
+          <div class="modal-body d-flex justify-space-around">
+            <label class="complaint_view">trainer name</label>
+            <input
+              type="text"
+              class="pl-4 disabled"
+              value="Zaid Al-Suleiman"
+              disabled
+            />
+          </div>
+
+          <div class="modal-body d-flex justify-space-around">
+            <label class="complaint_view">Date</label>
+            <input type="Date" class="pl-4 disabled" value="" disabled />
+          </div>
+
+          <div class="modal-body d-flex justify-space-around">
+            <label class="complaint_view">Trainee Mobile</label>
+            <input
+              type="Date"
+              class="pl-4 disabled"
+              value="597889533"
+              disabled
+            />
+          </div>
+
+          <div class="modal-body d-flex justify-space-around">
+            <label class="complaint_view">Case</label>
             <button
               type="button"
-              class="btn white rounded-20 btn-no-border width-33 primary--bg btn-lg"
+              class="btn white rounded-20 btn-no-border width-33 red--bg mr-97 btn-lg"
               data-dismiss="modal"
             >
-              Add
-            </button>
-            <button
-              type="button"
-              class="btn white--bg rounded-20 width-33 btn-lg gray--border"
-              style="outline: none;"
-              data-dismiss="modal"
-            >
-              Cancel
+              Closed
             </button>
           </div>
         </div>
@@ -137,6 +171,11 @@
     </div>
   </div>
 </template>
+<style lang="scss" scoped>
+.yellow--bg {
+  background-color: #f6b900;
+}
+</style>
 <script lang="ts">
 import Vue from "vue";
 import { Component } from "vue-property-decorator";

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 22 20" style="enable-background:new 0 0 22 20;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#Print_1_);}
+</style>
+<g id="Symbols">
+	<g id="print_logout" transform="translate(-13.000000, -14.000000)">
+		<g id="Group-27">
+			<g id="Group-16" transform="translate(104.500000, 24.000000) scale(-1, 1) translate(-104.500000, -24.000000) ">
+				
+					<linearGradient id="Print_1_" gradientUnits="userSpaceOnUse" x1="1186.0909" y1="537.6368" x2="1185.0909" y2="538.4632" gradientTransform="matrix(-22 0 0 -20 26290 10785)">
+					<stop  offset="0" style="stop-color:#0C9EE2"/>
+					<stop  offset="1" style="stop-color:#06E8A7"/>
+				</linearGradient>
+				<path id="Print" class="st0" d="M191.2,14c0.4,0,0.7,0.3,0.7,0.7l0,0v4.2h2.3c0.9,0,1.7,0.8,1.7,1.7l0,0v7.2
+					c0,0.9-0.8,1.7-1.7,1.7l0,0H192v3.9c0,0.4-0.3,0.7-0.7,0.7l0,0h-12.4c-0.4,0-0.7-0.3-0.7-0.7l0,0v-3.9h-2.3
+					c-0.9,0-1.7-0.8-1.7-1.7l0,0v-7.2c0-0.9,0.8-1.7,1.7-1.7l0,0h2.3v-4.2c0-0.4,0.3-0.7,0.7-0.7l0,0H191.2z M190.5,26.7h-11l0,0
+					v5.9h11l0,0V26.7z M188.2,30c0.4,0,0.7,0.3,0.7,0.7c0,0.4-0.3,0.7-0.7,0.7l0,0h-6.4c-0.4,0-0.7-0.3-0.7-0.7
+					c0-0.4,0.3-0.7,0.7-0.7l0,0H188.2z M188.2,27.8c0.4,0,0.7,0.3,0.7,0.7c0,0.4-0.3,0.7-0.7,0.7l0,0h-6.4c-0.4,0-0.7-0.3-0.7-0.7
+					c0-0.4,0.3-0.7,0.7-0.7l0,0H188.2z M191.2,21.6h-1.9c-0.4,0-0.7,0.3-0.7,0.7s0.3,0.7,0.7,0.7l0,0h1.9c0.4,0,0.7-0.3,0.7-0.7
+					S191.6,21.6,191.2,21.6L191.2,21.6z M190.5,15.4h-11v3.4h11V15.4z"/>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

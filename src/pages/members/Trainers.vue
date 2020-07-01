@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="d-flex mb-2 justify-flex-start">
-      <div class="dropdown mt-1 ml-5">
+      <div class="dropdown mt-4 ml-5">
         <button
           type="button"
           class="btn black--border rounded-20 search"
@@ -27,14 +27,14 @@
         <i class="fas position-absolute right-30 bottom-15 fa-search"></i>
       </div>
     </div>
-    <nav aria-label="Departments Pagination">
+    <nav aria-label="Departments Pagination" class="mt-4">
       <div
         class="position-relative"
         v-for="(program, index) in programs"
         v-bind:key="index"
       >
         <div class="card width-90 rounded-100px centered mb-3">
-          <div class="card-body d-grid grid-de-la-ban py-1 px-1">
+          <div class="card-body d-grid grid-de-la-trainers py-1 px-1">
             <div class="vertical-centered centered">
               <input
                 class="vertical-centered centered"
@@ -55,14 +55,20 @@
               <li>{{ program.personName }}</li>
               <li class="gray fs--10">Last appearance: {{ program.date }}</li>
             </ul>
-            <!-- <button type="button" class="btn btn-no-border btn-sm">
+            <button type="button" class="btn btn-no-border btn-sm">
               <div
-                class="rounded-100 py-3 px-2 vertical-centered d-flex justify-space-around black--bg"
-                style="fill: white;"
+                class="rounded-100 py-3 px-2 vertical-centered d-flex justify-space-around primary--border primary white--bg"
+                style="fill: rgb(12, 158, 226);"
               >
-                <span class="white vertical-centered">Blocking information</span>
+                <svg width="30" height="30" viewBox="0 0 30 30">
+                  <path
+                    d="M97.325 21.429C97.168 20.044 96.071 19 94.776 19h-2.554c-1.295 0-2.39 1.044-2.549 2.429l-.662 5.808c-.055.486.095.969.411 1.323.273.305.635.483 1.027.505l.552 7.472c.02.261.237.463.5.463h4c.261 0 .478-.202.496-.463l.552-7.472c.392-.022.755-.199 1.027-.505.317-.355.467-.837.411-1.323l-.662-5.808zm-.494 6.465c-.057.064-.182.173-.366.173h-.379c-.262 0-.48.202-.499.463L95.035 36h-3.07l-.552-7.47c-.02-.261-.237-.463-.499-.463h-.379c-.184 0-.308-.109-.366-.173-.127-.143-.187-.341-.164-.544l.662-5.808c.1-.879.77-1.542 1.556-1.542h2.554c.786 0 1.455.663 1.556 1.542l.662 5.808c.023.203-.037.401-.164.544zM93.501 18c1.377 0 2.5-1.122 2.5-2.5S94.877 13 93.5 13c-1.379 0-2.5 1.122-2.5 2.5s1.121 2.5 2.5 2.5zm0-4c.826 0 1.5.673 1.5 1.5s-.674 1.5-1.5 1.5c-.828 0-1.5-.673-1.5-1.5s.672-1.5 1.5-1.5zm17 12c.275 0 .5-.224.5-.5v-9c0-.276-.225-.5-.5-.5h-3c-.277 0-.5.224-.5.5v9c0 .276.223.5.5.5h3zm-2.5-9h2v8h-2v-8zm-2.5 9c.275 0 .5-.224.5-.5v-7c0-.276-.225-.5-.5-.5h-3c-.277 0-.5.224-.5.5v7c0 .276.223.5.5.5h3zm-2.5-7h2v6h-2v-6zm-2.5 7c.275 0 .5-.224.5-.5v-4c0-.276-.225-.5-.5-.5h-1.657c-.276 0-.5.224-.5.5s.224.5.5.5H100v3h-.7c-.276 0-.5.224-.5.5s.224.5.5.5h1.2zm12-13H97c-.277 0-.5.224-.5.5s.223.5.5.5h15v13H99.5c-.277 0-.5.224-.5.5s.223.5.5.5h13c.275 0 .5-.224.5-.5v-14c0-.276-.225-.5-.5-.5z"
+                    transform="translate(-89 -13)"
+                  />
+                </svg>
+                <span class="white vertical-centered">Analytics</span>
               </div>
-            </button> -->
+            </button>
             <button type="button" class="btn btn-no-border btn-sm">
               <div
                 class="rounded-100 py-3 px-2 vertical-centered d-flex justify-space-around primary--bg"
@@ -73,7 +79,7 @@
                     d="M11.7 1.3c0-.718.582-1.3 1.3-1.3.718 0 1.3.582 1.3 1.3v2.6h10.4c.718 0 1.3.582 1.3 1.3 0 .718-.582 1.3-1.3 1.3h-1.3v13c0 1.436-1.164 2.6-2.6 2.6h-6.5v1.3h2.6c.718 0 1.3.582 1.3 1.3 0 .718-.582 1.3-1.3 1.3H9.1c-.718 0-1.3-.582-1.3-1.3 0-.718.582-1.3 1.3-1.3h2.6v-1.3H5.2c-1.436 0-2.6-1.164-2.6-2.6v-13H1.3C.582 6.5 0 5.918 0 5.2c0-.718.582-1.3 1.3-1.3h10.4V1.3zM13 6.5H20.8v13H5.2v-13H13zm5.2 3.9c0-.718-.582-1.3-1.3-1.3h-4.55c-.718 0-1.3.582-1.3 1.3 0 .718.582 1.3 1.3 1.3h4.55c.718 0 1.3-.582 1.3-1.3zm-1.3 3.9c.718 0 1.3.582 1.3 1.3 0 .718-.582 1.3-1.3 1.3H9.1c-.718 0-1.3-.582-1.3-1.3 0-.718.582-1.3 1.3-1.3h7.8z"
                   />
                 </svg>
-                <span class="white vertical-centered">Subjects taught</span>
+                <span class="white vertical-centered">Subjects</span>
               </div>
             </button>
             <div class="d-flex justify-space-around">
@@ -132,7 +138,7 @@ import Vue from "vue";
 import { Component } from "vue-property-decorator";
 
 @Component
-export default class BanLog extends Vue {
+export default class Trainers extends Vue {
   programs = [
     {
       logo: "atom.png",
