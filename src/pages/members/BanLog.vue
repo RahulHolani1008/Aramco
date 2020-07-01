@@ -72,6 +72,8 @@
               <div
                 class="rounded-100 py-3 px-2 vertical-centered d-flex justify-space-around primary--bg"
                 style="fill: white;"
+                data-toggle="modal"
+                data-target="#unblockModal"
               >
                 <span class="white vertical-centered">unblock</span>
               </div>
@@ -156,9 +158,50 @@
         </div>
       </div>
     </div>
+
+    <div class="modal fade" id="unblockModal" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+
+          <div class="modal-body d-flex justify-space-around">
+            <div class="pt-3"><i class="fa fa-user fs--70 red" aria-hidden="true"></i></div>
+          </div>
+
+          <div class="modal-body d-flex justify-space-around fs--20 bold">
+            <p>Do you want to unblock memebership?</p>
+          </div>
+
+          <div class="d-flex justify-space-around mb-5 mt-2">
+            <button
+              type="button"
+              class="btn white rounded-20 btn-no-border width-33 red--bg btn-lg"
+              data-dismiss="modal"
+            >
+              Yes, confirm
+            </button>
+            <button
+              type="button"
+              class="btn white--bg rounded-20 width-33 btn-lg gray--border"
+              style="outline: none;"
+              data-dismiss="modal"
+            >
+              Cancel
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
   </div>
 </template>
 <style lang="scss" scoped>
+
+.fs--70 {
+  font-size: 72px !important;
+}
+
 .fs--28 {
   font-size: 28px !important;
 }
