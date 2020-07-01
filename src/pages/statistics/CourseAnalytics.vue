@@ -1,4 +1,5 @@
 <template>
+<div>
   <div class="d-flex justify-space-around">
     <card class="card card-left fit-content ml-4" style="height: max-content">
       <div
@@ -6,7 +7,7 @@
       >
         <img
           src="../../assets/icons/analytics_2.svg"
-          class="pb-3"
+          class="pb-3 mr-2"
           height="5%"
           width="5%"
         />&nbsp;&nbsp;AVERAGE TRAINING TIME
@@ -63,7 +64,7 @@
       >
         <img
           src="../../assets/icons/analytics_2.svg"
-          class="pb-3"
+          class="pb-3 mr-2"
           height="5%"
           width="5%"
         />&nbsp;&nbsp;GENERAL NUMBER OF SESSIONS
@@ -136,9 +137,23 @@
         ></div>
       </div>
     </card>
-    <div class="card">
-      <chart></chart>
+  </div>
+  <div>
+    <div class="card card-left ml-5 mt-4" style="width: 60%; height: 50vh;">
+      <div
+        class="card-title gray--color pt-3 mx-4 mt-2 px-4 blue-gradient left-rounded"
+      >
+        <img
+          src="../../assets/icons/analytics_2.svg"
+          class="pb-3 mr-2"
+          height="5%"
+          width="5%"
+        />&nbsp;&nbsp;TIME PERIOD WHERE MOST SESSIONS HAPPENED
+        <span class="position-absolute right-0 top-40 pr-4">Past 7 days</span>
+      </div>
+      <chart :options="chartOptions"></chart>
     </div>
+  </div>
   </div>
 </template>
 <style lang="scss" scoped>
@@ -212,7 +227,7 @@ import { Chart } from "highcharts-vue";
 @Component({
   components: {
     Slider,
-    highcharts: Chart
+    chart: Chart
   }
 })
 export default class CourseAnalytics extends Vue {
@@ -229,7 +244,47 @@ export default class CourseAnalytics extends Vue {
           [7, 5]
         ]
       }
-    ]
-  };
+    ],
+    xAxis:{
+      title: {text: "Day of the week"},
+      categories: ["0", "Monday", "Tuesday", "Wednesday", "Thursday","Friday", "Saturday","Sunday"]
+    },
+    yAxis:{
+      title: {text: "Time of day"},
+      categories: ["0", "12:00", "1:00", "2:00", "3:00","4:00", "5:00","6:00","7:00","8:00"]
+    },
+    chart:{
+
+    },
+    title: {
+      text: ""
+    },
+     tooltip: {
+                formatter: function() {
+                    return "Thursday, 3:00"
+                }
+            },
+  //   plotOptions: {
+  //               scatter: {
+  //                   marker: {
+  //                       radius: 5,
+  //                       states: {
+  //                           hover: {
+  //                               enabled: true,
+  //                               lineColor: 'red'
+  //                           }
+  //                       }
+  //                   },
+  //                   states: {
+  //                       hover: {
+  //                           marker: {
+  //                               enabled: false
+  //                           }
+  //                       }
+  //                   }
+  //               }
+  //           },
+  // };
+  }
 }
 </script>
