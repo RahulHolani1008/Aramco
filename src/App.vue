@@ -615,7 +615,7 @@ button:focus {
   background-size: 11px;
   background-repeat: no-repeat;
   position: absolute;
-  right: 5px;
+  right: 10px;
   top: 18px;
   pointer-events: none;
 }

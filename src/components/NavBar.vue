@@ -250,95 +250,51 @@
 
     <div class="modal fade mt-0" id="printreportModal" role="dialog">
       <div class="modal-dialog">
-        <!-- Modal content-->
-        <div class="modal-content">
-          <div class="modal-body d-flex justify-space-around pt-5">
-            <div class="dropdown mt-1 width-75 position-relative">
-              <button
-                type="button"
-                class="btn gray--border rounded-20 width-100 text-left white--bg"
-                style="padding: 5px 20px; outline: none;"
-                id="dropdownMenuButton"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="true"
-              >
-                Please select a report type
-              </button>
-              <i
-                class="fas fa-angle-down position-absolute right-20 top-10"
-              ></i>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Financial Management</a>
-                <a class="dropdown-item" href="#">Computer Sciences</a>
-                <a class="dropdown-item" href="#">Economics</a>
-                <a class="dropdown-item" href="#">Mathematics</a>
+          <!-- Modal content-->
+          <div class="modal-content">
+            
+            <div class="modal-body d-flex justify-space-around">
+              <div class="select-wrapper maxwidth-350 width-75">
+              <select class="width-100 border-radius-20 height-50 gray--border-1 gray--color outline-none">
+                <option disabled selected>Please select a report type</option>
+                <option>option</option>
+                <option>option</option>
+              </select>
               </div>
             </div>
-          </div>
 
-          <div class="modal-body d-flex justify-space-around">
-            <div class="dropdown mt-1 width-75 position-relative">
-              <button
-                type="button"
-                class="btn gray--border rounded-20 width-100 text-left white--bg"
-                style="padding: 5px 20px; outline: none;"
-                id="dropdownMenuButton"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="true"
-              >
-                Select the scholl year
-              </button>
-              <i
-                class="fas fa-angle-down position-absolute right-20 top-10"
-              ></i>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Financial Management</a>
-                <a class="dropdown-item" href="#">Computer Sciences</a>
-                <a class="dropdown-item" href="#">Economics</a>
-                <a class="dropdown-item" href="#">Mathematics</a>
+            <div class="modal-body d-flex justify-space-around">
+              <div class="select-wrapper maxwidth-350 width-75">
+              <select class="width-100 border-radius-20 height-50 gray--border-1 gray--color outline-none">
+                <option disabled selected>Select the school year</option>
+                <option>option</option>
+                <option>option</option>
+              </select>
+              </div>
+            </div>         
+
+            <div class="modal-body d-flex justify-space-around">
+              <div class="select-wrapper maxwidth-350 width-75">
+              <select class="width-100 border-radius-20 height-50 gray--border-1 gray--color outline-none">
+                <option disabled selected>Determining the academic term</option>
+                <option>option</option>
+                <option>option</option>
+              </select>
               </div>
             </div>
-          </div>
 
-          <div class="modal-body d-flex justify-space-around">
-            <div class="dropdown mt-1 width-75 position-relative">
+            <div class="d-flex justify-space-around mb-5 mt-2">
               <button
                 type="button"
-                class="btn gray--border rounded-20 width-100 text-left white--bg"
-                style="padding: 5px 20px; outline: none;"
-                id="dropdownMenuButton"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="true"
+                class="btn white rounded-20 btn-no-border width-75 primary--bg btn-lg"
+                data-dismiss="modal"
               >
-                Determining the academic term
+                Print the report
               </button>
-              <i
-                class="fas fa-angle-down position-absolute right-20 top-10"
-              ></i>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Financial Management</a>
-                <a class="dropdown-item" href="#">Computer Sciences</a>
-                <a class="dropdown-item" href="#">Economics</a>
-                <a class="dropdown-item" href="#">Mathematics</a>
-              </div>
             </div>
-          </div>
-
-          <div class="d-flex justify-space-around mb-5 mt-2">
-            <button
-              type="button"
-              class="btn white rounded-20 btn-no-border width-75 primary--bg btn-lg"
-              data-dismiss="modal"
-            >
-              Print the report
-            </button>
           </div>
         </div>
       </div>
-    </div>
   </nav>
 </template>
 <style lang="scss" scoped>

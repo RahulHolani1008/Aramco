@@ -278,19 +278,23 @@
           </div>
 
           <div class="modal-body d-flex justify-space-around">
-            <select class="width-75 border-radius-20 height-50 outline-none">
+            <div class="select-wrapper maxwidth-350 width-75">
+            <select class="width-100 border-radius-20 height-50 gray--border-1 gray--color outline-none">
               <option disabled selected>Effectivness</option>
               <option>option</option>
               <option>option</option>
             </select>
+            </div>
           </div>
 
           <div class="modal-body d-flex justify-space-around">
-            <select class="width-75 border-radius-20 height-50 outline-none">
+            <div class="select-wrapper maxwidth-350 width-75">
+            <select class="width-100 border-radius-20 height-50 gray--border-1 gray--color outline-none">
               <option disabled selected>Type</option>
               <option>option</option>
               <option>option</option>
             </select>
+            </div>
           </div>
 
           <div class="d-flex justify-space-around mb-5 mt-2">
@@ -327,21 +331,23 @@
           </div>
 
           <div class="modal-body d-flex justify-space-around">
-            <select
-              class="width-75 border-radius-20 height-50 gray--border-1 gray--color outline-none"
-            >
+            <div class="select-wrapper maxwidth-350 width-75">
+            <select class="width-100 border-radius-20 height-50 gray--border-1 gray--color outline-none">
               <option disabled selected>Effectivness</option>
               <option>option</option>
               <option>option</option>
             </select>
+            </div>
           </div>
 
           <div class="modal-body d-flex justify-space-around">
-            <select class="width-75 border-radius-20 height-50 outline-none">
+            <div class="select-wrapper maxwidth-350 width-75">
+            <select class="width-100 border-radius-20 height-50 gray--border-1 gray--color outline-none">
               <option disabled selected>Type</option>
               <option>option</option>
               <option>option</option>
             </select>
+            </div>
           </div>
 
           <div class="d-flex justify-space-around mb-5 mt-2">

@@ -119,15 +119,15 @@
                 </div>
 
                 <div class="col-sm-6">
-                  <select
-                    class="width-100 border-radius-20 height-50 gray--border-1 gray--color outline-none maxwidth-350 mx-2"
-                  >
+                  <div class="select-wrapper maxwidth-350 width-100">
+                  <select class="width-100 border-radius-20 height-50 gray--border-1 gray--color outline-none  mx-2">
                     <option disabled selected
                       >A scale from 1 to 5 with excellent</option
                     >
                     <option>option</option>
                     <option>option</option>
                   </select>
+                  </div>
                   <p class="fs--13 gray--color mb-0 ml-3 mt-2">
                     <i class="fas fa-exclamation-circle"></i>
                     Choose the type of answer to this question
@@ -158,15 +158,15 @@
                 </div>
 
                 <div class="col-sm-6">
-                  <select
-                    class="width-100 border-radius-20 height-50 gray--border-1 gray--color outline-none maxwidth-350 mx-2"
-                  >
+                  <div class="select-wrapper maxwidth-350 width-100">
+                  <select class="width-100 border-radius-20 height-50 gray--border-1 gray--color outline-none  mx-2">
                     <option disabled selected
                       >A scale from 1 to 5 with excellent</option
                     >
                     <option>option</option>
                     <option>option</option>
                   </select>
+                  </div>
                   <p class="fs--13 gray--color mb-0 ml-3 mt-2">
                     <i class="fas fa-exclamation-circle"></i>
                     Choose the type of answer to this question
@@ -176,13 +176,13 @@
             </div>
 
             <div class="modal-body d-flex justify-space-around">
-              <select
-                class="width-75 border-radius-20 height-50 gray--border-1 gray--color outline-none maxwidth-350"
-              >
+              <div class="select-wrapper maxwidth-350 width-75">
+              <select class="width-100 border-radius-20 height-50 gray--border-1 gray--color outline-none">
                 <option disabled selected>Type of users</option>
                 <option>option</option>
                 <option>option</option>
               </select>
+              </div>
             </div>
 
             <p class="mb-0 fs--12 gray--color text-center">
@@ -191,13 +191,13 @@
             </p>
 
             <div class="modal-body d-flex justify-space-around">
-              <select
-                class="width-75 border-radius-20 height-50 gray--border-1 gray--color outline-none  maxwidth-350"
-              >
+              <div class="select-wrapper maxwidth-350 width-75">
+              <select class="width-100 border-radius-20 height-50 gray--border-1 gray--color outline-none">
                 <option disabled selected>When does the survey Appear</option>
                 <option>option</option>
                 <option>option</option>
               </select>
+              </div>
             </div>
 
             <div class="d-flex justify-space-around mb-5 mt-2">
@@ -258,15 +258,15 @@
                 </div>
 
                 <div class="col-sm-6">
-                  <select
-                    class="width-100 border-radius-20 height-50 gray--border-1 gray--color outline-none maxwidth-350 mx-2"
-                  >
+                  <div class="select-wrapper maxwidth-350 width-100">
+                  <select class="width-100 border-radius-20 height-50 gray--border-1 gray--color outline-none  mx-2">
                     <option disabled selected
                       >A scale from 1 to 5 with excellent</option
                     >
                     <option>option</option>
                     <option>option</option>
                   </select>
+                  </div>
                   <p class="fs--13 gray--color mb-0 ml-3 mt-2">
                     <i class="fas fa-exclamation-circle"></i>
                     Choose the type of answer to this question
@@ -298,15 +298,13 @@
 
                 <div class="col-sm-6">
                   <div class="select-wrapper maxwidth-350 width-100">
-                    <select
-                      class="width-100 border-radius-20 height-50 gray--border-1 gray--color outline-none  mx-2"
+                  <select class="width-100 border-radius-20 height-50 gray--border-1 gray--color outline-none  mx-2">
+                    <option disabled selected
+                      >A scale from 1 to 5 with excellent</option
                     >
-                      <option disabled selected
-                        >A scale from 1 to 5 with excellent</option
-                      >
-                      <option>option</option>
-                      <option>option</option>
-                    </select>
+                    <option>option</option>
+                    <option>option</option>
+                  </select>
                   </div>
                   <p class="fs--13 gray--color mb-0 ml-3 mt-2">
                     <i class="fas fa-exclamation-circle"></i>
@@ -317,13 +315,13 @@
             </div>
 
             <div class="modal-body d-flex justify-space-around">
-              <select
-                class="width-75 border-radius-20 height-50 gray--border-1 gray--color outline-none maxwidth-350 .fa-angle-down"
-              >
+              <div class="select-wrapper maxwidth-350 width-75">
+              <select class="width-100 border-radius-20 height-50 gray--border-1 gray--color outline-none">
                 <option disabled selected>Type of users</option>
                 <option>option</option>
                 <option>option</option>
               </select>
+              </div>
             </div>
 
             <p class="mb-0 fs--12 gray--color text-center">
@@ -332,13 +330,13 @@
             </p>
 
             <div class="modal-body d-flex justify-space-around">
-              <select
-                class="width-75 border-radius-20 height-50 gray--border-1 gray--color outline-none  maxwidth-350"
-              >
+              <div class="select-wrapper maxwidth-350 width-75">
+              <select class="width-100 border-radius-20 height-50 gray--border-1 gray--color outline-none">
                 <option disabled selected>When does the survey Appear</option>
                 <option>option</option>
                 <option>option</option>
               </select>
+              </div>
             </div>
 
             <div class="d-flex justify-space-around mb-5 mt-2">
