@@ -29,7 +29,11 @@
       </div>
     </div>
     <nav aria-label="Departments Pagination" class="mt-4">
-      <div class="position-relative" v-for="(program, index) in programs" v-bind:key="index">
+      <div
+        class="position-relative"
+        v-for="(program, index) in programs"
+        v-bind:key="index"
+      >
         <div class="card width-90 rounded-100px centered mb-3">
           <div class="card-body d-grid grid-de-la-ban py-1 px-1">
             <div class="vertical-centered centered">
@@ -42,7 +46,11 @@
               />
             </div>
             <div class="rounded-100 lightBlue--bg height-75px width-75px">
-              <img :src="require('@/assets/' + program.logo)" height="100%" width="100%" />
+              <img
+                :src="require('@/assets/' + program.logo)"
+                height="100%"
+                width="100%"
+              />
             </div>
             <ul class="vertical-centered list-none">
               <li>{{ program.personName }}</li>
@@ -56,7 +64,9 @@
                 data-toggle="modal"
                 data-target="#blockinginfoModal"
               >
-                <span class="white vertical-centered">Blocking information</span>
+                <span class="white vertical-centered"
+                  >Blocking information</span
+                >
               </div>
             </button>
             <button type="button" class="btn btn-no-border btn-sm">
@@ -74,7 +84,13 @@
       </div>
       <ul class="pagination pagination-lg justify-content-center pb-0 mb-0">
         <li class="page-item hidden">
-          <a class="page-link gray px-5" href="#" tabindex="-1" aria-disabled="true">PREVIOUS</a>
+          <a
+            class="page-link gray px-5"
+            href="#"
+            tabindex="-1"
+            aria-disabled="true"
+            >PREVIOUS</a
+          >
         </li>
         <li class="page-item">
           <a class="page-link primary--bg white" href="#">1</a>
@@ -96,7 +112,9 @@
         <!-- Modal content-->
         <div class="modal-content">
           <div class="modal-body d-flex justify-space-around">
-            <label class="complaint_view banlog_label">Responsible of the ban</label>
+            <label class="complaint_view banlog_label"
+              >Responsible of the ban</label
+            >
             <div class="avtar_main px-2 py-2">
               <span class="banlog_avtar">
                 <i class="fas fa-user fs--28 mt-3"></i>
@@ -107,7 +125,12 @@
 
           <div class="modal-body d-flex justify-space-around">
             <label class="complaint_view">date of the ban</label>
-            <input type="text" class="pl-4 disabled" value="Thursday, April 16 2020, 5 pm" disabled />
+            <input
+              type="text"
+              class="pl-4 disabled"
+              value="Thursday, April 16 2020, 5 pm"
+              disabled
+            />
           </div>
 
           <div class="modal-body d-flex justify-space-around">
@@ -125,13 +148,17 @@
               type="button"
               class="btn white rounded-20 btn-no-border width-33 primary--bg btn-lg"
               data-dismiss="modal"
-            >unblock</button>
+            >
+              unblock
+            </button>
             <button
               type="button"
               class="btn white--bg rounded-20 width-33 btn-lg gray--border"
               style="outline: none;"
               data-dismiss="modal"
-            >Cancel</button>
+            >
+              Cancel
+            </button>
           </div>
         </div>
       </div>
@@ -156,13 +183,17 @@
               type="button"
               class="btn white rounded-20 btn-no-border width-33 red--bg btn-lg"
               data-dismiss="modal"
-            >Yes, confirm</button>
+            >
+              Yes, confirm
+            </button>
             <button
               type="button"
               class="btn white--bg rounded-20 width-33 btn-lg gray--border"
               style="outline: none;"
               data-dismiss="modal"
-            >Cancel</button>
+            >
+              Cancel
+            </button>
           </div>
         </div>
       </div>
@@ -182,8 +213,6 @@
 }
 </style>
 <script>
-import Vue from "vue";
-
 export default {
   data() {
     return {

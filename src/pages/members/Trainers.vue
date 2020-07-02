@@ -22,14 +22,18 @@
       <div class="col-sm-3 position-relative">
         <input
           type="text"
-          class="form-control pt-2 pb-2 pr-5 search rounded-50"
+          class="form-control pt-2 pb-2 pr-5 mt-20 search rounded-50"
           placeholder="Search"
         />
         <i class="fas position-absolute right-30 bottom-15 fa-search"></i>
       </div>
     </div>
     <nav aria-label="Departments Pagination" class="mt-4">
-      <div class="position-relative" v-for="(program, index) in programs" v-bind:key="index">
+      <div
+        class="position-relative"
+        v-for="(program, index) in programs"
+        v-bind:key="index"
+      >
         <div class="card width-90 rounded-100px centered mb-3">
           <div class="card-body d-grid grid-de-la-trainers py-1 px-1">
             <div class="vertical-centered centered">
@@ -42,7 +46,11 @@
               />
             </div>
             <div class="rounded-100 lightBlue--bg height-75px width-75px">
-              <img :src="require('@/assets/' + program.logo)" height="100%" width="100%" />
+              <img
+                :src="require('@/assets/' + program.logo)"
+                height="100%"
+                width="100%"
+              />
             </div>
             <ul class="vertical-centered list-none">
               <li>{{ program.personName }}</li>
@@ -80,7 +88,7 @@
                 class="rounded-100 pt-2 max-content pb-2 px-2 vertical-centered black--bg"
                 style="fill: white;"
                 data-toggle="modal"
-                data-target="#editDeptModal"
+                data-target="#teacherViewCourse"
               >
                 <svg width="30" height="30" viewBox="0 0 17 19">
                   <path
@@ -88,11 +96,12 @@
                   />
                 </svg>
               </div>
+
               <div
                 class="rounded-100 pt-2 max-content pb-2 px-2 vertical-centered primary--bg"
                 style="fill: white;"
                 data-toggle="modal"
-                data-target="#editDeptModal"
+                data-target="#teacherViewCourse2"
               >
                 <svg width="30" height="30" viewBox="0 -1 30 22">
                   <path
@@ -106,7 +115,13 @@
       </div>
       <ul class="pagination pagination-lg justify-content-center pb-0 mb-0">
         <li class="page-item hidden">
-          <a class="page-link gray px-5" href="#" tabindex="-1" aria-disabled="true">PREVIOUS</a>
+          <a
+            class="page-link gray px-5"
+            href="#"
+            tabindex="-1"
+            aria-disabled="true"
+            >PREVIOUS</a
+          >
         </li>
         <li class="page-item">
           <a class="page-link primary--bg white" href="#">1</a>
@@ -122,11 +137,187 @@
         </li>
       </ul>
     </nav>
+
+    <!-- Modal dashboard_members_teacher_view_course -->
+
+    <div class="modal fade" id="teacherViewCourse" role="dialog">
+      <div class="modal-dialog block_modal">
+        <!-- Modal content-->
+        <div class="modal-content modal_width" style="border-radius: 30px;">
+          <div
+            class="modal-body modal_pdng d-flex justify-space-around pl-5 pt-3"
+          >
+            <div class="card-body d-grid grid-de-la-faq px-1">
+              <div
+                class="rounded-100 lightGray--bg width-90 height-80 text-center vertical-centered centered pt-3"
+              >
+                1
+              </div>
+              <span
+                class="vertical-centered lightGray--bg black rounded-50 py-3 px-4 max-content ml-4"
+                >Infulential Leader - Scientific subject
+              </span>
+            </div>
+          </div>
+          <div class="modal-body modal_pdng d-flex justify-space-around pl-5">
+            <div class="card-body d-grid grid-de-la-faq px-1">
+              <div
+                class="rounded-100 lightGray--bg width-90 height-80 text-center vertical-centered centered pt-3"
+              >
+                2
+              </div>
+              <span
+                class="vertical-centered lightGray--bg black rounded-50 py-3 px-4 max-content ml-4"
+                >Infulential Leader - Scientific subject
+              </span>
+            </div>
+          </div>
+          <div class="modal-body modal_pdng d-flex justify-space-around pl-5">
+            <div class="card-body d-grid grid-de-la-faq px-1">
+              <div
+                class="rounded-100 lightGray--bg width-90 height-80 text-center vertical-centered centered"
+                style="padding-top: inherit"
+              >
+                3
+              </div>
+              <span
+                class="vertical-centered lightGray--bg black rounded-50 py-3 px-4 max-content ml-4"
+                >Infulential Leader - Scientific subject
+              </span>
+            </div>
+          </div>
+          <div class="modal-body modal_pdng d-flex justify-space-around pl-5">
+            <div class="card-body d-grid grid-de-la-faq px-1">
+              <div
+                class="rounded-100 lightGray--bg width-90 height-80 text-center vertical-centered centered"
+                style="padding-top: inherit"
+              >
+                4
+              </div>
+              <span
+                class="vertical-centered lightGray--bg black rounded-50 py-3 px-4 max-content ml-4"
+                >Infulential Leader - Scientific subject
+              </span>
+            </div>
+          </div>
+          <div
+            class="modal-body modal_pdng d-flex justify-space-around pl-5 pb-3"
+          >
+            <div class="card-body d-grid grid-de-la-faq px-1">
+              <div
+                class="rounded-100 lightGray--bg width-90 height-80 text-center vertical-centered centered"
+                style="padding-top: inherit"
+              >
+                5
+              </div>
+              <span
+                class="vertical-centered lightGray--bg black rounded-50 py-3 px-4 max-content ml-4"
+                >Infulential Leader - Scientific subject
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal dashboard_members_teacher_view_course2 -->
+
+    <div class="modal fade" id="teacherViewCourse2" role="dialog">
+      <div class="modal-dialog block_modal">
+        <!-- Modal content-->
+        <div class="modal-content modal_width" style="border-radius: 30px;">
+          <div
+            class="modal-body modal_pdng d-flex justify-space-around pl-5 pt-3"
+          >
+            <div class="card-body d-grid grid-de-la-faq px-1">
+              <div
+                class="rounded-100 lightGray--bg width-90 height-80 text-center vertical-centered centered pt-3"
+              >
+                1
+              </div>
+              <span
+                class="vertical-centered lightGray--bg black rounded-50 py-3 px-4 max-content ml-4"
+                >Infulential Leader - Scientific subject
+              </span>
+            </div>
+          </div>
+          <div class="modal-body modal_pdng d-flex justify-space-around pl-5">
+            <div class="card-body d-grid grid-de-la-faq px-1">
+              <div
+                class="rounded-100 lightGray--bg width-90 height-80 text-center vertical-centered centered pt-3"
+              >
+                2
+              </div>
+              <span
+                class="vertical-centered lightGray--bg black rounded-50 py-3 px-4 max-content ml-4"
+                >Infulential Leader - Scientific subject
+              </span>
+            </div>
+          </div>
+          <div class="modal-body modal_pdng d-flex justify-space-around pl-5">
+            <div class="card-body d-grid grid-de-la-faq px-1">
+              <div
+                class="rounded-100 lightGray--bg width-90 height-80 text-center vertical-centered centered"
+                style="padding-top: inherit"
+              >
+                3
+              </div>
+              <span
+                class="vertical-centered lightGray--bg black rounded-50 py-3 px-4 max-content ml-4"
+                >Infulential Leader - Scientific subject
+              </span>
+            </div>
+          </div>
+          <div class="modal-body modal_pdng d-flex justify-space-around pl-5">
+            <div class="card-body d-grid grid-de-la-faq px-1">
+              <div
+                class="rounded-100 lightGray--bg width-90 height-80 text-center vertical-centered centered"
+                style="padding-top: inherit"
+              >
+                4
+              </div>
+              <span
+                class="vertical-centered lightGray--bg black rounded-50 py-3 px-4 max-content ml-4"
+                >Infulential Leader - Scientific subject
+              </span>
+            </div>
+          </div>
+          <div
+            class="modal-body modal_pdng d-flex justify-space-around pl-5 pb-3"
+          >
+            <div class="card-body d-grid grid-de-la-faq px-1">
+              <div
+                class="rounded-100 lightGray--bg width-90 height-80 text-center vertical-centered centered"
+                style="padding-top: inherit"
+              >
+                5
+              </div>
+              <span
+                class="vertical-centered lightGray--bg black rounded-50 py-3 px-4 max-content ml-4"
+                >Infulential Leader - Scientific subject
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
+<style lang="scss" scoped>
+.grid-de-la-faq {
+  grid-template-columns: 50px auto auto 200px;
+}
+.mt-20{
+  margin-top: 20px;
+}
+.modal_pdng {
+  padding: 0;
+}
+.modal_width {
+  width: 85%;
+}
+</style>
 <script>
-import Vue from "vue";
-
 export default {
   data() {
     return {

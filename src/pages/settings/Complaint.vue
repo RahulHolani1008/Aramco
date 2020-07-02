@@ -6,7 +6,7 @@
         data-toggle="modal"
         data-target="#newDeptModal"
       >
-        <i class="fas fa-plus white--bg rounded-100 mr-2 transparent"></i>
+        <i class="fas fa-plus-circle"></i>
         Add a new request
       </button>
       <div class="col-sm-3 position-relative">
@@ -23,7 +23,7 @@
         <div class="card width-90 rounded-100px centered mb-3">
           <div class="card-body d-grid grid-de-la-complaint px-1">
             <div
-              class="rounded-100 lightGray--bg width-90 height-80 text-center vertical-centered centered"
+              class="rounded-100 lightGray--bg width-90 height-80 text-center vertical-centered centered bold"
               style="padding-top: inherit"
             >
               1
@@ -68,7 +68,7 @@
         <div class="card width-90 rounded-100px centered mb-3">
           <div class="card-body d-grid grid-de-la-complaint px-1">
             <div
-              class="rounded-100 lightGray--bg width-90 height-80 text-center vertical-centered centered"
+              class="rounded-100 lightGray--bg width-90 height-80 text-center vertical-centered centered bold"
               style="padding-top: inherit"
             >
               1
@@ -113,7 +113,7 @@
         <div class="card width-90 rounded-100px centered mb-3">
           <div class="card-body d-grid grid-de-la-complaint px-1">
             <div
-              class="rounded-100 lightGray--bg width-90 height-80 text-center vertical-centered centered"
+              class="rounded-100 lightGray--bg width-90 height-80 text-center vertical-centered centered bold"
               style="padding-top: inherit"
             >
               1
@@ -158,7 +158,7 @@
         <div class="card width-90 rounded-100px centered mb-3">
           <div class="card-body d-grid grid-de-la-complaint px-1">
             <div
-              class="rounded-100 lightGray--bg width-90 height-80 text-center vertical-centered centered"
+              class="rounded-100 lightGray--bg width-90 height-80 text-center vertical-centered centered bold"
               style="padding-top: inherit"
             >
               1
@@ -203,7 +203,7 @@
         <div class="card width-90 rounded-100px centered mb-3">
           <div class="card-body d-grid grid-de-la-complaint px-1">
             <div
-              class="rounded-100 lightGray--bg width-90 height-80 text-center vertical-centered centered"
+              class="rounded-100 lightGray--bg width-90 height-80 text-center vertical-centered centered bold"
               style="padding-top: inherit"
             >
               1
@@ -279,21 +279,25 @@
 
           <div class="modal-body d-flex justify-space-around">
             <div class="select-wrapper maxwidth-350 width-75">
-            <select class="width-100 border-radius-20 height-50 gray--border-1 gray--color outline-none">
-              <option disabled selected>Effectivness</option>
-              <option>option</option>
-              <option>option</option>
-            </select>
+              <select
+                class="width-100 border-radius-20 height-50 gray--border-1 gray--color outline-none"
+              >
+                <option disabled selected>Effectivness</option>
+                <option>option</option>
+                <option>option</option>
+              </select>
             </div>
           </div>
 
           <div class="modal-body d-flex justify-space-around">
             <div class="select-wrapper maxwidth-350 width-75">
-            <select class="width-100 border-radius-20 height-50 gray--border-1 gray--color outline-none">
-              <option disabled selected>Type</option>
-              <option>option</option>
-              <option>option</option>
-            </select>
+              <select
+                class="width-100 border-radius-20 height-50 gray--border-1 gray--color outline-none"
+              >
+                <option disabled selected>Type</option>
+                <option>option</option>
+                <option>option</option>
+              </select>
             </div>
           </div>
 
@@ -332,21 +336,25 @@
 
           <div class="modal-body d-flex justify-space-around">
             <div class="select-wrapper maxwidth-350 width-75">
-            <select class="width-100 border-radius-20 height-50 gray--border-1 gray--color outline-none">
-              <option disabled selected>Effectivness</option>
-              <option>option</option>
-              <option>option</option>
-            </select>
+              <select
+                class="width-100 border-radius-20 height-50 gray--border-1 gray--color outline-none"
+              >
+                <option disabled selected>Effectivness</option>
+                <option>option</option>
+                <option>option</option>
+              </select>
             </div>
           </div>
 
           <div class="modal-body d-flex justify-space-around">
             <div class="select-wrapper maxwidth-350 width-75">
-            <select class="width-100 border-radius-20 height-50 gray--border-1 gray--color outline-none">
-              <option disabled selected>Type</option>
-              <option>option</option>
-              <option>option</option>
-            </select>
+              <select
+                class="width-100 border-radius-20 height-50 gray--border-1 gray--color outline-none"
+              >
+                <option disabled selected>Type</option>
+                <option>option</option>
+                <option>option</option>
+              </select>
             </div>
           </div>
 
@@ -378,11 +386,10 @@
 }
 </style>
 <script>
-import Vue from "vue";
 import Slider from "../../components/Slider.vue";
-export default{
+export default {
   components: {
     Slider
   }
-}
+};
 </script>

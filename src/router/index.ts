@@ -1,4 +1,3 @@
-import Vue from "vue";
 import VueRouter, { RouteConfig } from "vue-router";
 import Specializations from "../pages/content/Specializations.vue";
 import Departments from "../pages/content/Departments.vue";
@@ -16,13 +15,17 @@ import Survey from "../pages/communication/Survey.vue";
 import Notifications from "../pages/communication/Notifications.vue";
 import MailingSystem from "../pages/communication/MailingSystem.vue";
 import CourseAnalytics from "../pages/statistics/CourseAnalytics.vue";
+import StatisticsOverview from "../pages/statistics/Overview.vue";
+import Quizzes from "../pages/statistics/Quizzes.vue";
+import StatisticsTrainees from "../pages/statistics/TraineesAnalytics.vue";
+import StatisticsTrainers from "../pages/statistics/TrainersAnalytics.vue";
 import Complaints from "../pages/complaints/Complaints.vue";
 import CourseRequests from "../pages/complaints/CourseRequests.vue";
 import Powers from "../pages/members/Powers.vue";
 import BanLog from "../pages/members/BanLog.vue";
 import Trainers from "../pages/members/Trainers.vue";
 import Trainees from "../pages/members/Trainees.vue";
-
+import Vue from "vue";
 Vue.use(VueRouter);
 
 const routes: Array<RouteConfig> = [
@@ -105,6 +108,26 @@ const routes: Array<RouteConfig> = [
     path: "/statistics/course-analytics",
     name: "CourseAnalytics",
     component: CourseAnalytics
+  },
+  {
+    path: "/statistics/quizzes",
+    name: "Quizzes",
+    component: Quizzes
+  },
+  {
+    path: "/statistics/trainees",
+    name: "StatisticsTrainees",
+    component: StatisticsTrainees
+  },
+  {
+    path: "/statistics/trainers",
+    name: "StatisticsTrainers",
+    component: StatisticsTrainers
+  },
+  {
+    path: "/statistics/overview",
+    name: "StatisticsOverview",
+    component: StatisticsOverview
   },
   {
     path: "/complaints/complaints",

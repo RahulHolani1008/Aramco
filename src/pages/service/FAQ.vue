@@ -6,7 +6,7 @@
         data-toggle="modal"
         data-target="#newDeptModal"
       >
-        <i class="fas fa-plus white--bg rounded-100 mr-2 transparent"></i>
+        <i class="fas fa-plus-circle"></i>
         Add a new Q&A
       </button>
       <div class="col-sm-3 position-relative">
@@ -23,7 +23,7 @@
         <div class="card width-90 rounded-100px centered mb-3">
           <div class="card-body d-grid grid-de-la-faq px-1">
             <div
-              class="rounded-100 lightGray--bg width-90 height-80 text-center vertical-centered centered"
+              class="rounded-100 lightGray--bg width-90 height-80 text-center vertical-centered centered bold"
               style="padding-top: inherit"
             >
               2
@@ -60,7 +60,7 @@
         <div class="card width-90 rounded-100px centered mb-3">
           <div class="card-body d-grid grid-de-la-faq px-1">
             <div
-              class="rounded-100 lightGray--bg width-90 height-80 text-center vertical-centered centered"
+              class="rounded-100 lightGray--bg width-90 height-80 text-center vertical-centered centered bold"
               style="padding-top: inherit"
             >
               2
@@ -97,7 +97,7 @@
         <div class="card width-90 rounded-100px centered mb-3">
           <div class="card-body d-grid grid-de-la-faq px-1">
             <div
-              class="rounded-100 lightGray--bg width-90 height-80 text-center vertical-centered centered"
+              class="rounded-100 lightGray--bg width-90 height-80 text-center vertical-centered centered bold"
               style="padding-top: inherit"
             >
               2
@@ -134,7 +134,7 @@
         <div class="card width-90 rounded-100px centered mb-3">
           <div class="card-body d-grid grid-de-la-faq px-1">
             <div
-              class="rounded-100 lightGray--bg width-90 height-80 text-center vertical-centered centered"
+              class="rounded-100 lightGray--bg width-90 height-80 text-center vertical-centered centered bold"
               style="padding-top: inherit"
             >
               2
@@ -171,7 +171,7 @@
         <div class="card width-90 rounded-100px centered mb-3">
           <div class="card-body d-grid grid-de-la-faq px-1">
             <div
-              class="rounded-100 lightGray--bg width-90 height-80 text-center vertical-centered centered"
+              class="rounded-100 lightGray--bg width-90 height-80 text-center vertical-centered centered bold"
               style="padding-top: inherit"
             >
               2
@@ -313,12 +313,11 @@
 }
 </style>
 <script>
-import Vue from "vue";
 import Slider from "../../components/Slider.vue";
 
 export default {
   components: {
     Slider
   }
-}
+};
 </script>

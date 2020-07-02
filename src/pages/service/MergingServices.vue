@@ -15,7 +15,7 @@
         <div class="card height-max width-90 rounded-100px centered mb-3">
           <div class="card-body d-grid px-3 grid-de-la-tnc">
             <div
-              class="rounded-100 lightGray--bg width-90 height-80 text-center vertical-centered centered"
+              class="rounded-100 lightGray--bg width-90 height-80 text-center vertical-centered centered bold"
               style="padding-top: inherit"
             >
               3
@@ -42,7 +42,7 @@
         <div class="card height-max width-90 rounded-100px centered mb-3">
           <div class="card-body d-grid px-3 grid-de-la-tnc">
             <div
-              class="rounded-100 lightGray--bg width-90 height-80 text-center vertical-centered centered"
+              class="rounded-100 lightGray--bg width-90 height-80 text-center vertical-centered centered bold"
               style="padding-top: inherit"
             >
               1
@@ -69,7 +69,7 @@
         <div class="card height-max width-90 rounded-100px centered mb-3">
           <div class="card-body d-grid px-3 grid-de-la-tnc">
             <div
-              class="rounded-100 lightGray--bg width-90 height-80 text-center vertical-centered centered"
+              class="rounded-100 lightGray--bg width-90 height-80 text-center vertical-centered centered bold"
               style="padding-top: inherit"
             >
               2
@@ -96,7 +96,7 @@
         <div class="card height-max width-90 rounded-100px centered mb-3">
           <div class="card-body d-grid px-3 grid-de-la-tnc">
             <div
-              class="rounded-100 lightGray--bg width-90 height-80 text-center vertical-centered centered"
+              class="rounded-100 lightGray--bg width-90 height-80 text-center vertical-centered centered bold"
               style="padding-top: inherit"
             >
               5
@@ -123,7 +123,7 @@
         <div class="card height-max width-90 rounded-100px centered mb-3">
           <div class="card-body d-grid px-3 grid-de-la-tnc">
             <div
-              class="rounded-100 lightGray--bg width-90 height-80 text-center vertical-centered centered"
+              class="rounded-100 lightGray--bg width-90 height-80 text-center vertical-centered centered bold"
               style="padding-top: inherit"
             >
               4
@@ -229,6 +229,5 @@
 }
 </style>
 <script>
-import Vue from "vue";
-export default {}
+export default {};
 </script>

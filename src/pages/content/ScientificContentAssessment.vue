@@ -1,8 +1,13 @@
 <template>
   <div>
     <div class="d-flex mb-2 justify-space-around mt-4" style="width: 40%">
-      <button class="btn rounded-100 search primary--border mt-1" style="height:40px; width: 40px;">
-        <i class="fas fa-2x fa-angle-left primary vertical-centered centered"></i>
+      <button
+        class="btn rounded-100 search primary--border mt-1"
+        style="height:40px; width: 40px;"
+      >
+        <i
+          class="fas fa-2x fa-angle-left primary vertical-centered centered"
+        ></i>
       </button>
       <div class="position-relative">
         <input
@@ -14,7 +19,11 @@
       </div>
     </div>
     <nav aria-label="Departments Pagination" class="mt-4">
-      <div class="position-relative" v-for="(assessment, index) in assessments" :key="index">
+      <div
+        class="position-relative"
+        v-for="(assessment, index) in assessments"
+        :key="index"
+      >
         <div class="card height-max width-90 rounded-100px centered mb-3">
           <div class="card-body d-grid px-3 grid-de-la-scientific-assessment">
             <div class="vertical-centered pl-4">{{ assessment.name }}</div>
@@ -24,7 +33,8 @@
             >
               <div class="pl-3 pr-1 min-content">
                 <i class="far fa-eye"></i>
-              </div>view absentees
+              </div>
+              view absentees
             </button>
             <button
               type="button"
@@ -32,14 +42,21 @@
             >
               <div class="pl-3 pr-1 min-content">
                 <i class="fas fa-user-friends"></i>
-              </div>Follow up trainees grades
+              </div>
+              Follow up trainees grades
             </button>
           </div>
         </div>
       </div>
       <ul class="pagination pagination-lg justify-content-center pb-0 mb-0">
         <li class="page-item hidden">
-          <a class="page-link gray px-5" href="#" tabindex="-1" aria-disabled="true">PREVIOUS</a>
+          <a
+            class="page-link gray px-5"
+            href="#"
+            tabindex="-1"
+            aria-disabled="true"
+            >PREVIOUS</a
+          >
         </li>
         <li class="page-item">
           <a class="page-link primary--bg white" href="#">1</a>
@@ -76,8 +93,12 @@
                 data-toggle="dropdown"
                 aria-haspopup="true"
                 aria-expanded="true"
-              >Select Departments</button>
-              <i class="fas fa-angle-down position-absolute right-20 top-10"></i>
+              >
+                Select Departments
+              </button>
+              <i
+                class="fas fa-angle-down position-absolute right-20 top-10"
+              ></i>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                 <a class="dropdown-item" href="#">Financial Management</a>
                 <a class="dropdown-item" href="#">Computer Sciences</a>
@@ -91,13 +112,17 @@
               type="button"
               class="btn white rounded-20 btn-no-border width-33 primary--bg btn-lg"
               data-dismiss="modal"
-            >Add</button>
+            >
+              Add
+            </button>
             <button
               type="button"
               class="btn white--bg rounded-20 width-33 btn-lg gray--border"
               style="outline: none;"
               data-dismiss="modal"
-            >Cancel</button>
+            >
+              Cancel
+            </button>
           </div>
         </div>
       </div>
@@ -110,7 +135,6 @@
 }
 </style>
 <script>
-import Vue from "vue";
 export default {
   data() {
     return {

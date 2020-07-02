@@ -5,7 +5,9 @@
         class="btn rounded-100 search primary--border ml-5 mr-3"
         style="height:40px; width: 40px;"
       >
-        <i class="fas fa-2x fa-angle-left primary vertical-centered centered"></i>
+        <i
+          class="fas fa-2x fa-angle-left primary vertical-centered centered"
+        ></i>
       </button>
       <div class="dropdown mx-3 mt-1">
         <button
@@ -34,7 +36,9 @@
           data-toggle="dropdown"
           aria-haspopup="true"
           aria-expanded="false"
-        >Confirm</button>
+        >
+          Confirm
+        </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
           <a class="dropdown-item" href="#">
             <i class="far fa-copy primary"></i> Repeat
@@ -69,7 +73,11 @@
       </div>
     </div>
     <nav aria-label="Departments Pagination" class="mt-4">
-      <div class="position-relative" v-for="(program, index) in programs" v-bind:key="index">
+      <div
+        class="position-relative"
+        v-for="(program, index) in programs"
+        v-bind:key="index"
+      >
         <input
           class="form-check-input position-absolute mx-3 left-65 bottom-40p"
           type="radio"
@@ -80,7 +88,11 @@
         <div class="card width-90 rounded-100px centered mb-3">
           <div class="card-body d-grid grid-de-la-programs py-1 px-1">
             <div class="rounded-100 lightBlue--bg height-75px width-75px">
-              <img :src="require('@/assets/' + program.logo)" height="100%" width="100%" />
+              <img
+                :src="require('@/assets/' + program.logo)"
+                height="100%"
+                width="100%"
+              />
             </div>
             <span class="vertical-centered">{{ program.name }}</span>
             <ul class="vertical-centered list-none">
@@ -93,7 +105,9 @@
                 {{ program.type }}
               </li>
             </ul>
-            <div class="rounded-50 width-100 lightGray--bg height-100 d-flex justify-space-around">
+            <div
+              class="rounded-50 width-100 lightGray--bg height-100 d-flex justify-space-around"
+            >
               <button
                 type="button"
                 class="btn btn-no-border vertical-centered rounded-50 height-max primary--bg white"
@@ -119,7 +133,13 @@
       </div>
       <ul class="pagination pagination-lg justify-content-center pb-0 mb-0">
         <li class="page-item hidden">
-          <a class="page-link gray px-5" href="#" tabindex="-1" aria-disabled="true">PREVIOUS</a>
+          <a
+            class="page-link gray px-5"
+            href="#"
+            tabindex="-1"
+            aria-disabled="true"
+            >PREVIOUS</a
+          >
         </li>
         <li class="page-item">
           <a class="page-link primary--bg white" href="#">1</a>
@@ -156,8 +176,12 @@
                 data-toggle="dropdown"
                 aria-haspopup="true"
                 aria-expanded="true"
-              >Select Departments</button>
-              <i class="fas fa-angle-down position-absolute right-20 top-10"></i>
+              >
+                Select Departments
+              </button>
+              <i
+                class="fas fa-angle-down position-absolute right-20 top-10"
+              ></i>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                 <a class="dropdown-item" href="#">Financial Management</a>
                 <a class="dropdown-item" href="#">Computer Sciences</a>
@@ -171,13 +195,17 @@
               type="button"
               class="btn white rounded-20 btn-no-border width-33 primary--bg btn-lg"
               data-dismiss="modal"
-            >Add</button>
+            >
+              Add
+            </button>
             <button
               type="button"
               class="btn white--bg rounded-20 width-33 btn-lg gray--border"
               style="outline: none;"
               data-dismiss="modal"
-            >Cancel</button>
+            >
+              Cancel
+            </button>
           </div>
         </div>
       </div>
@@ -191,9 +219,6 @@
 </style>
 
 <script>
-import Vue from "vue";
-import Slider from "../../components/Slider.vue";
-
 export default {
   data() {
     return {

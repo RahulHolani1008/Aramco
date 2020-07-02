@@ -271,6 +271,5 @@
 }
 </style>
 <script>
-import Vue from "vue";
-export default{}
+export default {};
 </script>

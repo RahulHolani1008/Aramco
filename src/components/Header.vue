@@ -1,13 +1,14 @@
 <template>
-  <div>
-    <div class="header_main">
+  <div class="" style="position: relative; z-index: 1000" id="header_id">
+    <div class="header_main position-fixed">
       <!-- logo will come here -->
       <div class="logo_main">
         <img src="../assets/Logo.png" height="100%" />
       </div>
     </div>
-    <div class="waterdrop_button" v-on:click="changeHeader">
+    <div class="waterdrop_button position-fixed" v-on:click="changeHeader">
       <i class="fas fa-angle-left white fs--28"></i>
+      <i class="fas fa-angle-right white fs--28"></i>
     </div>
   </div>
 </template>
@@ -25,12 +26,15 @@
   top: -3vh;
   z-index: 999;
   left: 0;
+  transition: 0.3s ease;
 }
+
 .logo_main {
   width: 188px;
   height: 52px;
   margin: auto;
   margin-top: 4vh;
+  transition: 0.3s ease;
 }
 .waterdrop_button {
   width: 40px;
@@ -44,24 +48,55 @@
   left: 220px;
   top: 5.7vh;
   z-index: 1000;
+  transition: 0.3s ease;
 }
-.waterdrop_button .fa-angle-left {
+.waterdrop_button .fa-angle-left,
+.waterdrop_button .fa-angle-right {
   transform: rotate(130deg);
   position: absolute;
   top: 5px;
   right: 12px;
 }
+
+.header_small .header_main {
+  width: 80px;
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+.header_small .logo_main {
+  height: 40%;
+  margin-left: 10px;
+}
+
+.header_small .waterdrop_button {
+  left: 80px;
+  transition: 0.3s ease;
+}
+
+.fa-angle-right {
+  display: none;
+}
+
+.header_small .fa-angle-right {
+  display: block;
+}
+
+.header_small .fa-angle-left {
+  display: none;
+}
 </style>
 <script>
-import Vue from "vue";
 export default {
   data() {
-    return {isSmall: false }
+    return { isSmall: false };
   },
   methods: {
-    changeHeader: function(){
+    changeHeader: function() {
       this.isSmall = !this.isSmall;
-      this.$emit("clicked",this.isSmall);;
+      this.$emit("clicked", this.isSmall);
+
+      document.getElementById("header_id").classList.toggle("header_small");
     }
   }
 };

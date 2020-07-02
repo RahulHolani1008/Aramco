@@ -6,7 +6,7 @@
         data-toggle="modal"
         data-target="#newDeptModal"
       >
-        <i class="fas fa-plus white--bg rounded-100 mr-2 transparent"></i>
+        <i class="fas fa-plus-circle"></i>
         New template
       </button>
       <div class="col-sm-3 position-relative">
@@ -19,7 +19,11 @@
       </div>
     </div>
     <nav aria-label="Departments Pagination" class="mt-4">
-      <div class="position-relative" v-for="(system, index) in systems" :key="index">
+      <div
+        class="position-relative"
+        v-for="(system, index) in systems"
+        :key="index"
+      >
         <span class="position-absolute left-30 bottom-30p">#</span>
         <div class="card width-90 rounded-100px centered mb-3">
           <div class="card-body d-grid grid-de-la-mailing py-2 px-5">
@@ -48,7 +52,13 @@
       </div>
       <ul class="pagination pagination-lg justify-content-center pb-0 mb-0">
         <li class="page-item hidden">
-          <a class="page-link gray px-5" href="#" tabindex="-1" aria-disabled="true">PREVIOUS</a>
+          <a
+            class="page-link gray px-5"
+            href="#"
+            tabindex="-1"
+            aria-disabled="true"
+            >PREVIOUS</a
+          >
         </li>
         <li class="page-item">
           <a class="page-link primary--bg white" href="#">1</a>
@@ -91,7 +101,10 @@
               id="file"
               class="rounded-20 inputfile gray--border width-90 text-wrap height-100px px-5"
             />
-            <label for="file" class="text-wrap gray-dashed-border px-5 py-4 text-center rounded-20">
+            <label
+              for="file"
+              class="text-wrap gray-dashed-border px-5 py-4 text-center rounded-20"
+            >
               <i class="fas fa-upload mb-2" style="font-size: 50px;"></i>
               <BR />Upload the template file from your device here
             </label>
@@ -101,13 +114,17 @@
               type="button"
               class="btn white rounded-20 btn-no-border width-33 primary--bg btn-lg"
               data-dismiss="modal"
-            >Add</button>
+            >
+              Add
+            </button>
             <button
               type="button"
               class="btn white--bg rounded-20 width-33 btn-lg gray--border"
               style="outline: none;"
               data-dismiss="modal"
-            >Cancel</button>
+            >
+              Cancel
+            </button>
           </div>
         </div>
       </div>
@@ -139,7 +156,10 @@
               id="file"
               class="rounded-20 inputfile gray--border width-90 text-wrap height-100px px-5"
             />
-            <label for="file" class="text-wrap gray-dashed-border px-5 py-4 text-center rounded-20">
+            <label
+              for="file"
+              class="text-wrap gray-dashed-border px-5 py-4 text-center rounded-20"
+            >
               <i class="fas fa-upload mb-2" style="font-size: 50px;"></i>
               <BR />Upload the template file from your device here
             </label>
@@ -149,13 +169,17 @@
               type="button"
               class="btn white rounded-20 btn-no-border width-33 primary--bg btn-lg"
               data-dismiss="modal"
-            >Save settings</button>
+            >
+              Save settings
+            </button>
             <button
               type="button"
               class="btn white--bg rounded-20 width-33 btn-lg gray--border"
               style="outline: none;"
               data-dismiss="modal"
-            >Cancel</button>
+            >
+              Cancel
+            </button>
           </div>
         </div>
       </div>
@@ -171,7 +195,6 @@
 }
 </style>
 <script>
-import Vue from "vue";
 import Slider from "../../components/Slider.vue";
 
 export default {

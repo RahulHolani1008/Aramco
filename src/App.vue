@@ -1,8 +1,8 @@
 <template>
   <div>
-    <div class="grid outer-div" v-if="!isLogin">
+    <div class="grid outer-div" v-if="!isLogin" id="outer_id">
       <Header @clicked="sendDataToNavBar"></Header>
-      <NavBar :isSmall = "isSmall"></NavBar>
+      <NavBar :isSmall="isSmall"></NavBar>
       <div class="inner-body">
         <router-view />
       </div>
@@ -125,7 +125,11 @@
   height: auto !important;
 }
 .search {
-  background-color: #e4edfd !important;
+  background-color: transparent !important;
+  border: 2px solid black !important;
+}
+.col-sm-3.position-relative {
+  max-width: 250px !important;
 }
 .rounded-50 {
   border-radius: 50px !important;
@@ -157,6 +161,7 @@
 }
 .modal {
   margin-top: 100px !important;
+  z-index: 999999 !important;
 }
 a {
   text-decoration: none;
@@ -238,8 +243,9 @@ body {
   overflow: overlay;
   font-size: 16px !important;
   font-family: "AJannatLT", sans-serif !important;
-  background-image: linear-gradient(to top, #cad9f3, #eaf2ff);
+  background-image: linear-gradient(to top, #cad9f3, #eaf2ff) !important;
   padding: 0px;
+  height: fit-content !important;
 }
 .centered {
   display: block;
@@ -311,7 +317,6 @@ body {
   }
   .inner-body {
     padding-top: 5px !important;
-    height: 100vh !important;
   }
 }
 @media screen and (max-width: 1700px) {
@@ -321,11 +326,6 @@ body {
   .pl-4,
   .px-4 {
     padding-left: 8px !important;
-  }
-}
-@media screen and (max-width: 1280px) {
-  body {
-    font-size: 0.5vw !important;
   }
 }
 @media screen and (max-width: 1500px) {
@@ -364,7 +364,8 @@ body {
 }
 .inner-body {
   grid-area: innerbody;
-  height: 100vh;
+  height: fit-content;
+  min-height: 100vh !important;
   padding-left: 20px;
   padding-top: 3rem;
 }
@@ -372,13 +373,25 @@ body {
   display: grid;
 }
 .outer-div {
-  grid-template-columns: 250px auto;
-  grid-template-rows: 20vh 80vh;
+  grid-template-columns: 1px auto;
+  grid-column-gap: 249px;
+  grid-template-rows: 20vh auto;
   grid-template-areas: "heads innerbody" "navigation innerbody";
+  transition: 0.3s ease;
+}
+.primary-2-border {
+  border: 3px solid rgb(12, 158, 226) !important;
+}
+.bigger_outer_div {
+  grid-column-gap: 49px;
 }
 .card {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.02);
+  z-index: 0 !important;
   border: 0px;
+}
+input {
+  z-index: 0 !important;
 }
 .pt-3-5 {
   padding-top: 10px;
@@ -409,6 +422,7 @@ ul {
   background-color: white;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  font-weight: bold;
 }
 .slider:before {
   position: absolute;
@@ -417,7 +431,7 @@ ul {
   width: 26px;
   left: 8px;
   bottom: 7px;
-  background-color: red;
+  background-image: linear-gradient(51deg, #ff0044 0%, #ff7f2e 124%);
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -431,7 +445,7 @@ input:checked + .slider:before {
   -webkit-transform: translateX(75px);
   -ms-transform: translateX(75px);
   transform: translateX(75px);
-  background-color: #24e8a6;
+  background-image: linear-gradient(130deg, #06e8a7, #0c9ee2) !important;
 }
 input:checked + .slider {
   border: 1px solid #24e8a6;
@@ -448,7 +462,9 @@ input + .slider .enabled {
 input + .slider .disabled {
   display: block;
   margin-left: 30px;
-  color: red;
+  background: linear-gradient(71deg, #ff0044 0%, #ff7f2e 132%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 input + .slider {
   border: 1px solid red;
@@ -673,7 +689,6 @@ button:focus {
 }
 </style>
 <script>
-import Vue from "vue";
 import NavBar from "./components/NavBar.vue";
 import Header from "./components/Header.vue";
 import Login from "./components/Login.vue";
@@ -690,9 +705,10 @@ export default {
       isSmall: false
     };
   },
-  methods:{
-    sendDataToNavBar(value){
-      this.isSmall = value
+  methods: {
+    sendDataToNavBar(value) {
+      this.isSmall = value;
+      document.getElementById("outer_id").classList.toggle("bigger_outer_div");
     }
   }
 };

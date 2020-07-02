@@ -6,7 +6,7 @@
         data-toggle="modal"
         data-target="#newDeptModal"
       >
-        <i class="fas fa-plus white--bg rounded-100 mr-2 transparent"></i>
+        <i class="fas fa-plus-circle"></i>
         New model
       </button>
       <div class="col-sm-3 position-relative">
@@ -19,25 +19,33 @@
       </div>
     </div>
     <nav aria-label="Departments Pagination" class="mt-4">
-      <div class="position-relative" v-for="(survey, index) in surveys" :key="index">
+      <div
+        class="position-relative"
+        v-for="(survey, index) in surveys"
+        :key="index"
+      >
         <div class="card width-90 rounded-100px centered mb-3">
           <div class="card-body d-grid grid-de-la-survey px-1">
             <div
-              class="rounded-100 lightGray--bg width-90 height-80 text-center vertical-centered centered"
+              class="rounded-100 lightGray--bg width-90 height-80 text-center vertical-centered centered bold"
               style="padding-top: inherit"
-            >{{ index + 1 }}</div>
+            >
+              {{ index + 1 }}
+            </div>
             <span class="vertical-centered gray rounded-50 py-3 max-content">
-              {{
-              survey.text
-              }}
+              {{ survey.text }}
             </span>
             <span
               class="vertical-centered mx-2 black rounded-50 py-3 px-4 max-content"
-            >{{ survey.name }}</span>
+              >{{ survey.name }}</span
+            >
             <span
               class="vertical-centered mx-2 black rounded-50 py-3 px-4 max-content"
-            >{{ survey.dateTime }}</span>
-            <div class="rounded-50 width-100 height-100 d-flex justify-space-around">
+              >{{ survey.dateTime }}</span
+            >
+            <div
+              class="rounded-50 width-100 height-100 d-flex justify-space-around"
+            >
               <Slider :enabled="survey.enabled" />
               <div
                 class="rounded-100 pt-2 pb-2 px-2 vertical-centered black--bg"
@@ -57,7 +65,13 @@
       </div>
       <ul class="pagination pagination-lg justify-content-center pb-0 mb-0">
         <li class="page-item hidden">
-          <a class="page-link gray px-5" href="#" tabindex="-1" aria-disabled="true">PREVIOUS</a>
+          <a
+            class="page-link gray px-5"
+            href="#"
+            tabindex="-1"
+            aria-disabled="true"
+            >PREVIOUS</a
+          >
         </li>
         <li class="page-item">
           <a class="page-link primary--bg white" href="#">1</a>
@@ -87,7 +101,9 @@
               </div>
             </div>
 
-            <div class="modal-body d-flex justify-space-around custom-survey-question">
+            <div
+              class="modal-body d-flex justify-space-around custom-survey-question"
+            >
               <div class="row width-100">
                 <div class="col-sm-6 mb-2">
                   <span class="ml-3 gray--color">
@@ -111,7 +127,9 @@
                     <select
                       class="width-100 border-radius-20 height-50 gray--border-1 gray--color outline-none mx-2"
                     >
-                      <option disabled selected>A scale from 1 to 5 with excellent</option>
+                      <option disabled selected
+                        >A scale from 1 to 5 with excellent</option
+                      >
                       <option>option</option>
                       <option>option</option>
                     </select>
@@ -124,7 +142,9 @@
               </div>
             </div>
 
-            <div class="modal-body d-flex justify-space-around custom-survey-question mt-3">
+            <div
+              class="modal-body d-flex justify-space-around custom-survey-question mt-3"
+            >
               <div class="row width-100">
                 <div class="col-sm-6 mb-2">
                   <span class="ml-3 gray--color">
@@ -148,7 +168,9 @@
                     <select
                       class="width-100 border-radius-20 height-50 gray--border-1 gray--color outline-none mx-2"
                     >
-                      <option disabled selected>A scale from 1 to 5 with excellent</option>
+                      <option disabled selected
+                        >A scale from 1 to 5 with excellent</option
+                      >
                       <option>option</option>
                       <option>option</option>
                     </select>
@@ -195,13 +217,17 @@
                 type="button"
                 class="btn white rounded-20 btn-no-border width-33 primary--bg btn-lg"
                 data-dismiss="modal"
-              >Add</button>
+              >
+                Add
+              </button>
               <button
                 type="button"
                 class="btn white--bg rounded-20 width-33 btn-lg gray--border"
                 style="outline: none;"
                 data-dismiss="modal"
-              >Cancel</button>
+              >
+                Cancel
+              </button>
             </div>
           </div>
         </div>
@@ -222,7 +248,9 @@
               </div>
             </div>
 
-            <div class="modal-body d-flex justify-space-around custom-survey-question">
+            <div
+              class="modal-body d-flex justify-space-around custom-survey-question"
+            >
               <div class="row width-100">
                 <div class="col-sm-6 mb-2">
                   <span class="ml-3 gray--color">
@@ -246,7 +274,9 @@
                     <select
                       class="width-100 border-radius-20 height-50 gray--border-1 gray--color outline-none mx-2"
                     >
-                      <option disabled selected>A scale from 1 to 5 with excellent</option>
+                      <option disabled selected
+                        >A scale from 1 to 5 with excellent</option
+                      >
                       <option>option</option>
                       <option>option</option>
                     </select>
@@ -259,7 +289,9 @@
               </div>
             </div>
 
-            <div class="modal-body d-flex justify-space-around custom-survey-question mt-3">
+            <div
+              class="modal-body d-flex justify-space-around custom-survey-question mt-3"
+            >
               <div class="row width-100">
                 <div class="col-sm-6 mb-2">
                   <span class="ml-3 gray--color">
@@ -283,7 +315,9 @@
                     <select
                       class="width-100 border-radius-20 height-50 gray--border-1 gray--color outline-none mx-2"
                     >
-                      <option disabled selected>A scale from 1 to 5 with excellent</option>
+                      <option disabled selected
+                        >A scale from 1 to 5 with excellent</option
+                      >
                       <option>option</option>
                       <option>option</option>
                     </select>
@@ -330,13 +364,17 @@
                 type="button"
                 class="btn white rounded-20 btn-no-border width-33 primary--bg btn-lg"
                 data-dismiss="modal"
-              >Save settings</button>
+              >
+                Save settings
+              </button>
               <button
                 type="button"
                 class="btn white--bg rounded-20 width-33 btn-lg gray--border"
                 style="outline: none;"
                 data-dismiss="modal"
-              >Cancel</button>
+              >
+                Cancel
+              </button>
             </div>
           </div>
         </div>
@@ -356,7 +394,6 @@
 }
 </style>
 <script>
-import Vue from "vue";
 import Slider from "../../components/Slider.vue";
 
 export default {

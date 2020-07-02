@@ -19,7 +19,11 @@
       </div>
     </div>
     <nav aria-label="Departments Pagination" class="mt-4">
-      <div class="position-relative" v-for="(department, index) in departments" v-bind:key="index">
+      <div
+        class="position-relative"
+        v-for="(department, index) in departments"
+        v-bind:key="index"
+      >
         <input
           class="form-check-input position-absolute left-65 bottom-40p"
           type="radio"
@@ -30,10 +34,16 @@
         <div class="card width-90 rounded-100px centered mb-3">
           <div class="card-body d-grid grid-de-la-dept py-1 px-1">
             <div class="rounded-100 lightBlue--bg height-75px width-75px">
-              <img :src="require('@/assets/' + department.logo)" height="100%" width="100%" />
+              <img
+                :src="require('@/assets/' + department.logo)"
+                height="100%"
+                width="100%"
+              />
             </div>
             <span class="vertical-centered">{{ department.name }}</span>
-            <div class="rounded-50 width-100 lightGray--bg height-100 d-flex justify-space-around">
+            <div
+              class="rounded-50 width-100 lightGray--bg height-100 d-flex justify-space-around"
+            >
               <Slider :enabled="department.enabled" />
               <div
                 class="rounded-100 pt-2 pb-2 px-2 vertical-centered black--bg"
@@ -53,7 +63,13 @@
       </div>
       <ul class="pagination pagination-lg justify-content-center pb-0 mb-0">
         <li class="page-item hidden">
-          <a class="page-link gray px-5" href="#" tabindex="-1" aria-disabled="true">PREVIOUS</a>
+          <a
+            class="page-link gray px-5"
+            href="#"
+            tabindex="-1"
+            aria-disabled="true"
+            >PREVIOUS</a
+          >
         </li>
         <li class="page-item">
           <a class="page-link primary--bg white" href="#">1</a>
@@ -88,7 +104,10 @@
               id="file"
               class="rounded-20 inputfile gray--border width-90 text-wrap height-100px px-5"
             />
-            <label for="file" class="text-wrap gray-dashed-border px-5 py-4 text-center rounded-50">
+            <label
+              for="file"
+              class="text-wrap gray-dashed-border px-5 py-4 text-center rounded-50"
+            >
               <i class="fas fa-upload mb-2" style="font-size: 68px;"></i>
               <BR />Upload the university logo image from your device here
             </label>
@@ -98,13 +117,17 @@
               type="button"
               class="btn white rounded-20 btn-no-border width-33 primary--bg btn-lg"
               data-dismiss="modal"
-            >Add</button>
+            >
+              Add
+            </button>
             <button
               type="button"
               class="btn white--bg rounded-20 width-33 btn-lg gray--border"
               style="outline: none;"
               data-dismiss="modal"
-            >Cancel</button>
+            >
+              Cancel
+            </button>
           </div>
         </div>
       </div>
@@ -128,7 +151,10 @@
               id="file"
               class="rounded-20 inputfile gray--border width-90 text-wrap height-100px px-5"
             />
-            <label for="file" class="text-wrap gray-dashed-border px-5 py-4 text-center rounded-50">
+            <label
+              for="file"
+              class="text-wrap gray-dashed-border px-5 py-4 text-center rounded-50"
+            >
               <i class="fas fa-upload mb-2" style="font-size: 68px;"></i>
               <BR />Upload the university logo image from your device here
             </label>
@@ -138,13 +164,17 @@
               type="button"
               class="btn white rounded-20 btn-no-border width-33 primary--bg btn-lg"
               data-dismiss="modal"
-            >Save settings</button>
+            >
+              Save settings
+            </button>
             <button
               type="button"
               class="btn white--bg rounded-20 width-33 btn-lg gray--border"
               style="outline: none;"
               data-dismiss="modal"
-            >Cancel</button>
+            >
+              Cancel
+            </button>
           </div>
         </div>
       </div>
@@ -158,7 +188,6 @@
 </style>
 
 <script>
-import Vue from "vue";
 import Slider from "../../components/Slider.vue";
 
 export default {
@@ -167,34 +196,34 @@ export default {
   },
   data() {
     return {
-        departments: [
-          {
-            logo: "atom.png",
-            name: "The name of department",
-            enabled: true
-          },
-          {
-            logo: "atom.png",
-            name: "The name of department",
-            enabled: true
-          },
-          {
-            logo: "atom.png",
-            name: "The name of department",
-            enabled: true
-          },
-          {
-            logo: "atom.png",
-            name: "The name of department",
-            enabled: true
-          },
-          {
-            logo: "atom.png",
-            name: "The name of department",
-            enabled: true
-          }
-        ]
-      }
+      departments: [
+        {
+          logo: "atom.png",
+          name: "The name of department",
+          enabled: true
+        },
+        {
+          logo: "atom.png",
+          name: "The name of department",
+          enabled: true
+        },
+        {
+          logo: "atom.png",
+          name: "The name of department",
+          enabled: true
+        },
+        {
+          logo: "atom.png",
+          name: "The name of department",
+          enabled: true
+        },
+        {
+          logo: "atom.png",
+          name: "The name of department",
+          enabled: true
+        }
+      ]
+    };
   }
 };
 </script>

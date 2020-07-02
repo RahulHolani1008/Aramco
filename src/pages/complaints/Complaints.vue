@@ -11,18 +11,27 @@
       </div>
     </div>
     <nav aria-label="Departments Pagination" class="mt-4">
-      <div class="position-relative" v-for="(complaint, index) in complaints" :key="index">
+      <div
+        class="position-relative"
+        v-for="(complaint, index) in complaints"
+        :key="index"
+      >
         <div class="card width-90 rounded-100px centered mb-3">
           <div class="card-body d-grid grid-de-la-complaint px-1">
             <div
               class="rounded-100 lightGray--bg width-90 height-80 text-center vertical-centered centered"
               style="padding-top: inherit"
-            >{{ index + 1 }}</div>
+            >
+              {{ index + 1 }}
+            </div>
             <span
               class="vertical-centered white yellow--bg rounded-50 px-4 py-3 max-content ml-1"
-            >{{ complaint.subject }}</span>
+              >{{ complaint.subject }}</span
+            >
             <ul class="list-none vertical-centered">
-              <li class="mx-2 black bold rounded-50 max-content">{{ complaint.type }}</li>
+              <li class="mx-2 black bold rounded-50 max-content">
+                {{ complaint.type }}
+              </li>
               <li class="mx-2 gray fs--10 rounded-50 max-content">
                 <i class="far fa-calendar-alt"></i>
                 {{ complaint.date }}
@@ -30,11 +39,15 @@
             </ul>
             <span
               class="vertical-centered mx-2 black rounded-50 py-3 max-content"
-            >{{ complaint.name }}</span>
+              >{{ complaint.name }}</span
+            >
             <span
               class="vertical-centered mx-2 black rounded-50 py-3 max-content"
-            >2020-02-25 10:46:46</span>
-            <div class="rounded-50 width-100 height-100 d-flex justify-space-around">
+              >2020-02-25 10:46:46</span
+            >
+            <div
+              class="rounded-50 width-100 height-100 d-flex justify-space-around"
+            >
               <Slider />
               <div
                 class="rounded-100 pt-2 pb-2 px-2 vertical-centered primary--bg"
@@ -54,7 +67,13 @@
       </div>
       <ul class="pagination pagination-lg justify-content-center pb-0 mb-0">
         <li class="page-item hidden">
-          <a class="page-link gray px-5" href="#" tabindex="-1" aria-disabled="true">PREVIOUS</a>
+          <a
+            class="page-link gray px-5"
+            href="#"
+            tabindex="-1"
+            aria-disabled="true"
+            >PREVIOUS</a
+          >
         </li>
         <li class="page-item">
           <a class="page-link primary--bg white" href="#">1</a>
@@ -74,30 +93,57 @@
     <div class="modal fade mt-0" id="viewDeptModal" role="dialog">
       <div class="modal-dialog">
         <!-- Modal content-->
-        <div class="modal-content height-500px pb-5 overflow-y-scroll aramco-scrollbar">
+        <div
+          class="modal-content height-500px pb-5 overflow-y-scroll aramco-scrollbar"
+        >
           <div class="modal-body d-flex justify-space-around">
             <label class="complaint_view">Course Name</label>
-            <input type="text" class="pl-4 disabled" value="Modern statistics" disabled />
+            <input
+              type="text"
+              class="pl-4 disabled"
+              value="Modern statistics"
+              disabled
+            />
           </div>
 
           <div class="modal-body d-flex justify-space-around">
             <label class="complaint_view">e-mail</label>
-            <input type="email" class="pl-4 disabled" value="nini.great@academi.sa" disabled />
+            <input
+              type="email"
+              class="pl-4 disabled"
+              value="nini.great@academi.sa"
+              disabled
+            />
           </div>
 
           <div class="modal-body d-flex justify-space-around">
             <label class="complaint_view">Department</label>
-            <input type="text" class="pl-4 disabled" value="Mechanical engineering" disabled />
+            <input
+              type="text"
+              class="pl-4 disabled"
+              value="Mechanical engineering"
+              disabled
+            />
           </div>
 
           <div class="modal-body d-flex justify-space-around">
             <label class="complaint_view">Specialization</label>
-            <input type="text" class="pl-4 disabled" value="General Mathematics" disabled />
+            <input
+              type="text"
+              class="pl-4 disabled"
+              value="General Mathematics"
+              disabled
+            />
           </div>
 
           <div class="modal-body d-flex justify-space-around">
             <label class="complaint_view">trainer name</label>
-            <input type="text" class="pl-4 disabled" value="Zaid Al-Suleiman" disabled />
+            <input
+              type="text"
+              class="pl-4 disabled"
+              value="Zaid Al-Suleiman"
+              disabled
+            />
           </div>
 
           <div class="modal-body d-flex justify-space-around">
@@ -107,7 +153,12 @@
 
           <div class="modal-body d-flex justify-space-around">
             <label class="complaint_view">Trainee Mobile</label>
-            <input type="Date" class="pl-4 disabled" value="597889533" disabled />
+            <input
+              type="Date"
+              class="pl-4 disabled"
+              value="597889533"
+              disabled
+            />
           </div>
 
           <div class="modal-body d-flex justify-space-around">
@@ -116,7 +167,9 @@
               type="button"
               class="btn white rounded-20 btn-no-border width-33 red--bg mr-97 btn-lg"
               data-dismiss="modal"
-            >Closed</button>
+            >
+              Closed
+            </button>
           </div>
         </div>
       </div>
@@ -129,7 +182,6 @@
 }
 </style>
 <script>
-import Vue from "vue";
 import Slider from "../../components/SliderOpen.vue";
 
 export default {
