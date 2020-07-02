@@ -400,6 +400,48 @@ export default {
   },
   components: {
     chart: Chart
+<<<<<<< HEAD
+=======
+  },
+  chartOptions : {
+    series: [
+      {
+        data: [
+          [1, 7],
+          [2, 6],
+          [3, 5],
+          [4, 4],
+          [5, 3],
+          [6, 4],
+          [7, 5]
+        ]
+      }
+    ],
+    xAxis:{
+      title: {text: "Day of the week"},
+      categories: ["0", "Monday", "Tuesday", "Wednesday", "Thursday","Friday", "Saturday","Sunday"]
+    },
+    yAxis:{
+      title: {text: "Time of day"},
+      categories: ["0", "12:00", "1:00", "2:00", "3:00","4:00", "5:00","6:00","7:00","8:00"],
+      padding: 0.1
+    },
+    chart:{
+      padding: 0.1
+    },
+    title: {
+      text: ""
+    },
+     tooltip: {
+                formatter: function() {
+                    return "Thursday, 3:00"
+                }
+            },
+    padding: 1,
+    style:{
+      fontFamily: 'AJannatLT'
+    }
+>>>>>>> 1f9ccda451886670f423f04f22b2ca251f80a12c
   }
 };
 </script>
