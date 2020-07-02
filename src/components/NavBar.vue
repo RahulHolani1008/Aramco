@@ -12,7 +12,7 @@
               </svg>
             </span>
             <span class="menu_name">Statistics</span>
-            <i class="fas fa-angle-right"></i> Shrikant
+            <i class="fas fa-angle-right"></i> Sushmita
           </a>
           <div class="sub-menu">
             <ul class="list-unstyled">
