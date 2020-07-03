@@ -227,7 +227,7 @@ a {
   color: white !important;
 }
 .left-65 {
-  left: 5%;
+  left: 4%;
 }
 .height-100 {
   height: 100%;
@@ -681,6 +681,30 @@ button:focus {
     rgba(202, 217, 243, 0.01),
     rgba(234, 242, 255, 0.5)
   );
+}
+
+input[type=radio].custom-radio{
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 1.5px solid black;
+  border-radius: 50%;
+  outline: none;
+}
+
+input[type=radio].custom-radio:checked{
+  border-color: #24e8a6;
+}
+
+input[type=radio].custom-radio:checked::After{
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #24e8a6;
+  position: absolute;
+  top: 2px;
+  left: 2.5px;
 }
 
 .modal-content button {

@@ -26,7 +26,7 @@
         v-bind:key="index"
       >
         <input
-          class="form-check-input position-absolute left-65 bottom-40p"
+          class="form-check-input position-absolute left-65 bottom-40p custom-radio"
           type="radio"
           name="gridRadios"
           id="gridRadios2"
