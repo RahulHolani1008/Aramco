@@ -33,7 +33,7 @@
           value="option2"
         />
         <div class="card width-90 rounded-100px centered mb-3">
-          <div class="card-body d-grid grid-de-la-logs py-1 px-1 pr-2">
+          <div class="card-body d-grid grid-de-la-logs py-1 pl-2 pr-3">
             <div class="rounded-100 lightBlue--bg height-75px width-75px">
               <img
                 :src="require('@/assets/' + log.logo)"
@@ -41,9 +41,9 @@
                 width="100%"
               />
             </div>
-            <span class="vertical-centered">{{ log.header }}</span>
+            <span class="vertical-centered pl-2">{{ log.header }}</span>
             <ul class="vertical-centered list-none">
-              <li>
+              <li class="pb-2">
                 <i class="fas fa-user"></i>
                 {{ log.name }}
               </li>
